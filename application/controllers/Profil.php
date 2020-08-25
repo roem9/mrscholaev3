@@ -12,24 +12,19 @@ class Profil extends CI_CONTROLLER{
 
     public function index(){
         $id = $this->session->userdata("id");
-
         $data['title'] = "Profil";
-        
         $data['user'] = $this->Admin_model->get_one("user", ["id_user" => $id]);
-
-        // $kosa_kata = 0;
-        // $kata_user = $this->Admin_model->get_all_group_by("kata_user", ["id_user" => $id], "id_mufrodat");
-        // foreach ($kata_user as $kata) {
-        //     $mufrodat = COUNT($this->Admin_model->get_all("kata_user", ["id_mufrodat" => $kata['id_mufrodat']]));
-        //     if($mufrodat == 2){
-        //         $jumlah_kata = $this->Admin_model->get_one("mufrodat", ["id_mufrodat" => $kata['id_mufrodat']]);
-        //         $kosa_kata += $jumlah_kata['kata'];
-        //     }
-        // }
-        // $data['kata'] = $kosa_kata;
-        // $data['latihan'] = COUNT($this->Admin_model->get_all("latihan", ["id_user" => $id, "mustawa" => $data['kelas']['mustawa']]));
-
         
+        // kelas & program
+            $data['kelas'] = [];
+            $data['program'] = [];
+            $kelas = $this->Admin_model->get_all("kelas_user", ["id_user" => $id]);
+            foreach ($kelas as $i => $kelas) {
+                $data['kelas'][$i] = $this->Admin_model->get_one("kelas", ["id_kelas" => $kelas['id_kelas']]);
+                $data['program'][$i] = $data['kelas'][$i]['program'];
+            }
+        // kelas & program
+
         $this->load->view("templates/header-user", $data);
         $this->load->view("profil/index", $data);
         $this->load->view("templates/footer-user", $data);

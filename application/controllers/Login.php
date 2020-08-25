@@ -7,7 +7,9 @@
         }
 
         public function index(){
-            if($_POST){
+            if($_GET){
+                $this->cek_login();
+            } else if($_POST){
                 $this->cek_login_user();
             } else {
                 $data['header'] = 'Login User';
@@ -23,23 +25,32 @@
             $password = md5($this->input->post("password", TRUE));
             $cek = $this->Admin_model->get_one("user", ["username" => $username, "password" => $password]);
             if($cek){
-                $date = date('Y-m-d');
-                // $langganan = $this->Admin_model->get_one("user", "email = '$email' AND password = '$password' AND tgl_langganan = '$date'");
-                if($cek['tgl_langganan'] >= $date){
-                    $data_session = array(
-                        'id' => $cek['id_user'],
-                        'status' => "login"
-                    );
-                    $this->session->set_userdata($data_session);
-                    redirect(base_url('mufrodat/'));
-                } else {
-                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert"><i class="fa fa-times-circle text-danger mr-1"></i>Maaf, waktu langganan Anda telah habis di tanggal <strong>'.date("d-M-Y", strtotime($cek['tgl_langganan'])).'</strong>. Silahkan hubungi Admin untuk memperpanjang langganan Anda<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
-                    $data['header'] = 'Login User';
-                    $data['title'] = 'Login User';
-                    $this->load->view("templates/header-login", $data);
-                    $this->load->view("login/login-user");
-                    $this->load->view("templates/footer");
-                }
+                $data_session = array(
+                    'id' => $cek['id_user'],
+                    'status' => "login"
+                );
+                $this->session->set_userdata($data_session);
+                redirect(base_url('profil/'));
+            }else{
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert"><i class="fa fa-times-circle text-danger mr-1"></i>Maaf, kombinasi username dan password salah<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                $data['header'] = 'Login User';
+                $data['title'] = 'Login User';
+                $this->load->view("templates/header-login", $data);
+                $this->load->view("login/login-user");
+                $this->load->view("templates/footer");
+            }
+        }
+
+        public function cek_login(){
+            $id = $this->input->get("user");
+            $cek = $this->Admin_model->get_one("user", "concat(MD5('alazhar'), MD5(id_user)) = '$id'");
+            if($cek){
+                $data_session = array(
+                    'id' => $cek['id_user'],
+                    'status' => "login"
+                );
+                $this->session->set_userdata($data_session);
+                redirect(base_url('profil/'));
             }else{
                 $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert"><i class="fa fa-times-circle text-danger mr-1"></i>Maaf, kombinasi username dan password salah<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
                 $data['header'] = 'Login User';

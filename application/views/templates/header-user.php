@@ -44,9 +44,9 @@
     <nav id="sidebar">
         <div class="list-group list-group-flush mt-3">
             <a href="<?= base_url()?>profil" class="list-group-item list-group-item-action <?php if($title == 'Profil'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-user mr-3"></i>Profil</a>
-            <a href="<?= base_url()?>mufrodat" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
-            <!-- <a href="<?= base_url()?>mufrodat/listmurojaah" class="list-group-item list-group-item-action <?php if($title == 'Murojaah Mufrodat'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-redo mr-3"></i>Murojaah Mufrodat</a> -->
-            <!-- <a href="<?= base_url()?>pelajaran" class="list-group-item list-group-item-action <?php if($title == 'Pelajaran Saya'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-book mr-3"></i>Pelajaran</a> -->
+            <?php if(in_array("Hifdzi 1", $program)):?>
+                <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
+            <?php endif;?>
             <a href="<?= base_url()?>login/logout_user" class="list-group-item list-group-item-action" onclick="return confirm('Yakin akan keluar?')"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
         </div>
     </nav>
