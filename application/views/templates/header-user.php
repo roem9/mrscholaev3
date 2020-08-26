@@ -43,6 +43,9 @@
     <!-- Sidebar  -->
     <nav id="sidebar">
         <div class="list-group list-group-flush mt-3">
+            <div class="col-12 mb-3 text-center">
+                <img src="<?= base_url()?>assets/img/logo.png" width="75" class="img-fluid img-shadow">
+            </div>
             <a href="<?= base_url()?>profil" class="list-group-item list-group-item-action <?php if($title == 'Profil'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-user mr-3"></i>Profil</a>
             <?php if(in_array("Hifdzi 1", $program)):?>
                 <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
@@ -55,6 +58,6 @@
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top navbar-ku">
             <div class="container">
-                <a id="sidebarCollapse" class="btn btn-sm"><i class="fa fa-bars text-light mr-3"></i><span class="text-light"><b><?= $title?></b></span></span></a>
+                <a id="sidebarCollapse" class="btn btn-sm"><img src="<?= base_url()?>assets/img/logo.png" width="25"><span class="text-light ml-1"><b><?= $title?></b></span></span></a>
             </div>
         </nav>

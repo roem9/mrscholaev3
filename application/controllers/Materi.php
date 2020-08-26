@@ -29,7 +29,24 @@ class Materi extends CI_CONTROLLER{
         if($materi == MD5("Hifdzi 1")){
             if($_GET){
                 if(!empty($_GET['tema'])){
+                    
+                    // pertemuan
+                        $kelas = $this->searchForId("Hifdzi 1", $data['kelas']);
+                        $per = $this->Admin_model->get_all("materi_kelas", ["id_kelas" => $kelas]);
+                        $pertemuan = [];
+                        foreach ($per as $i => $per) {
+                            $pertemuan[$i] = $per['materi'];
+                        }
+                    // pertemuan
+
                     if($_GET['tema'] == MD5('Pertemuan 1')){
+
+                        $data['back'] = "";
+                        if (in_array("Pertemuan 2", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 2");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 1';
                         $data['materi'] = 'Materi Pertemuan 1';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -39,6 +56,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 4","حُرُوْفُ النِّدَاءِ", "Huruf Nidaa", 3);
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 5","حُرُوْفُ الْإِسْتِثْنَاءِ", "Huruf Istisna", 1);
                     } else if($_GET['tema'] == MD5('Pertemuan 2')){
+                        
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 1");
+                        if (in_array("Pertemuan 3", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 3");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 2';
                         $data['materi'] = 'Materi Pertemuan 2';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -51,6 +75,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][7] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 12","حُرُوْفُ النَّافِي", "Huruf Nafi", 2);
                         $data['mufrodat'][8] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 13","حُرُوْفُ اْلإِسْتِفْهَامِ", "Huruf Istifham", 2);
                     } else if($_GET['tema'] == MD5('Pertemuan 3')){
+
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 2");
+                        if (in_array("Pertemuan 4", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 4");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 3';
                         $data['materi'] = 'Materi Pertemuan 3';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -67,6 +98,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][11] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 24","عَدَدٌ", "81-89", 9);
                         $data['mufrodat'][12] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 25","عَدَدٌ", "91-99", 9);
                     } else if($_GET['tema'] == MD5('Pertemuan 4')){
+                        
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 3");
+                        if (in_array("Pertemuan 5", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 5");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 4';
                         $data['materi'] = 'Materi Pertemuan 4';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -75,6 +113,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 28","ظُرُوْفُ الزَّمَانِ", "Keterangan Waktu Bag. 2", 8);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 29","ظُرُوْفُ الزَّمَانِ", "Keterangan Waktu Bag. 3", 6);
                     } else if($_GET['tema'] == MD5('Pertemuan 5')){
+                        
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 4");
+                        if (in_array("Pertemuan 6", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 6");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 5';
                         $data['materi'] = 'Materi Pertemuan 5';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -86,6 +131,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][6] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 35","أَعْضَاءُ الْبَدَنِ", "Anggota Tubuh Bag. 6", 6);
                         $data['mufrodat'][7] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 36","أَعْضَاءُ الْبَدَنِ", "Anggota Tubuh Bag. 7", 5);
                     } else if($_GET['tema'] == MD5('Pertemuan 6')){
+                        
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 5");
+                        if (in_array("Pertemuan 7", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 7");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 6';
                         $data['materi'] = 'Materi Pertemuan 6';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -99,6 +151,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][8] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 44","الأُسْرَةُ", "Keluarga Bag. 3", 8);
                         $data['mufrodat'][9] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 45","الأُسْرَةُ", "Keluarga Bag. 4", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 7')){
+
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 6");
+                        if (in_array("Pertemuan 8", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 8");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 7';
                         $data['materi'] = 'Materi Pertemuan 7';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -107,6 +166,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 48","اْلأَفْعَالُ عَنِ اْلأُسْرَةِ", "Pekerjaan Tentang Keluarga Bag. 3", 6);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 49","اْلأَفْعَالُ عَنِ اْلأُسْرَةِ", "Pekerjaan Tentang Keluarga Bag. 4", 6);
                     } else if($_GET['tema'] == MD5('Pertemuan 8')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 7");
+                        if (in_array("Pertemuan 9", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 9");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 8';
                         $data['materi'] = 'Materi Pertemuan 8';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -116,6 +181,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 53","أَخْلاَقُ اْلإِنْسَانِ", "Akhlak Manusia Bag. 4", 8);
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 54","أَخْلاَقُ اْلإِنْسَانِ", "Akhlak Manusia Bag. 5", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 9')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 8");
+                        if (in_array("Pertemuan 10", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 10");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 9';
                         $data['materi'] = 'Materi Pertemuan 9';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -126,6 +197,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 59","أَخْلاَقُ اْلإِنْسَانِ", "Akhlak Manusia Bag. 5", 7);
                         $data['mufrodat'][6] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 60","أَخْلاَقُ اْلإِنْسَانِ", "Akhlak Manusia Bag. 6", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 10')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 9");
+                        if (in_array("Pertemuan 11", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 11");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 10';
                         $data['materi'] = 'Materi Pertemuan 10';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -135,6 +212,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 64","آثَاثُ اْلبَيْتِ", "Perlengkapan Rumah Bag. 4", 7);
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 65","آثَاثُ اْلبَيْتِ", "Perlengkapan Rumah Bag. 5", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 11')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 10");
+                        if (in_array("Pertemuan 12", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 12");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 11';
                         $data['materi'] = 'Materi Pertemuan 11';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -146,6 +229,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][6] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 71","الصِّفَاتُ", "Sifat Bag. 1", 8);
                         $data['mufrodat'][7] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 72","الصِّفَاتُ", "Sifat Bag. 2", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 12')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 11");
+                        if (in_array("Pertemuan 13", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 13");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 12';
                         $data['materi'] = 'Materi Pertemuan 12';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -154,6 +243,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 75","الصِّفَاتُ", "Sifat Bag. 3", 7);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 76","الصِّفَاتُ", "Sifat Bag. 4", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 13')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 12");
+                        if (in_array("Pertemuan 14", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 14");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 13';
                         $data['materi'] = 'Materi Pertemuan 13';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -167,6 +262,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][8] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 84","غُرْفَةُ النَّوْمِ", "Kamar Tidur Bag. 1", 8);
                         $data['mufrodat'][9] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 85","غُرْفَةُ النَّوْمِ", "Kamar Tidur Bag. 2", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 14')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 13");
+                        if (in_array("Pertemuan 15", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 15");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 14';
                         $data['materi'] = 'Materi Pertemuan 14';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -175,6 +276,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 88","الْمَطْبَخُ", "Dapur Bag. 2", 8);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 89","الْمَطْبَخُ", "Dapur Bag. 3", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 15')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 14");
+                        if (in_array("Pertemuan 16", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 16");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 15';
                         $data['materi'] = 'Materi Pertemuan 15';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -183,6 +290,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 92","الطُّعُوْمُ", "Rasa-rasa Bag. 1", 6);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 93","الطُّعُوْمُ", "Rasa-rasa Bag. 2", 6);
                     } else if($_GET['tema'] == MD5('Pertemuan 16')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 15");
+                        if (in_array("Pertemuan 17", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 17");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 16';
                         $data['materi'] = 'Materi Pertemuan 16';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -191,6 +304,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 96","اْلأَفْعَالُ عَنِ الْحَمَّام", "Pekerjaan Tentang Kamar Mandi Bag. 1", 7);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 97","اْلأَفْعَالُ عَنِ الْحَمَّام", "Pekerjaan Tentang Kamar Mandi Bag. 2", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 17')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 16");
+                        if (in_array("Pertemuan 18", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 18");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 17';
                         $data['materi'] = 'Materi Pertemuan 17';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -200,6 +319,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 101","المَدْرَسَةُ", "Sekolah Bag. 4", 7);
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 102","المَدْرَسَةُ", "Sekolah Bag. 5", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 18')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 17");
+                        if (in_array("Pertemuan 19", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 19");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 18';
                         $data['materi'] = 'Materi Pertemuan 18';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -213,6 +338,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][8] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 110","الْمَرْكُوْبَاتُ", "Kendaraan-kendaraan Bag. 3", 8);
                         $data['mufrodat'][9] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 111","الْمَرْكُوْبَاتُ", "Kendaraan-kendaraan Bag. 4", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 19')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 18");
+                        if (in_array("Pertemuan 20", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 20");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 19';
                         $data['materi'] = 'Materi Pertemuan 19';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -224,6 +355,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][6] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 117","أَسْمَاءُ الْحَيَوَانَاتِ", "Nama-nama Hewan Bag. 3", 7);
                         $data['mufrodat'][7] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 118","أَسْمَاءُ الْحَيَوَانَاتِ", "Nama-nama Hewan Bag. 4", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 20')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 19");
+                        if (in_array("Pertemuan 21", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 21");
+                        else
+                            $data['next'] = "";
+                            
                         $data['title'] = 'Pertemuan 20';
                         $data['materi'] = 'Materi Pertemuan 20';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -234,6 +371,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 123","أَسْمَاءُ اْلفَوَاكِهِ", "Nama-nama Buah Bag. 3", 7);
                         $data['mufrodat'][6] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 124","اْلأَفْعَالُ عَنِ اْلفَوَاكِهِ", "Pekerjaan Tentang Buah", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 21')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 20");
+                        if (in_array("Pertemuan 22", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 22");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 21';
                         $data['materi'] = 'Materi Pertemuan 21';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -246,6 +389,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][7] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 131","اْلأَفْعَالُ عَنِ الْمَكَانِ", "Pekerjaan Tentang Tempat Bag. 1", 5);
                         $data['mufrodat'][8] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 132","اْلأَفْعَالُ عَنِ الْمَكَانِ", "Pekerjaan Tentang Tempat Bag. 2", 5);
                     } else if($_GET['tema'] == MD5('Pertemuan 22')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 21");
+                        if (in_array("Pertemuan 23", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 23");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 22';
                         $data['materi'] = 'Materi Pertemuan 22';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -254,6 +403,12 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 135","العَالَمُ", "Alam Semesta Bag. 3", 8);
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 136","العَالَمُ", "Alam Semesta Bag. 4", 8);
                     } else if($_GET['tema'] == MD5('Pertemuan 23')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 22");
+                        if (in_array("Pertemuan 24", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 24");
+                        else
+                            $data['next'] = "";
+
                         $data['title'] = 'Pertemuan 23';
                         $data['materi'] = 'Materi Pertemuan 23';
                         $data['mufrodat'][0]['mufrodat'] = 100;
@@ -263,6 +418,13 @@ class Materi extends CI_CONTROLLER{
                         $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 140","الْمِهْنَةُ", "Profesi Bag. 4", 7);
                         $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 141","الْمِهْنَةُ", "Profesi Bag. 5", 7);
                     } else if($_GET['tema'] == MD5('Pertemuan 24')){
+                        $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 23");
+                        if (in_array("Pertemuan 25", $pertemuan))
+                            $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 25");
+                        else
+                            $data['next'] = "";
+
+                        $data['next'] = "";
                         $data['title'] = 'Pertemuan 24';
                         $data['materi'] = 'Materi Pertemuan 24';
                         $data['mufrodat'][0]['mufrodat'] = 100;

@@ -1,14 +1,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-3">
+                    
+                    <a href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c?tema=<?= md5($tema)?>" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i><?= $tema?></a>
                     <!-- <a href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c" class="text-primary"><u>Hifdzi 1</u></a> / <a class="text-primary" href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c?tema=<?= md5($tema)?>"><u><?= $tema?></u></a> / <a class="text-primary" href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c?id=<?= md5($materi)?>"><u><?= $title?></u></a> -->
-                    <a href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c" class="text-primary"><u>Hifdzi 1</u></a> / <a class="text-primary" href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c?tema=<?= md5($tema)?>"><u><?= $tema?></u></a> / <?= $title?>
+                    <!-- <a href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c" class="text-light"><u>Hifdzi 1</u></a> / <a class="text-light" href="<?= base_url()?>materi/program/a20deb514ea1ea62546f6474a5abe59c?tema=<?= md5($tema)?>"><u><?= $tema?></u></a> / <?= $title?> -->
                 </div>
-                <div class="col-12 mb-3">
+                <div class="col-12">
                     <div class="form-group">
-                        <label for="font">Ukuran Font</label>
+                        <!-- <label for="font">Ukuran Font</label> -->
                         <select name="font" id="font" class="form-control form-control-sm">
-                            <option value="16px">Pilih Ukuran Font</option>
+                            <option value="16px">Ganti Ukuran Font</option>
                             <option value="16px">16</option>
                             <option value="18px">18</option>
                             <option value="20px">20</option>
@@ -30,11 +32,12 @@
                 <?php endif;?>
                 <?php if(COUNT($mufrodat) != 0):?>
                     <?php foreach ($mufrodat as $mufrodat) :?>
-                        <div class="col-12 col-md-4 mb-2">
+                        <div class="col-12 col-md-4 mb-1">
                             <ul class="list-group shadow">
                                 <li class="list-group-item d-flex justify-content-between arab" id="container-content">
                                     <a class="" data-container="body" data-toggle="popover" data-placement="top" data-content="<?= $mufrodat['arti']?>">
                                         <i class="fa fa-info-circle text-info fa-lg"></i>
+                                        <!-- <span class="btn btn-sm btn-outline-info text-info">arti</span> -->
                                     </a>
                                     <span>
                                         <?= $mufrodat['kata_arab']?>
@@ -43,7 +46,7 @@
                             </ul>
                         </div>
                     <?php endforeach;?>
-                    <div class="col-12">
+                    <div class="col-12 mt-2">
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-warning">Latihan</li>
                             <?php if($latihan[0]):?>
@@ -66,16 +69,16 @@
                     <div class="col-12 mt-3">
                         <?php if($back != "" && $next != "") :?>
                             <div class="d-flex justify-content-between">
-                                <a href="<?= base_url()?><?= $back?>" class="btn btn-sm btn-secondary"><i class="fa fa-arrow-left "></i></a>
-                                <a href="<?= base_url()?><?= $next?>" class="btn btn-sm btn-secondary"><i class="fa fa-arrow-right"></i></a>
+                                <a href="<?= base_url()?><?= $back?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
+                                <a href="<?= base_url()?><?= $next?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
                             </div>
                         <?php elseif($back != "" && $next == ""):?>
                             <div class="d-flex justify-content-start">
-                                <a href="<?= base_url()?><?= $back?>" class="btn btn-sm btn-secondary"><i class="fa fa-arrow-left "></i></a>
+                                <a href="<?= base_url()?><?= $back?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
                             </div>
                         <?php elseif($back == "" && $next != "") :?>
                             <div class="d-flex justify-content-end">
-                                <a href="<?= base_url()?><?= $next?>" class="btn btn-sm btn-secondary"><i class="fa fa-arrow-right"></i></a>
+                                <a href="<?= base_url()?><?= $next?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
                             </div>
                         <?php endif;?>
                     </div>

@@ -67,15 +67,15 @@
             <?php endif; ?>
             <div class="row">
                 <div class="col-12 mb-3">
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item-info"><strong>Data Profil</strong></li>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><strong>Profil</strong></li>
                         <li class="list-group-item"><i class="fa fa-user mr-2"></i><?= $user['nama']?></li>
                         <li class="list-group-item"><i class="fa fa-envelope mr-2"></i><?= $user['email']?></li>
                     </ul>
                 </div>
                 <div class="col-12 mb-3">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-success"><strong>Data Kelas</strong></li>
+                        <li class="list-group-item list-group-item-success"><strong>Kelas</strong></li>
                         <?php if($kelas):?>
                             <?php foreach ($kelas as $i => $kelas) :?>
                                 <li class="list-group-item d-flex justify-content-between">
@@ -92,14 +92,14 @@
                 </div>
                 <div class="col-12 mb-3">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-warning"><strong>Data Login</strong></li>
+                        <li class="list-group-item list-group-item-warning"><strong>Password</strong></li>
                         <li class="list-group-item">
-                            <div class="alert alert-info"><i class="fa fa-info-circle mr-1 text-info"></i>Isi form berikut ini untuk membuat data login</div>
+                            <div class="alert alert-info"><i class="fa fa-info-circle mr-1 text-info"></i>Isi form berikut ini untuk mengganti password</div>
                             <form action="<?= base_url()?>profil/edit_password" method="post">
                                 <input type="hidden" name="id" value="<?= MD5($user['id_user'])?>" readonly>
                                 <div class="form-group">
                                     <label for="username">Username</label>
-                                    <input type="text" name="username" id="username" value="<?= $user['username']?>" class="form-control form-control-sm" required>
+                                    <input type="text" name="username" id="username" class="form-control form-control-sm" value="<?= $user['username']?>" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="pass">Password Baru</label>
@@ -110,7 +110,7 @@
                                     <input type="password" name="password2" id="password2" class="form-control form-control-sm" required>
                                 </div>
                                 <div class="d-flex justify-content-end">
-                                    <input type="submit" value="Ubah Data" class="btn btn-sm btn-success" id="btnSubmitEditPassword">
+                                    <input type="submit" value="Ubah Password" class="btn btn-sm btn-success" id="btnSubmitEditPassword">
                                 </div>
                             </form>
                         </li>
