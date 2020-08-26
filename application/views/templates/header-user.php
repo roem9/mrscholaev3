@@ -37,7 +37,7 @@
     <title><?= $title?></title>
 </head>
 
-<body>
+<body style="background-color: #265D5A">
     
 <div class="wrapper">
     <!-- Sidebar  -->
