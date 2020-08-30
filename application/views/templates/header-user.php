@@ -50,6 +50,7 @@
             <?php if(in_array("Hifdzi 1", $program)):?>
                 <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
             <?php endif;?>
+            <a href="<?= base_url()?>setting" class="list-group-item list-group-item-action <?php if($title == 'Pengaturan'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-cog mr-3"></i>Pengaturan</a>
             <a href="<?= base_url()?>login/logout_user" class="list-group-item list-group-item-action" onclick="return confirm('Yakin akan keluar?')"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
         </div>
     </nav>
@@ -58,6 +59,6 @@
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top navbar-ku">
             <div class="container">
-                <a id="sidebarCollapse" class="btn btn-sm"><img src="<?= base_url()?>assets/img/logo.png" width="25"><span class="text-light ml-1"><b><?= $title?></b></span></span></a>
+                <a id="sidebarCollapse" class="btn btn-sm"><img src="<?= base_url()?>assets/img/logo.png" width="25"><span class="text-light ml-2"><b><?= $title?></b></span></span></a>
             </div>
         </nav>

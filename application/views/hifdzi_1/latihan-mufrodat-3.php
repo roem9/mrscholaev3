@@ -151,15 +151,25 @@
     $(".hapus").click(function(){
         let id = $(this).data("id");
         let answer = $("#jaw"+id).val();
-        if (answer.charAt(answer.length-2) == "ّ" || answer.charAt(answer.length-1) == "ّ"){
+        
+        // console.log(answer.charAt(answer.length-4)+answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1))
+        
+        if (answer.charAt(answer.length-4)+answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَلْ") {
+            hapus = answer.slice(0,-4);
+        } else if (answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَل" || answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "الْ" ){
             hapus = answer.slice(0,-3);
-        } else if(answer.charAt(answer.length-1) == "ا" || answer.charAt(answer.length-1) == "ى" || answer.charAt(answer.length-1) == "-" || answer.charAt(answer.length-1) == "ل" || answer.charAt(answer.length-1) == "آ" || answer.charAt(answer.length-1) == "ي"){
+        } else if (answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "ال" ){
+            hapus = answer.slice(0,-2);
+        } else if (answer.charAt(answer.length-2) == "ّ" || answer.charAt(answer.length-1) == "ّ"){
+            hapus = answer.slice(0,-3);
+        } else if(answer.charAt(answer.length-1) == "ا" || answer.charAt(answer.length-1) == "ى" || answer.charAt(answer.length-1) == "-" || answer.charAt(answer.length-1) == "_" || answer.charAt(answer.length-1) == "ل" || answer.charAt(answer.length-1) == "آ" || answer.charAt(answer.length-1) == "ي" || answer.charAt(answer.length-1) == "و"){
             hapus = answer.slice(0,-1);
         } else {
             hapus = answer.slice(0,-2);
         }
         $("#jaw"+id).val(hapus);
     })
+// لَا
 
     $(".edit").click(function(){
         let id = $(this).data("id");

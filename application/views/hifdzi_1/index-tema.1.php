@@ -7,11 +7,11 @@
                         <?php if($tema[$i]['status'] == "on"):?>
                             <?php if($tema[$i]['mufrodat'] == 100) :?>
                                 <div class="col-12 col-md-4 mb-3">
-                                <div class="card rounded-lg border-primary">
+                                <div class="card border-primary">
                                 <div class="card-header list-group-item-primary d-flex justify-content-between"><span class="text-dark"><strong><?= $tema[$i]['title']?></strong></span><span class="badge badge-success text-light"><?= $tema[$i]['count']?></span></div>
                             <?php else:?>
                                 <div class="col-12 col-md-4 mb-3">
-                                <div class="card rounded-lg border-danger">
+                                <div class="card border-danger">
                                 <div class="card-header list-group-item-danger d-flex justify-content-between"><span class="text-dark"><strong><?= $tema[$i]['title']?></strong></span><span class="badge badge-success text-light"><?= $tema[$i]['count']?></span></div>
                             <?php endif;?>
                                 <div class="card-body">
