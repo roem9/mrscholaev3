@@ -15,7 +15,6 @@
                                 <div class="card-header list-group-item-danger d-flex justify-content-between"><span class="text-dark"><strong><?= $tema[$i]['title']?></strong></span><span class="badge badge-success text-light"><?= $tema[$i]['count']?></span></div>
                             <?php endif;?>
                                 <div class="card-body">
-                                    
                                     <?php if($tema[$i]['mufrodat'] < 100) :?>
                                         <div class="progress mb-3">
                                             <div class="progress-bar bg-info" role="progressbar" style="width: <?= $tema[$i]['mufrodat']?>%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?= floor($tema[$i]['mufrodat'])?>%</div>

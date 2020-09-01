@@ -30,6 +30,7 @@
                                     <div id="select<?=$i?>">
                                         <div class="container">
                                             <div class="row justify-content-between">
+                                                <?php sort($kata)?>
                                                 <?php foreach ($kata as $k => $data) :?>
                                                     <div class="radio-toolbar radio-shadow mr-1">
                                                         <input type="radio" id="<?= $i.$k?>" name="<?= $i?>1" class="btn-primary" value="<?= $data?>">

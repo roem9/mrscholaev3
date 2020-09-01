@@ -28,6 +28,7 @@
                                     <div id="select<?=$i?>">
                                         <div class="container">
                                             <div class="row justify-content-between">
+                                                <?php rsort($kata);?>
                                                 <?php foreach ($kata as $k => $data) :?>
                                                     <!-- <div class="col"> -->
                                                         <div class="radio-toolbar radio-shadow mr-1">

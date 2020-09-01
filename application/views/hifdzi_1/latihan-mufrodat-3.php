@@ -15,7 +15,7 @@
     
                     <div class="col-12 col-md-12 mb-3">
                         <ul class="list-group">
-                            <li class="list-group-item">
+                            <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
                                     <div class="">
                                         <label for="<?=$i?>"><strong><?= $i+1?>. <?= $kalimat['arti']?></strong></label>
@@ -32,8 +32,7 @@
                                             <div class="container">
                                                 <div class="row justify-content-center">
                                                     <?php 
-                                                        // shuffle($huruf);
-                                                        shuffle($kalimat['huruf']);
+                                                        rsort($kalimat['huruf']);
                                                         foreach ($kalimat['huruf'] as $k => $data) :?>
                                                             <div class="radio-toolbar mr-2">
                                                                 <a data-id="<?= $data?>|<?= $i?>" class="btn btn-md mt-2 mb-2 arab radio-shadow input-btn" style="height: 40px; width: 40px;background-color: rgb(238, 238, 238);"><b><?= $data?></b></a>
@@ -77,8 +76,12 @@
             if(cek != 'betul'){
                 benar = 0;
                 $(".icon-cek-"+i).html(`<i class="fa fa-times-circle text-danger"></i>`);
+                $(".bg-cek-"+i).removeClass("list-group-item-success");
+                $(".bg-cek-"+i).addClass("list-group-item-danger");
             } else {
                 $(".icon-cek-"+i).html(`<i class="fa fa-check-circle text-success"></i>`);
+                $(".bg-cek-"+i).removeClass("list-group-item-danger");
+                $(".bg-cek-"+i).addClass("list-group-item-success");
             }
         }
         if(benar == 0){
