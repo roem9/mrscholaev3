@@ -14,7 +14,7 @@
                     $urut++?>
                     <div class="col-12 col-md-12 mb-3">
                         <ul class="list-group">
-                            <li class="list-group-item">
+                            <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
                                     <!-- <div class="arab"> -->
                                         <label for="<?=$i?>"><strong><?= $i+1?>. <?= $kalimat['kata_arab']?></strong></label>
@@ -75,8 +75,12 @@
             if(cek != 'betul'){
                 benar = 0;
                 $(".icon-cek-"+i).html(`<i class="fa fa-times-circle text-danger"></i>`);
+                $(".bg-cek-"+i).removeClass("list-group-item-success");
+                $(".bg-cek-"+i).addClass("list-group-item-danger");
             } else {
                 $(".icon-cek-"+i).html(`<i class="fa fa-check-circle text-success"></i>`);
+                $(".bg-cek-"+i).removeClass("list-group-item-danger");
+                $(".bg-cek-"+i).addClass("list-group-item-success");
             }
         }
         if(benar == 0){

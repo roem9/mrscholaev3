@@ -2512,7 +2512,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "بَلَغَ-يَبْلُغُ-بُلُوغًا",
                                 "arti" => "Menyampaikan",
-                                "huruf" => array_unique(["بَ","لَ","غَ","-","يَ","بْ","لُ","غُ","-","بُ","xلُ","و","غً","ا"])
+                                "huruf" => array_unique(["بَ","لَ","غَ","-","يَ","بْ","لُ","غُ","-","بُ","لُ","و","غً","ا"])
                             ],
                             [
                                 "kata_arab" => "مَزَحَ-يَمْزَحُ-مِزَاحًا",
@@ -2571,7 +2571,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "سَكَتَ-يَسْكُتُ-سُكُوْتًا",
                                 "arti" => "Diam",
-                                "huruf" => array_unique(["سَ","كَ","تَ","-","يَ","سْ","كُ","تُ","-س","ُك","ُوْ","تً","ا"])
+                                "huruf" => array_unique(["سَ","كَ","تَ","-","يَ","سْ","كُ","تُ","سُ","ُوْ","تً","ا"])
                             ],
                         ];
                     } else if($_GET['id'] == MD5('Mufrodat 50')){
@@ -2662,7 +2662,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["حَ","سُ","وْ","دٌ"])
                             ],
                             [
-                                "kata_arab" => "سَخِيٌّ",
+                                "kata_arab" => "سَـخِيٌّ",
                                 "arti" => "Dermawan",
                                 "huruf" => array_unique(["سَ","خِ","يٌّ"])
                             ],
@@ -2681,7 +2681,7 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 52");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "شُجَاعٌ",
+                                "kata_arab" => "شُـجَاعٌ",
                                 "arti" => "Berani",
                                 "huruf" => array_unique(["شُ","جَ","ا","عٌ"])
                             ],
@@ -2791,7 +2791,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "مُتَعَنِّتٌ",
                                 "arti" => "Bandel",
-                                "huruf" => array_unique(["مُ","تَ","عَ","نّ","ِتٌ"])
+                                "huruf" => array_unique(["مُ","تَ","عَ","نِّ","تٌ"])
                             ],
                             [
                                 "kata_arab" => "حَسَّاسٌ",
@@ -2975,7 +2975,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["مَ","ذْ","مُ","وْ","مٌ"])
                             ],
                             [
-                                "kata_arab" => "رَابِحٌ",
+                                "kata_arab" => "رَابِـحٌ",
                                 "arti" => "Beruntung",
                                 "huruf" => array_unique(["رَ","ا","بِ","حٌ"])
                             ],
@@ -2985,7 +2985,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["خَ","ا","سِ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "سَمِيْنٌ",
+                                "kata_arab" => "سَـمِيْنٌ",
                                 "arti" => "Gemuk",
                                 "huruf" => array_unique(["سَ","مِ","يْ","نٌ"])
                             ],
@@ -3054,7 +3054,7 @@ class Materi extends CI_CONTROLLER{
                         $data['next'] = "";
                         $data['tema'] = "Pertemuan 9";
                         $data['materi'] = "Mufrodat 60";
-                        $data['title'] = "Akhlak Manusia Bag.";
+                        $data['title'] = "Akhlak Manusia Bag. 6";
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 60");
                         $data['mufrodat'] = [
                             [
@@ -3347,7 +3347,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["نَ","ظَّ","فَ","-","يُ","نَ","ظِّ","فُ","-","تَ","نْ","ظِ","يْ","فً","ا"])
                             ],
                             [
-                                "kata_arab" => "وَسَّخَ-يُوَسِّخُ-تَوْسِيْخًا",
+                                "kata_arab" => "وَسَّـخَ-يُوَسِّـخُ-تَوْسِيْخًا",
                                 "arti" => "Mengotori",
                                 "huruf" => array_unique(["وَ","سَّ","خَ","-","يُ","وَ","سِّ","خُ","-","تَ","وْ","سِ","يْ","خً","ا"])
                             ],
@@ -3362,9 +3362,9 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["جَ","لَ","سَ","-","يَ","جْ","لِ","سُ","-","جُ","لُ","وْ","سً","ا"])
                             ],
                             [
-                                "kata_arab" => "قَعَدَ-يَقْعُدُ-قُعُودًا",
-                                "arti" => "Duduk",
-                                "huruf" => array_unique(["قَ","عَ","دَ","-","يَ","قْ","عُ","دُ","-","قُ","عُ","و","دً","ا"])
+                                "kata_arab" => "دَخَلَ-يَدْخُلُ-دُخُوْلاً",
+                                "arti" => "Masuk",
+                                "huruf" => array_unique(["دَ","خَ","لَ","-","يَ","دْ","خُ","لُ","-","دُ","خُ","وْ","لاً"])
                             ],
                             [
                                 "kata_arab" => "قَامَ-يَقُوْمُ-قِيَامًا",
@@ -3381,9 +3381,9 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 67");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "دَخَلَ-يَدْخُلُ-دُخُوْلاً",
-                                "arti" => "Masuk",
-                                "huruf" => array_unique(["دَ","خَ","لَ","-","يَ","دْ","خُ","لُ","-","دُ","خُ","وْ","لاً"])
+                                "kata_arab" => "قَعَدَ-يَقْعُدُ-قُعُودًا",
+                                "arti" => "Duduk",
+                                "huruf" => array_unique(["قَ","عَ","دَ","-","يَ","قْ","عُ","دُ","-","قُ","عُ","و","دً","ا"])
                             ],
                             [
                                 "kata_arab" => "خَرَجَ-يَخْرُجُ-خُرُوْجًا",
@@ -3435,7 +3435,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["شَ","ا","هَ","دَ","-","يُ","شَ","ا","هِ","دُ","-","مُ","شَ","ا","هَ","دَ","ةً"])
                             ],
                             [
-                                "kata_arab" => "هَجَرَ-يَهْجُرُ-هَجْرًا",
+                                "kata_arab" => "هَـجَرَ-يَهْجُرُ-هَـجْرًا",
                                 "arti" => "Hijrah",
                                 "huruf" => array_unique(["هَ","جَ","رَ","-","يَ","هْ","جُ","رُ","-","هَ","جْ","رً","ا"])
                             ],
@@ -3503,7 +3503,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["أَ","خْ","ضَ","رُ"])
                             ],
                             [
-                                "kata_arab" => "أَسْمَرُ",
+                                "kata_arab" => "أَسْـمَرُ",
                                 "arti" => "Coklat",
                                 "huruf" => array_unique(["أَ","سْ","مَ","رُ"])
                             ],
@@ -3544,7 +3544,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "صَغِيْرٌ",
                                 "arti" => "Kecil",
-                                "huruf" => array_unique(["صَ","غِ","يْxرٌ"])
+                                "huruf" => array_unique(["صَ","غِ","يْ","رٌ"])
                             ],
                             [
                                 "kata_arab" => "طَوِيْلٌ",
@@ -3567,12 +3567,12 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["ضَ","يِّ","قٌ"])
                             ],
                             [
-                                "kata_arab" => "عَمِيْقٌ",
+                                "kata_arab" => "عَـمِيْقٌ",
                                 "arti" => "Dalam",
                                 "huruf" => array_unique(["عَ","مِ","يْ","قٌ"])
                             ],
                             [
-                                "kata_arab" => "ضَحْلٌ",
+                                "kata_arab" => "ضَـحْلٌ",
                                 "arti" => "Dangkal",
                                 "huruf" => array_unique(["ضَ","حْ","لٌ"])
                             ],
@@ -3601,7 +3601,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["نَ","ظِ","يْ","فٌ"])
                             ],
                             [
-                                "kata_arab" => "وَسِخٌ",
+                                "kata_arab" => "وَسِـخٌ",
                                 "arti" => "Kotor",
                                 "huruf" => array_unique(["وَ","سِ","خٌ"])
                             ],
@@ -3821,7 +3821,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["ثَ","وْ","بٌ"])
                             ],
                             [
-                                "kata_arab" => "قَمِيْصٌ",
+                                "kata_arab" => "قَـمِيْصٌ",
                                 "arti" => "Kemeja",
                                 "huruf" => array_unique(["قَ","مِ","يْ","صٌ"])
                             ],
@@ -4014,7 +4014,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "قُرْطٌ",
                                 "arti" => "Anting-anting",
-                                "huruf" => array_unique(["قُ","ر","ْطٌ"])
+                                "huruf" => array_unique(["قُ","رْ","طٌ"])
                             ],
                             [
                                 "kata_arab" => "خَاتَمٌ",
@@ -4082,7 +4082,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "قَصَّرَ-يُقَصِّرُ-تَقْصِيْرًا",
                                 "arti" => "Memendekkan",
-                                "huruf" => array_unique(["قَ","صَّ","رَ","-","يُ","قَ","صِّ","رُ","-تَ","قْ","صِ","يْ","رً","ا"])
+                                "huruf" => array_unique(["قَ","صَّ","رَ","-","يُ","قَ","صِّ","رُ","تَ","قْ","صِ","يْ","رً","ا"])
                             ],
                             [
                                 "kata_arab" => "كَبَّرَ-يُكَبِّرُ-تَكْبِيْرًا",
@@ -4134,7 +4134,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["وِ","سَ","ا","دَ","ةٌ","_","مُ","سْ","تَ","طِ","يْ","لَ","ةٌ"])
                             ],
                             [
-                                "kata_arab" => "لِحَافٌ",
+                                "kata_arab" => "لِـحَافٌ",
                                 "arti" => "Selimut",
                                 "huruf" => array_unique(["لِ","حَ","ا","فٌ"])
                             ],
@@ -4144,7 +4144,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["حَ","صِ","يْ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "سَجَّادَةٌ",
+                                "kata_arab" => "سَـجَّادَةٌ",
                                 "arti" => "Sajadah",
                                 "huruf" => array_unique(["سَ","جَّ","ا","دَ","ةٌ"])
                             ],
@@ -4332,7 +4332,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "مِلْعَقَةُ الرُّزِّ",
                                 "arti" => "Sendok Nasi",
-                                "huruf" => array_unique(["مِ","لْ","عَ","قَ","ةُ","x_","ال","رُّ","زِّ"])
+                                "huruf" => array_unique(["مِ","لْ","عَ","قَ","ةُ","_","ال","رُّ","زِّ"])
                             ],
                             [
                                 "kata_arab" => "مِلْعَقَةُ الْمَرَقِ",
@@ -4428,7 +4428,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["شَ","وَ","ى","-","يَ","شْ","وِ","ى","-","شَ","وَ","ا","ءً"])
                             ],
                             [
-                                "kata_arab" => "لَحِسَ-يَلْحَسُ-لَحْسًا",
+                                "kata_arab" => "لَـحِسَ-يَلْحَسُ-لَحْسًا",
                                 "arti" => "Menjilat",
                                 "huruf" => array_unique(["لَ","حِ","سَ","-","يَ","لْ","حَ","سُ","-","لَ","حْ","سً","ا"])
                             ],
@@ -4438,7 +4438,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["بَ","لَ","عَ","-","يَ","بْ","لَ","عُ","-","بَ","لْ","عً","ا"])
                             ],
                             [
-                                "kata_arab" => "مَضَغَ-يَمْضَغُ-مَضْغَا",
+                                "kata_arab" => "مَضَغَ-يَـمْضَغُ-مَضْغَا",
                                 "arti" => "Mengunyah",
                                 "huruf" => array_unique(["مَ","ضَ","غَ","-","يَ","مْ","ضَ","غُ","-","مَ","ضْ","غَ","ا"])
                             ],
@@ -4506,7 +4506,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["حُ","لْ","وٌ"])
                             ],
                             [
-                                "kata_arab" => "مَالِحٌ",
+                                "kata_arab" => "مَالِـحٌ",
                                 "arti" => "Asin",
                                 "huruf" => array_unique(["مَ","ا","لِ","حٌ"])
                             ],
@@ -4922,7 +4922,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["قَ","لَ","مُ","_","ال","سَّ","بُّ","وْ","رَ","ةِ"])
                             ],
                             [
-                                "kata_arab" => "كِتَابٌ",
+                                "kata_arab" => "كِـتَابٌ",
                                 "arti" => "Buku",
                                 "huruf" => array_unique(["كِ","تَ","ا","بٌ"])
                             ],
@@ -4937,7 +4937,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["قَ","لَ","مٌ"])
                             ],
                             [
-                                "kata_arab" => "مِمْسَحَةٌ",
+                                "kata_arab" => "مِـمْسَحَةٌ",
                                 "arti" => "Penghapus",
                                 "huruf" => array_unique(["مِ","مْ","سَ","حَ","ةٌ"])
                             ],
@@ -5059,7 +5059,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["إِ","مْ","تِ","حَ","ا","نٌ","_","شَ","فَ","وِ","يٌّ"])
                             ],
                             [
-                                "kata_arab" => "لَجْنَةُ الْإِمْتِحَانِ",
+                                "kata_arab" => "لَـجْنَةُ الْإِمْتِحَانِ",
                                 "arti" => "Panitia ujian",
                                 "huruf" => array_unique(["لَ","جْ","نَ","ةُ","_","الْ","إِ","مْ","تِ","حَ","ا","نِ"])
                             ],
@@ -5098,12 +5098,12 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["أَ","يَّ","دَ","-","يُ","ؤَ","يِّ","دُ","-","تَ","أْ","يِ","يْ","دً","ا"])
                             ],
                             [
-                                "kata_arab" => "مَثَّلَ-يُمَثِّلُ-تَمْثِيْلًا",
+                                "kata_arab" => "مَثَّلَ-يُـمَثِّلُ-تَـمْثِيْلًا",
                                 "arti" => "Menirukan",
                                 "huruf" => array_unique(["مَ","ثَّ","لَ","-","يُ","مَ","ثِّ","لُ","-","تَ","مْ","ثِ","يْ","لً","ا"])
                             ],
                             [
-                                "kata_arab" => "مَرَّنَ-يُمَرِّنُ-تَمْرِيْنًا",
+                                "kata_arab" => "مَرَّنَ-يُـمَرِّنُ-تَـمْرِيْنًا",
                                 "arti" => "Melatih",
                                 "huruf" => array_unique(["مَ","رَّ","نَ","-","يُ","مَ","رِّ","نُ","-","تَ","مْ","رِ","يْ","نً","ا"])
                             ],
@@ -5117,14 +5117,14 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 106");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "اِمْتَحَنَ-يَمْتَحِنُ-اِمْتِحَانًا",
+                                "kata_arab" => "اِمْتَحَنَ-يَـمْتَحِنُ-اِمْتِحَانًا",
                                 "arti" => "Ujian",
                                 "huruf" => array_unique(["اِ","مْ","تَ","حَ","نَ","-","يَ","مْ","تَ","حِ","نُ","-","اِ","مْ","تِ","حَ","ا","نً","ا"])
                             ],
                             [
-                                "kata_arab" => "اَفَادَ-يُفِيْدُ-إفِاَدَةً",
+                                "kata_arab" => "اَفَادَ-يُفِيْدُ-إِفَادَةً",
                                 "arti" => "Memberi manfaat",
-                                "huruf" => array_unique(["اَ","فَ","ا","دَ","-","يُ","فِ","يْ","دُ","-","إ","فِ","اَ","دَ","ةً"])
+                                "huruf" => array_unique(["اَ","فَ","ا","دَ","-","يُ","فِ","يْ","دُ","-","إِ","فَ","ا","دَ","ةً"])
                             ],
                             [
                                 "kata_arab" => "عَمِلَ-يَعْمَلُ-عَمَلاً",
@@ -5171,17 +5171,17 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["فَ","تَّ","شَ","-","يُ","فَ","تِّ","شُ","-","تَ","فْ","تِ","يْ","شً","ا"])
                             ],
                             [
-                                "kata_arab" => "كَتَبَ-يَكْتُبُ-كِتَابَةً",
+                                "kata_arab" => "كَتَبَ-يَكْتُبُ-كِـتَابَةً",
                                 "arti" => "Menulis",
                                 "huruf" => array_unique(["كَ","تَ","بَ","-","يَ","كْ","تُ","بُ","-","كِ","تَ","ا","بَ","ةً"])
                             ],
                             [
-                                "kata_arab" => "رَسَمَ-يَرْسُمُ-رَسْمًا",
+                                "kata_arab" => "رَسَمَ-يَرْسُمُ-رَسْـمًا",
                                 "arti" => "Menggambar",
                                 "huruf" => array_unique(["رَ","سَ","مَ","-","يَ","رْ","سُ","مُ","-","رَ","سْ","مً","ا"])
                             ],
                             [
-                                "kata_arab" => "سَجَّلَ-يُسَجِّلُ-تَسْجِيْلًا",
+                                "kata_arab" => "سَـجَّلَ-يُسَجِّلُ-تَسْجِيْلًا",
                                 "arti" => "Mendaftar",
                                 "huruf" => array_unique(["سَ","جَّ","لَ","-","يُ","سَ","جِّ","لُ","-","تَ","سْ","جِ","يْ","لً","ا"])
                             ],
@@ -5313,7 +5313,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["فَ","رْ","مَ","لَ","ةٌ"])
                             ],
                             [
-                                "kata_arab" => "عَجَلَةٌ",
+                                "kata_arab" => "عَـجَلَةٌ",
                                 "arti" => "Roda",
                                 "huruf" => array_unique(["عَ","جَ","لَ","ةٌ"])
                             ],
@@ -5369,7 +5369,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "هَدَايَا السَّفَرِ",
                                 "arti" => "Oleh-oleh",
-                                "huruf" => array_unique(["هَ","دَ","ا","يَ","ا","_","ال","سّ","َف","َرِ"])
+                                "huruf" => array_unique(["هَ","دَ","ا","يَ","ا","_","ال","سَّ","فَ","رِ"])
                             ],
                             [
                                 "kata_arab" => "مَصَارِيْفُ السَّفَرِ",
@@ -5435,7 +5435,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["طَ","بِ","يْ","بَ","ةٌ"])
                             ],
                             [
-                                "kata_arab" => "مُمَرِّضٌ",
+                                "kata_arab" => "مُـمَرِّضٌ",
                                 "arti" => "Perawat",
                                 "huruf" => array_unique(["مُ","مَ","رِّ","ضٌ"])
                             ],
@@ -5617,7 +5617,7 @@ class Materi extends CI_CONTROLLER{
                             ],
                             [
                                 "kata_arab" => "ذِئْبٌ",
-                                "arti" => "Serigal",
+                                "arti" => "Serigala",
                                 "huruf" => array_unique(["ذِ","ئْ","بٌ"])
                             ],
                             [
@@ -5652,7 +5652,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "حِمَارُ الزَّرَدِ",
                                 "arti" => "Zebra",
-                                "huruf" => array_unique(["حِ","مَ","ا","رُ","_","ا","لز","َّرَxدِ"])
+                                "huruf" => array_unique(["حِ","مَ","ا","رُ","_","ال","زَّ","رَ","دِ"])
                             ],
                             [
                                 "kata_arab" => "ثَعْبَانٌ",
@@ -5665,7 +5665,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["وَ","رَ","لٌ"])
                             ],
                             [
-                                "kata_arab" => "قَمْلٌ",
+                                "kata_arab" => "قَـمْلٌ",
                                 "arti" => "Kutu",
                                 "huruf" => array_unique(["قَ","مْ","لٌ"])
                             ],
@@ -5689,7 +5689,7 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 119");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "تِمْسَاحٌ",
+                                "kata_arab" => "تِـمْسَاحٌ",
                                 "arti" => "Buaya",
                                 "huruf" => array_unique(["تِ","مْ","سَ","ا","حٌ"])
                             ],
@@ -5719,12 +5719,12 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["فِ","يْ","لٌ"])
                             ],
                             [
-                                "kata_arab" => "نَمْلٌ",
+                                "kata_arab" => "نَـمْلٌ",
                                 "arti" => "Semut",
                                 "huruf" => array_unique(["نَ","مْ","لٌ"])
                             ],
                             [
-                                "kata_arab" => "نَمْلَةٌ بَيْضَاءُ",
+                                "kata_arab" => "نَـمْلَةٌ بَيْضَاءُ",
                                 "arti" => "Rayap",
                                 "huruf" => array_unique(["نَ","مْ","لَ","ةٌ","_","بَ","يْ","ضَ","ا","ءُ"])
                             ],
@@ -5765,7 +5765,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "إِنْسَانُ اْلغَابِ",
                                 "arti" => "Orang utan",
-                                "huruf" => array_unique(["إِ","نْ","سَ","ا","نُ","_","اْلغَابِ"])
+                                "huruf" => array_unique(["إِ","نْ","سَ","ا","نُ","_","اْل","غَ","ا","بِ"])
                             ],
                             [
                                 "kata_arab" => "عَقْرَبٌ",
@@ -5802,7 +5802,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["عِ","نَ","بٌ"])
                             ],
                             [
-                                "kata_arab" => "كُمِثْرَى",
+                                "kata_arab" => "كُـمِثْرَى",
                                 "arti" => "Pir",
                                 "huruf" => array_unique(["كُ","مِ","ثْ","رَ","ى"])
                             ],
@@ -5841,7 +5841,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["اَ","فُ","وْ","كَ","ا","دُ","و"])
                             ],
                             [
-                                "kata_arab" => "شَمَامٌ",
+                                "kata_arab" => "شَـمَامٌ",
                                 "arti" => "Blewa",
                                 "huruf" => array_unique(["شَ","مَ","ا","مٌ"])
                             ],
@@ -5856,7 +5856,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["بُ","رْ","تُ","قَ","ا","لٌ"])
                             ],
                             [
-                                "kata_arab" => "تَمْرٌ",
+                                "kata_arab" => "تَـمْرٌ",
                                 "arti" => "Kurma",
                                 "huruf" => array_unique(["تَ","مْ","رٌ"])
                             ],
@@ -5934,7 +5934,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["زَ","رَ","عَ","-","يَ","زْ","رَ","عُ","-","زَ","رْ","عً","ا"])
                             ],
                             [
-                                "kata_arab" => "تَحَفَّظَ-يَتَحَفَّظُ-تَحَفُّظًا",
+                                "kata_arab" => "تَحَفَّظَ-يَـتَحَفَّظُ-تَحَفُّظًا",
                                 "arti" => "Merawat",
                                 "huruf" => array_unique(["تَ","حَ","فَّ","ظَ","-","يَ","تَ","حَ","فَّ","ظُ","-","تَ","حَ","فُّ","ظً","ا"])
                             ],
@@ -5944,7 +5944,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["قَ","طَ","فَ","-","يَ","قْ","طِ","فُ","-","قَ","طْ","فً","ا"])
                             ],
                             [
-                                "kata_arab" => "سَمَّدَ-يُسَمِّدُ-تَسْمِيْدًا",
+                                "kata_arab" => "سَـمَّدَ-يُسَمِّدُ-تَسْمِيْدًا",
                                 "arti" => "Memupuk",
                                 "huruf" => array_unique(["سَ","مَّ","دَ","-","يُ","سَ","مِّ","دُ","-","تَ","سْ","مِ","يْ","دً","ا"])
                             ],
@@ -6003,7 +6003,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["مَ","وْ","قِ","فُ","_","ال","سَّ","يَّ","ا","رَ","ةِ"])
                             ],
                             [
-                                "kata_arab" => "مَحَطَّةُ الْقِطَارِ",
+                                "kata_arab" => "مَـحَطَّةُ الْقِطَارِ",
                                 "arti" => "Stasiun Kereta",
                                 "huruf" => array_unique(["مَ","حَ","طَّ","ةُ","_","الْ","قِ","طَ","ا","رِ"])
                             ],
@@ -6017,7 +6017,7 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 126");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "مَحَطَّةُ الْبِنْزِيْنِ",
+                                "kata_arab" => "مَـحَطَّةُ الْبِنْزِيْنِ",
                                 "arti" => "Pom bensin",
                                 "huruf" => array_unique(["مَ","حَ","طَّ","ةُ","_","الْ","بِ","نْ","زِ","يْ","نِ"])
                             ],
@@ -6052,7 +6052,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["مَ","قْ","هَ","ى"])
                             ],
                             [
-                                "kata_arab" => "مَمْلَكَةٌ",
+                                "kata_arab" => "مَـمْلَكَةٌ",
                                 "arti" => "Kerajaan",
                                 "huruf" => array_unique(["مَ","مْ","لَ","كَ","ةٌ"])
                             ],
@@ -6066,7 +6066,7 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 127");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "مَحْكَمَةٌ",
+                                "kata_arab" => "مَـحْكَـمَةٌ",
                                 "arti" => "Pengadilan",
                                 "huruf" => array_unique(["مَ","حْ","كَ","مَ","ةٌ"])
                             ],
@@ -6145,7 +6145,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["مَ","زْ","رَ","عَ","ةٌ"])
                             ],
                             [
-                                "kata_arab" => "حُجْرَةٌ",
+                                "kata_arab" => "حُـجْرَةٌ",
                                 "arti" => "Kamar",
                                 "huruf" => array_unique(["حُ","جْ","رَ","ةٌ"])
                             ],
@@ -6252,9 +6252,9 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 131");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "جَاءَ-يَجِيْئُ-مَجِيْئًا",
+                                "kata_arab" => "جَاءَ-يَـجِيْئُ-مَـجِيْئًا",
                                 "arti" => "Datang",
-                                "huruf" => array_unique(["جَ","ا","ءَ","_","-","يَ","جِ","يْ","ئُ","-","مَ","جِ","يْ","ئً","ا"])
+                                "huruf" => array_unique(["جَ","ا","ءَ","-","يَ","جِ","يْ","ئُ","-","مَ","جِ","يْ","ئً","ا"])
                             ],
                             [
                                 "kata_arab" => "أَتَى-يَأْتِي-اِتْيَانًا",
@@ -6262,7 +6262,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["أَ","تَ","ى","-","يَ","أْ","تِ","ي","-","اِ","تْ","يَ","ا","نً","ا"])
                             ],
                             [
-                                "kata_arab" => "حَضَرَ-يَحْضُرُ-حُضُورًا",
+                                "kata_arab" => "حَضَرَ-يَـحْضُرُ-حُضُورًا",
                                 "arti" => "Hadir",
                                 "huruf" => array_unique(["حَ","ضَ","رَ","-","يَ","حْ","ضُ","رُ","-","حُ","ضُ","و","رً","ا"])
                             ],
@@ -6320,12 +6320,12 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 133");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "شَمْسٌ",
+                                "kata_arab" => "شَـمْسٌ",
                                 "arti" => "Matahari",
                                 "huruf" => array_unique(["شَ","مْ","سٌ"])
                             ],
                             [
-                                "kata_arab" => "قَمَرٌ",
+                                "kata_arab" => "قَـمَرٌ",
                                 "arti" => "Bulan",
                                 "huruf" => array_unique(["قَ","مَ","رٌ"])
                             ],
@@ -6335,17 +6335,17 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["جَ","بَ","لٌ"])
                             ],
                             [
-                                "kata_arab" => "بَحْرٌ",
+                                "kata_arab" => "بَـحْرٌ",
                                 "arti" => "Laut",
                                 "huruf" => array_unique(["بَ","حْ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "سَمَاءٌ",
+                                "kata_arab" => "سَـمَاءٌ",
                                 "arti" => "Langit",
                                 "huruf" => array_unique(["سَ","مَ","ا","ءٌ"])
                             ],
                             [
-                                "kata_arab" => "نَجْمٌ",
+                                "kata_arab" => "نَـجْمٌ",
                                 "arti" => "Bintang",
                                 "huruf" => array_unique(["نَ","جْ","مٌ"])
                             ],
@@ -6394,17 +6394,17 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["حَ","صْ","بَ","ا","ءُ"])
                             ],
                             [
-                                "kata_arab" => "صَحْرَاءُ",
+                                "kata_arab" => "صَـحْرَاءُ",
                                 "arti" => "Padang pasir",
                                 "huruf" => array_unique(["صَ","حْ","رَ","ا","ءُ"])
                             ],
                             [
-                                "kata_arab" => "حَجَرٌ",
+                                "kata_arab" => "حَـجَرٌ",
                                 "arti" => "Batu",
                                 "huruf" => array_unique(["حَ","جَ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "قِمَّةُ الْجَبَلِ",
+                                "kata_arab" => "قِـمَّةُ الْـجَبَلِ",
                                 "arti" => "Puncak gunung",
                                 "huruf" => array_unique(["قِ","مَّ","ةُ","_","الْ","جَ","بَ","لِ"])
                             ],
@@ -6477,7 +6477,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["هَ","ضْ","بَ","ةٌ"])
                             ],
                             [
-                                "kata_arab" => "بُخَارٌ",
+                                "kata_arab" => "بُـخَارٌ",
                                 "arti" => "Uap",
                                 "huruf" => array_unique(["بُ","خَ","ا","رٌ"])
                             ],
@@ -6526,7 +6526,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["مُ","عَ","لِّ","مٌ"])
                             ],
                             [
-                                "kata_arab" => "مُحَاضِرٌ",
+                                "kata_arab" => "مُـحَاضِرٌ",
                                 "arti" => "Dosen",
                                 "huruf" => array_unique(["مُ","حَ","ا","ضِ","رٌ"])
                             ],
@@ -6541,7 +6541,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["طَ","بِ","يْ","بٌ"])
                             ],
                             [
-                                "kata_arab" => "مُمَرِّضٌ",
+                                "kata_arab" => "مُـمَرِّضٌ",
                                 "arti" => "Suster",
                                 "huruf" => array_unique(["مُ","مَ","رِّ","ضٌ"])
                             ],
@@ -6565,7 +6565,7 @@ class Materi extends CI_CONTROLLER{
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 138");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "مُخْتَطِفٌ",
+                                "kata_arab" => "مُـخْتَطِفٌ",
                                 "arti" => "Perampok",
                                 "huruf" => array_unique(["مُ","خْ","تَ","طِ","فٌ"])
                             ],
@@ -6575,7 +6575,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["سَ","ا","رِ","قٌ"])
                             ],
                             [
-                                "kata_arab" => "مُحَامٍ",
+                                "kata_arab" => "مُـحَامٍ",
                                 "arti" => "Pengacara",
                                 "huruf" => array_unique(["مُ","حَ","ا","مٍ"])
                             ],
@@ -6624,12 +6624,12 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["صَ","يَّ","ا","دٌ"])
                             ],
                             [
-                                "kata_arab" => "بَحَّارٌ",
+                                "kata_arab" => "بَـحَّارٌ",
                                 "arti" => "Pelaut",
                                 "huruf" => array_unique(["بَ","حَّ","ا","رٌ"])
                             ],
                             [
-                                "kata_arab" => "نَجَّارٌ",
+                                "kata_arab" => "نَـجَّارٌ",
                                 "arti" => "Tukang kayu",
                                 "huruf" => array_unique(["نَ","جَّ","ا","رٌ"])
                             ],
@@ -6707,7 +6707,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["سَ","ا","ئِ","قٌ"])
                             ],
                             [
-                                "kata_arab" => "مُخْبِرٌ",
+                                "kata_arab" => "مُـخْبِرٌ",
                                 "arti" => "Reporter",
                                 "huruf" => array_unique(["مُ","خْ","بِ","رٌ"])
                             ],
@@ -6727,7 +6727,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["رَ","سَّ","ا","مٌ"])
                             ],
                             [
-                                "kata_arab" => "عُمَّالٌ",
+                                "kata_arab" => "عُـمَّالٌ",
                                 "arti" => "Karyawan",
                                 "huruf" => array_unique(["عُ","مَّ","ا","لٌ"])
                             ],
@@ -6790,7 +6790,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["سِ","كْ","رِ","تِ","يْ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "مُمَثِّلٌ",
+                                "kata_arab" => "مُـمَثِّلٌ",
                                 "arti" => "Artis",
                                 "huruf" => array_unique(["مُ","مَ","ثِّ","لٌ"])
                             ],
@@ -6805,12 +6805,12 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["رَ","قَّ","ا","صٌ"])
                             ],
                             [
-                                "kata_arab" => "رَئِيْسُ الْجُمْهُوْرِيَّةِ",
+                                "kata_arab" => "رَئِيْسُ الْجُـمْهُوْرِيَّةِ",
                                 "arti" => "Presiden",
                                 "huruf" => array_unique(["رَ","ئِ","يْ","سُ","_","الْ","جُ","مْ","هُ","وْ","رِ","يَّ","ةِ"])
                             ],
                             [
-                                "kata_arab" => "نَائِبُ رَئِيْسِ الْجُمْهُوْرِيَّةِ",
+                                "kata_arab" => "نَائِبُ رَئِيْسِ الْجُـمْهُوْرِيَّةِ",
                                 "arti" => "Wakil presiden",
                                 "huruf" => array_unique(["نَ","ا","ئِ","بُ","_","رَ","ئِ","يْ","سِ","_","الْ","جُ","مْ","هُ","وْ","رِ","يَّ","ةِ"])
                             ],
@@ -6820,21 +6820,21 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["وَ","زِ","يْ","رٌ"])
                             ],
                             [
-                                "kata_arab" => "مَجْلِسُ النَّوَابِ",
+                                "kata_arab" => "مَـجْلِسُ النَّوَابِ",
                                 "arti" => "DPR",
                                 "huruf" => array_unique(["مَ","جْ","لِ","سُ","_","ال","نَّ","وَ","ا","بِ"])
                             ],
                         ];
                     } else if($_GET['id'] == MD5('Mufrodat 144')){
                         $data['back'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 143");
-                        $data['next'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 145");
+                        $data['next'] = "";
                         $data['tema'] = "Pertemuan 24";
                         $data['materi'] = "Mufrodat 144";
                         $data['title'] = "Musim";
                         $data['latihan'] = $this->latihan_mufrodat("latihan_hifdzi_1", $id, "Mufrodat 144");
                         $data['mufrodat'] = [
                             [
-                                "kata_arab" => "فَصْلُ الْمَطَرِ",
+                                "kata_arab" => "فَصْلُ الْـمَطَرِ",
                                 "arti" => "Musim hujan",
                                 "huruf" => array_unique(["فَ","صْ","لُ","_","الْ","مَ","طَ","رِ"])
                             ],
@@ -6854,7 +6854,7 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["فَ","صْ","لُ","_","ال","شِّ","تَ","ا","ءِ"])
                             ],
                             [
-                                "kata_arab" => "فَصْلُ الْخَرِيْفِ",
+                                "kata_arab" => "فَصْلُ الْـخَرِيْفِ",
                                 "arti" => "Musim gugur",
                                 "huruf" => array_unique(["فَ","صْ","لُ","_","الْ","خَ","رِ","يْ","فِ"])
                             ],
@@ -8829,7 +8829,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "بَلَغَ-يَبْلُغُ-بُلُوغًا",
                                 "arti" => "Menyampaikan",
-                                "huruf" => array_unique(["بَ","لَ","غَ","-","يَ","بْ","لُ","غُ","-","بُ","xلُ","و","غً","ا"])
+                                "huruf" => array_unique(["بَ","لَ","غَ","-","يَ","بْ","لُ","غُ","-","بُ","لُ","و","غً","ا"])
                             ],
                             [
                                 "kata_arab" => "مَزَحَ-يَمْزَحُ-مِزَاحًا",
@@ -8886,7 +8886,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "سَكَتَ-يَسْكُتُ-سُكُوْتًا",
                                 "arti" => "Diam",
-                                "huruf" => array_unique(["سَ","كَ","تَ","-","يَ","سْ","كُ","تُ","-س","ُك","ُوْ","تً","ا"])
+                                "huruf" => array_unique(["سَ","كَ","تَ","-","يَ","سْ","كُ","تُ","سُ","ُوْ","تً","ا"])
                             ],
                         ];
                     } else if($_GET['latihan'] == MD5('Mufrodat 50')){
@@ -9096,7 +9096,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "مُتَعَنِّتٌ",
                                 "arti" => "Bandel",
-                                "huruf" => array_unique(["مُ","تَ","عَ","نّ","ِتٌ"])
+                                "huruf" => array_unique(["مُ","تَ","عَ","نِّ","تٌ"])
                             ],
                             [
                                 "kata_arab" => "حَسَّاسٌ",
@@ -9348,7 +9348,7 @@ class Materi extends CI_CONTROLLER{
                         $data['redirect'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 60");
                         $data['tema'] = "Pertemuan 9";
                         $data['materi'] = "Mufrodat 60";
-                        $data['title'] = "Akhlak Manusia Bag.";
+                        $data['title'] = "Akhlak Manusia Bag. 6";
                         $data['mufrodat'] = [
                             [
                                 "kata_arab" => "مُسْتَعْجِلٌ",
@@ -9728,7 +9728,7 @@ class Materi extends CI_CONTROLLER{
                             ],
                         ];
                     } else if($_GET['latihan'] == MD5('Mufrodat 69')){
-                        $data['redirect'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 70");
+                        $data['redirect'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 69");
                         $data['tema'] = "Pertemuan 11";
                         $data['materi'] = "Mufrodat 69";
                         $data['title'] = "Warna-warna Bag. 1";
@@ -9815,7 +9815,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "صَغِيْرٌ",
                                 "arti" => "Kecil",
-                                "huruf" => array_unique(["صَ","غِ","يْxرٌ"])
+                                "huruf" => array_unique(["صَ","غِ","يْ","رٌ"])
                             ],
                             [
                                 "kata_arab" => "طَوِيْلٌ",
@@ -10265,7 +10265,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "قُرْطٌ",
                                 "arti" => "Anting-anting",
-                                "huruf" => array_unique(["قُ","ر","ْطٌ"])
+                                "huruf" => array_unique(["قُ","رْ","طٌ"])
                             ],
                             [
                                 "kata_arab" => "خَاتَمٌ",
@@ -10329,7 +10329,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "قَصَّرَ-يُقَصِّرُ-تَقْصِيْرًا",
                                 "arti" => "Memendekkan",
-                                "huruf" => array_unique(["قَ","صَّ","رَ","-","يُ","قَ","صِّ","رُ","-تَ","قْ","صِ","يْ","رً","ا"])
+                                "huruf" => array_unique(["قَ","صَّ","رَ","-","يُ","قَ","صِّ","رُ","تَ","قْ","صِ","يْ","رً","ا"])
                             ],
                             [
                                 "kata_arab" => "كَبَّرَ-يُكَبِّرُ-تَكْبِيْرًا",
@@ -10569,7 +10569,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "مِلْعَقَةُ الرُّزِّ",
                                 "arti" => "Sendok Nasi",
-                                "huruf" => array_unique(["مِ","لْ","عَ","قَ","ةُ","x_","ال","رُّ","زِّ"])
+                                "huruf" => array_unique(["مِ","لْ","عَ","قَ","ةُ","_","ال","رُّ","زِّ"])
                             ],
                             [
                                 "kata_arab" => "مِلْعَقَةُ الْمَرَقِ",
@@ -11323,9 +11323,9 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["اِ","مْ","تَ","حَ","نَ","-","يَ","مْ","تَ","حِ","نُ","-","اِ","مْ","تِ","حَ","ا","نً","ا"])
                             ],
                             [
-                                "kata_arab" => "اَفَادَ-يُفِيْدُ-إفِاَدَةً",
+                                "kata_arab" => "اَفَادَ-يُفِيْدُ-إِفَادَةً",
                                 "arti" => "Memberi manfaat",
-                                "huruf" => array_unique(["اَ","فَ","ا","دَ","-","يُ","فِ","يْ","دُ","-","إ","فِ","اَ","دَ","ةً"])
+                                "huruf" => array_unique(["اَ","فَ","ا","دَ","-","يُ","فِ","يْ","دُ","-","إِ","فَ","ا","دَ","ةً"])
                             ],
                             [
                                 "kata_arab" => "عَمِلَ-يَعْمَلُ-عَمَلاً",
@@ -11342,11 +11342,11 @@ class Materi extends CI_CONTROLLER{
                                 "arti" => "Mengetahui",
                                 "huruf" => array_unique(["عَ","لِ","مَ","-","يَ","عْ","لَ","مُ","-","عِ","لْ","مً","ا"])
                             ],
-                            [
-                                "kata_arab" => "عَرَفَ-يَعْرِفُ-مَعْرِفَةً",
-                                "arti" => "Mengetahui",
-                                "huruf" => array_unique(["عَ","رَ","فَ","-","يَ","عْ","رِ","فُ","-","مَ","عْ","رِ","فَ","ةً"])
-                            ],
+                            // [
+                            //     "kata_arab" => "عَرَفَ-يَعْرِفُ-مَعْرِفَةً",
+                            //     "arti" => "Mengetahui",
+                            //     "huruf" => array_unique(["عَ","رَ","فَ","-","يَ","عْ","رِ","فُ","-","مَ","عْ","رِ","فَ","ةً"])
+                            // ],
                         ];
                     } else if($_GET['latihan'] == MD5('Mufrodat 107')){
                         $data['redirect'] = "materi/program/".MD5("Hifdzi 1")."?id=".MD5("Mufrodat 107");
@@ -11560,7 +11560,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "هَدَايَا السَّفَرِ",
                                 "arti" => "Oleh-oleh",
-                                "huruf" => array_unique(["هَ","دَ","ا","يَ","ا","_","ال","سّ","َف","َرِ"])
+                                "huruf" => array_unique(["هَ","دَ","ا","يَ","ا","_","ال","سَّ","فَ","رِ"])
                             ],
                             [
                                 "kata_arab" => "مَصَارِيْفُ السَّفَرِ",
@@ -11790,13 +11790,13 @@ class Materi extends CI_CONTROLLER{
                                 "huruf" => array_unique(["كَ","رْ","كَ","دَّ","ا","نٌ"])
                             ],
                             [
-                                "kata_arab" => "نَمِرٌ",
+                                "kata_arab" => "نَـمِرٌ",
                                 "arti" => "Harimau",
                                 "huruf" => array_unique(["نَ","مِ","رٌ"])
                             ],
                             [
                                 "kata_arab" => "ذِئْبٌ",
-                                "arti" => "Serigal",
+                                "arti" => "Serigala",
                                 "huruf" => array_unique(["ذِ","ئْ","بٌ"])
                             ],
                             [
@@ -11829,7 +11829,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "حِمَارُ الزَّرَدِ",
                                 "arti" => "Zebra",
-                                "huruf" => array_unique(["حِ","مَ","ا","رُ","_","ا","لز","َّرَxدِ"])
+                                "huruf" => array_unique(["حِ","مَ","ا","رُ","_","ال","زَّ","رَ","دِ"])
                             ],
                             [
                                 "kata_arab" => "ثَعْبَانٌ",
@@ -11938,7 +11938,7 @@ class Materi extends CI_CONTROLLER{
                             [
                                 "kata_arab" => "إِنْسَانُ اْلغَابِ",
                                 "arti" => "Orang utan",
-                                "huruf" => array_unique(["إِ","نْ","سَ","ا","نُ","_","اْلغَابِ"])
+                                "huruf" => array_unique(["إِ","نْ","سَ","ا","نُ","_","اْل","غَ","ا","بِ"])
                             ],
                             [
                                 "kata_arab" => "عَقْرَبٌ",
@@ -12291,11 +12291,11 @@ class Materi extends CI_CONTROLLER{
                                 "arti" => "Kebun",
                                 "huruf" => array_unique(["حَ","دِ","يْ","قَ","ةٌ"])
                             ],
-                            [
-                                "kata_arab" => "بُسْتَانٌ",
-                                "arti" => "Kebun",
-                                "huruf" => array_unique(["بُ","سْ","تَ","ا","نٌ"])
-                            ],
+                            // [
+                            //     "kata_arab" => "بُسْتَانٌ",
+                            //     "arti" => "Kebun",
+                            //     "huruf" => array_unique(["بُ","سْ","تَ","ا","نٌ"])
+                            // ],
                             [
                                 "kata_arab" => "مَزْرَعَةٌ",
                                 "arti" => "Sawah",
@@ -12402,11 +12402,11 @@ class Materi extends CI_CONTROLLER{
                         $data['materi'] = "Mufrodat 131";
                         $data['title'] = "Pekerjaan Tentang Tempat Bag. 1";
                         $data['mufrodat'] = [
-                            [
-                                "kata_arab" => "جَاءَ-يَجِيْئُ-مَجِيْئًا",
-                                "arti" => "Datang",
-                                "huruf" => array_unique(["جَ","ا","ءَ","_","-","يَ","جِ","يْ","ئُ","-","مَ","جِ","يْ","ئً","ا"])
-                            ],
+                            // [
+                            //     "kata_arab" => "جَاءَ-يَجِيْئُ-مَجِيْئًا",
+                            //     "arti" => "Datang",
+                            //     "huruf" => array_unique(["جَ","ا","ءَ","-","يَ","جِ","يْ","ئُ","-","مَ","جِ","يْ","ئً","ا"])
+                            // ],
                             [
                                 "kata_arab" => "أَتَى-يَأْتِي-اِتْيَانًا",
                                 "arti" => "Datang",
@@ -13219,7 +13219,7 @@ class Materi extends CI_CONTROLLER{
                 // Tema
                     $data['tema'][0]['mufrodat'] = 100;
                     $data['tema'][1] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 1","Pertemuan 1", "Pertemuan 1", 32, 5, $pertemuan);
-                    $data['tema'][2] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 2","Pertemuan 2", "Pertemuan 2", 33, 5, $pertemuan);
+                    $data['tema'][2] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 2","Pertemuan 2", "Pertemuan 2", 33, 8, $pertemuan);
                     $data['tema'][3] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 3","Pertemuan 3", "Pertemuan 3", 108, 12, $pertemuan);
                     $data['tema'][4] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 4","Pertemuan 4", "Pertemuan 4", 32, 4, $pertemuan);
                     $data['tema'][5] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 5","Pertemuan 5", "Pertemuan 5", 51, 7, $pertemuan);
