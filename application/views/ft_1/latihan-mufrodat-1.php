@@ -1,10 +1,10 @@
 <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 mb-3">
-                    <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times"></i> keluar</a>
+                    <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times mr-1"></i>keluar</a>
                 </div>
                 <div class="col-12 mb-1">
-                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Ketik bahasa Arab dari setiap kata berikut, kemudian tekan tombol <strong>simpan</strong>. Gunakan "<strong>_</strong>" sebagai pengganti spasi</div>
+                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Terjemahkan kata berikut ini ke dalam bahasa Arab. Pilihlah jawaban kemudian tekan tombol <strong>simpan</strong></div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
@@ -22,50 +22,50 @@
                 <?php 
                     $urut = 0;
                     foreach ($mufrodat as $i => $kalimat) :
-                    $urut++?>
-    
+                    $urut++;?>
                     <div class="col-12 col-md-12 mb-3">
                         <ul class="list-group">
                             <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
-                                    <div class="">
-                                        <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['arti']?></strong></label>
-                                        <span class="icon-cek-<?= $i?>"></span>
-                                    </div>
+                                    <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['arti']?></strong></label>
+                                    <span class="icon-cek-<?= $i?>"></span>
                                     <input type="hidden" name="kunci<?=$i?>" value="<?= $kalimat['kata_arab']?>">
                                     <input type="hidden" name="j<?= $i?>" id="jawaban<?=$i?>">
                                     <div class="d-flex justify-content-between">
-                                        <a id="btnEdit<?=$i?>" class="btn btn-sm btn-success img-shadow text-light edit" data-id="<?= $i?>" style="display: none">ubah</a>
+                                        <a id="btnEdit<?=$i?>" class="btn btn-sm btn-success text-light edit img-shadow" data-id="<?= $i?>" style="display: none">ubah</a>
                                         <h5 class="text-right" id="j<?=$i?>"></h5>
-                                    </div>                        
+                                    </div>
+        
                                     <div id="select<?=$i?>">
-                                            <textarea name="jaw<?=$i?>" id="jaw<?=$i?>" class="form-control" readonly></textarea>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <?php 
-                                                        rsort($kalimat['huruf']);
-                                                        foreach ($kalimat['huruf'] as $k => $data) :?>
-                                                            <div class="radio-toolbar mr-2">
-                                                                <a data-id="<?= $data?>|<?= $i?>" id="container-content" class="btn btn-md mt-2 mb-2 arab radio-shadow input-btn" style="height: 40px; width: 40px;background-color: rgb(238, 238, 238);"><b><?= $data?></b></a>
-                                                            </div>
-                                                    <?php endforeach;?>
-                                                </div>
+                                        <div class="container">
+                                            <div class="row justify-content-between">
+                                                <?php rsort($kata);?>
+                                                <?php foreach ($kata as $k => $data) :?>
+                                                    <!-- <div class="col"> -->
+                                                        <div class="radio-toolbar radio-shadow mr-1">
+                                                            <input type="radio" id="<?= $i.$k?>" name="<?= $i?>1" class="btn-primary" value="<?= $data?>">
+                                                            <label for="<?= $i.$k?>" id="container-content"><center><b><?= $data?></b></center></label>
+                                                        </div>
+                                                    <!-- </div> -->
+                                                <?php endforeach;?>
                                             </div>
-                                            <a class="btn btn-block btn-sm btn-info img-shadow text-light cek" data-id="<?= $i?>|1">simpan</a>
-                                            <a class="btn btn-block btn-sm btn-danger img-shadow text-light hapus" data-id="<?= $i?>">hapus</a>
                                         </div>
+                                        <a class="btn btn-block btn-sm btn-info text-light cek img-shadow" data-id="<?= $i?>|1">simpan</a>
+                                    </div>
                                 </div>
+
                             </li>
+
                         </ul>
                     </div>
                 <?php endforeach;?>
             </div>
             <div class="row">
-                <form action="<?= base_url()?>materi/add_latihan" method="post" id="latihan">
+                <form action="<?= base_url()?>ft_1/add_latihan" method="post" id="latihan">
                     <input type="hidden" name="materi" value="<?= $materi?>">
                     <input type="hidden" name="tema" value="<?= $tema?>">
-                    <input type="hidden" name="table" value="latihan_hifdzi_1">
-                    <input type="hidden" name="latihan" value="Latihan 3">
+                    <input type="hidden" name="table" value="<?= $table?>">
+                    <input type="hidden" name="latihan" value="Latihan 1">
                     <input type="hidden" name="redirect" value="<?= $redirect?>">
                 </form>
                 <div class="col-12 col-md-12 mb-3">
@@ -79,9 +79,12 @@
 <div class="overlay"></div>
 
 <script>
+
+
     $("#simpanJawaban").click(function(){
         let count = $(this).data("id");
         let benar = 1;
+        let cek = "";
         for (let i = 0; i < count; i++) {
             cek = $("input[name='j"+i+"']").val();
             if(cek != 'betul'){
@@ -95,6 +98,7 @@
                 $(".bg-cek-"+i).addClass("list-group-item-success");
             }
         }
+
         if(benar == 0){
             Swal.fire({
                 icon: 'error',
@@ -117,7 +121,7 @@
     $("#backHome").click(function(){
         Swal.fire({
             icon: 'question',
-            text: 'pekerjaan Anda tidak akan tersimpan, yakin akan kembali?',
+            text: 'pekerjaan Anda tidak akan tersimpan, yakin akan keluar?',
             showCloseButton: true,
             showCancelButton: true,
             confirmButtonText: '<a href="<?= base_url($redirect)?>">Ya</a>',
@@ -125,26 +129,17 @@
         })
     })
 
-    $(".input-btn").click(function(){
-        let data = $(this).data("id");
-        data = data.split("|");
-        let kata = data[0];
-        let id = data[1];
-        
-        let html = $("#jaw"+id).val();
-
-        $("#jaw"+id).val(html + "" + kata);
-    })
-
     $(".cek").click(function(){
         let data = $(this).data("id");
         data = data.split("|");
         let id = data[0];
         let total = data[1];
-        html = $("#jaw"+id).val();
-        html = html.replace(/_/g, " ")
 
-        console.log(html)
+        let html = '';
+        for (let i = 0; i < total; i++) {
+            html += $("input[name='"+id+""+1+"']:checked").val();
+        }
+
         if(html === 'undefined'){
             html = '-';
         }
@@ -162,32 +157,9 @@
         }
     })
 
-    $(".hapus").click(function(){
-        let id = $(this).data("id");
-        let answer = $("#jaw"+id).val();
-        
-        // console.log(answer.charAt(answer.length-4)+answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1))
-        
-        if (answer.charAt(answer.length-4)+answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَلْ") {
-            hapus = answer.slice(0,-4);
-        } else if (answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَل" || answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "الْ" ){
-            hapus = answer.slice(0,-3);
-        } else if (answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "ال" ){
-            hapus = answer.slice(0,-2);
-        } else if (answer.charAt(answer.length-2) == "ّ" || answer.charAt(answer.length-1) == "ّ"){
-            hapus = answer.slice(0,-3);
-        } else if(answer.charAt(answer.length-1) == "ا" || answer.charAt(answer.length-1) == "ى" || answer.charAt(answer.length-1) == "-" || answer.charAt(answer.length-1) == "_" || answer.charAt(answer.length-1) == "ل" || answer.charAt(answer.length-1) == "آ" || answer.charAt(answer.length-1) == "ي" || answer.charAt(answer.length-1) == "و"){
-            hapus = answer.slice(0,-1);
-        } else {
-            hapus = answer.slice(0,-2);
-        }
-        $("#jaw"+id).val(hapus);
-    })
-// لَا
-
     $(".edit").click(function(){
         let id = $(this).data("id");
-
+        
         $("#btnEdit"+id).hide();
         $("#j"+id).html("");
         $("#jawaban"+id).val("");
@@ -197,17 +169,5 @@
     $("#font").change(function(){
         let font = $(this).val();
         $("[id='container-content']").css("font-size", font)
-        font = font.replace("px", "")
-        if(font >= 22){
-            $('.input-btn').each(function() {
-                $(this).css("height", "45px");
-                $(this).css("width", "45px");
-            });
-        } else {
-            $('.input-btn').each(function() {
-                $(this).css("height", "42px");
-                $(this).css("width", "42px");
-            });
-        }
     })
 </script>

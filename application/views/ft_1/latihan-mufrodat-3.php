@@ -61,10 +61,10 @@
                 <?php endforeach;?>
             </div>
             <div class="row">
-                <form action="<?= base_url()?>materi/add_latihan" method="post" id="latihan">
+                <form action="<?= base_url()?>ft_1/add_latihan" method="post" id="latihan">
                     <input type="hidden" name="materi" value="<?= $materi?>">
                     <input type="hidden" name="tema" value="<?= $tema?>">
-                    <input type="hidden" name="table" value="latihan_hifdzi_1">
+                    <input type="hidden" name="table" value="<?= $table?>">
                     <input type="hidden" name="latihan" value="Latihan 3">
                     <input type="hidden" name="redirect" value="<?= $redirect?>">
                 </form>

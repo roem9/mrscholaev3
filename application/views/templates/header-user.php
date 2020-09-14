@@ -50,6 +50,9 @@
             <?php if(in_array("Hifdzi 1", $program)):?>
                 <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
             <?php endif;?>
+            <?php if(in_array("Full Time 1", $program)):?>
+                <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action <?php if($title == 'Full Time 1'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Full Time</a>
+            <?php endif;?>
             <a href="<?= base_url()?>setting" class="list-group-item list-group-item-action <?php if($title == 'Pengaturan'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-cog mr-3"></i>Pengaturan</a>
             <a href="<?= base_url()?>login/logout_user" class="list-group-item list-group-item-action" onclick="return confirm('Yakin akan keluar?')"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
         </div>

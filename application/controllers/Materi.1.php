@@ -4,7 +4,6 @@ class Materi extends CI_CONTROLLER{
         parent::__construct();
         $this->load->model("Arab_model");
         $this->load->model("Admin_model");
-        $this->load->model("Hifdzi1_model");
         ini_set('xdebug.var_display_max_depth', '10');
         ini_set('xdebug.var_display_max_children', '256');
         ini_set('xdebug.var_display_max_data', '1024');
@@ -28,8 +27,6 @@ class Materi extends CI_CONTROLLER{
         // kelas & program
         
         if($materi == MD5("Hifdzi 1")){
-            $hifdzi1 = $this->Hifdzi1_model->kata();
-            $tema = $this->Hifdzi1_model->tema();
             if($_GET){
                 if(!empty($_GET['tema'])){
                     
@@ -43,6 +40,7 @@ class Materi extends CI_CONTROLLER{
                     // pertemuan
 
                     if($_GET['tema'] == MD5('Pertemuan 1')){
+
                         $data['back'] = "";
                         if (in_array("Pertemuan 2", $pertemuan))
                             $data['next'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 2");
@@ -51,23 +49,12 @@ class Materi extends CI_CONTROLLER{
 
                         $data['title'] = 'Pertemuan 1';
                         $data['materi'] = 'Materi Pertemuan 1';
-
-                        $i = 1;
-                        foreach ($tema as $materi) {
-                            
-                            if(MD5($materi['pertemuan']) == $_GET['tema']){
-                                // jumlah kosa kata
-                                    $j = 0;
-                                    foreach ($hifdzi1 as $kata) {
-                                        if($kata['tema'] == $materi['tema']){
-                                            $mufrodat[$j] = $kata;
-                                            $j++;
-                                        }
-                                    }
-                                $data['mufrodat'][$i] = $this->latihan("latihan_hifdzi_1", $id, $materi['tema'], $materi['title_arab'], $materi['title'], COUNT($mufrodat));
-                                $i++;
-                            }
-                        }
+                        $data['mufrodat'][0]['mufrodat'] = 100;
+                        $data['mufrodat'][1] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 1","كَلِمَاتُ الْإِسْتِفْهَامِ", "Kata Tanya Bag. 1", 9);
+                        $data['mufrodat'][2] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 2","كَلِمَاتُ الْإِسْتِفْهَامِ", "Kata Tanya Bag. 2", 9);
+                        $data['mufrodat'][3] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 3","حُرُوْفُ الْجَرِّ", "Huruf Jar", 10);
+                        $data['mufrodat'][4] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 4","حُرُوْفُ النِّدَاءِ", "Huruf Nidaa", 3);
+                        $data['mufrodat'][5] = $this->latihan("latihan_hifdzi_1", $id, "Mufrodat 5","حُرُوْفُ الْإِسْتِثْنَاءِ", "Huruf Istisna", 1);
                     } else if($_GET['tema'] == MD5('Pertemuan 2')){
                         
                         $data['back'] = "materi/program/".MD5("Hifdzi 1")."?tema=".MD5("Pertemuan 1");
@@ -13231,27 +13218,30 @@ class Materi extends CI_CONTROLLER{
     
                 // Tema
                     $data['tema'][0]['mufrodat'] = 100;
-
-                    $pert = array_unique(array_column($hifdzi1, 'pertemuan'));
-                    $data['mufrodat'][0]['mufrodat'] = 100;
-                    $i = 1;
-                    foreach ($pert as $pert) {
-
-                        // jumlah kosa kata
-                            $j = 0;
-                            foreach ($hifdzi1 as $kata) {
-                                if($kata['pertemuan'] == $pert){
-                                    $data['mufrodat'][$j] = $kata;
-                                    $j++;
-                                }
-                            }
-                        
-                        // jumlah latihan
-                            $latihan = array_unique(array_column($data['mufrodat'], 'tema'));
-
-                        $data['tema'][$i] = $this->tema("latihan_hifdzi_1", $id, $pert, $pert, $pert, COUNT($data['mufrodat']), COUNT($latihan), $pertemuan);
-                        $i++;
-                    }
+                    $data['tema'][1] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 1","Pertemuan 1", "Pertemuan 1", 32, 5, $pertemuan);
+                    $data['tema'][2] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 2","Pertemuan 2", "Pertemuan 2", 33, 8, $pertemuan);
+                    $data['tema'][3] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 3","Pertemuan 3", "Pertemuan 3", 109, 12, $pertemuan);
+                    $data['tema'][4] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 4","Pertemuan 4", "Pertemuan 4", 32, 4, $pertemuan);
+                    $data['tema'][5] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 5","Pertemuan 5", "Pertemuan 5", 51, 7, $pertemuan);
+                    $data['tema'][6] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 6","Pertemuan 6", "Pertemuan 6", 58, 9, $pertemuan);
+                    $data['tema'][7] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 7","Pertemuan 7", "Pertemuan 7", 24, 4, $pertemuan);
+                    $data['tema'][8] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 8","Pertemuan 8", "Pertemuan 8", 40, 5, $pertemuan);
+                    $data['tema'][9] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 9","Pertemuan 9", "Pertemuan 9", 44, 6, $pertemuan);
+                    $data['tema'][10] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 10","Pertemuan 10", "Pertemuan 10", 38, 5, $pertemuan);
+                    $data['tema'][11] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 11","Pertemuan 11", "Pertemuan 11", 46, 7, $pertemuan);
+                    $data['tema'][12] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 12","Pertemuan 12", "Pertemuan 12", 30, 4, $pertemuan);
+                    $data['tema'][13] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 13","Pertemuan 13", "Pertemuan 13", 62, 9, $pertemuan);
+                    $data['tema'][14] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 14","Pertemuan 14", "Pertemuan 14", 32, 4, $pertemuan);
+                    $data['tema'][15] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 15","Pertemuan 15", "Pertemuan 15", 27, 4, $pertemuan);
+                    $data['tema'][16] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 16","Pertemuan 16", "Pertemuan 16", 33, 4, $pertemuan);
+                    $data['tema'][17] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 17","Pertemuan 17", "Pertemuan 17", 35, 5, $pertemuan);
+                    $data['tema'][18] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 18","Pertemuan 18", "Pertemuan 18", 63, 9, $pertemuan);
+                    $data['tema'][19] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 19","Pertemuan 19", "Pertemuan 19", 47, 7, $pertemuan);
+                    $data['tema'][20] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 20","Pertemuan 20", "Pertemuan 20", 45, 6, $pertemuan);
+                    $data['tema'][21] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 21","Pertemuan 21", "Pertemuan 21", 56, 8, $pertemuan);
+                    $data['tema'][22] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 22","Pertemuan 22", "Pertemuan 22", 33, 4, $pertemuan);
+                    $data['tema'][23] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 23","Pertemuan 23", "Pertemuan 23", 35, 5, $pertemuan);
+                    $data['tema'][24] = $this->tema("latihan_hifdzi_1", $id, "Pertemuan 24","Pertemuan 24", "Pertemuan 24", 21, 3, $pertemuan);
                 // Tema
     
                 $this->load->view("templates/header-user", $data);

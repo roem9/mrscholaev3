@@ -20,7 +20,11 @@
                             <?php foreach ($kelas as $i => $kelas) :?>
                                 <li class="list-group-item d-flex justify-content-between shadow-md">
                                     <span><?= $kelas['nama_kelas']?></span>
-                                    <span><a href="<?= base_url()?>materi/program/<?= MD5($kelas['program'])?>" class="btn btn-sm btn-info img-shadow">mulai</a></span>
+                                    <?php if($kelas['program'] == "Full Time 1"):?>
+                                        <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span>
+                                    <?php else :?>
+                                        <span><a href="<?= base_url()?>materi/program/<?= MD5($kelas['program'])?>" class="btn btn-sm btn-info img-shadow">mulai</a></span>
+                                    <?php endif;?>
                                 </li>
                             <?php endforeach;?>
                         <?php else :?>

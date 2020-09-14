@@ -1,10 +1,21 @@
-        <div class="container">
+<div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 mb-3">
                     <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times mr-1"></i>keluar</a>
                 </div>
                 <div class="col-12 mb-1">
                     <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Terjemahkan kata berikut ini ke dalam bahasa Indonesia. Pilihlah jawaban kemudian tekan tombol <strong>simpan</strong></div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <!-- <label for="font">Ukuran Font</label> -->
+                        <select name="font" id="font" class="form-control form-control-sm">
+                            <option value="20px">Ganti Ukuran Font</option>
+                            <option value="20px">20</option>
+                            <option value="22px">22</option>
+                            <option value="24px">24</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -17,7 +28,7 @@
                             <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
                                     <!-- <div class="arab"> -->
-                                        <label for="<?=$i?>"><strong><?= $i+1?>. <?= $kalimat['kata_arab']?></strong></label>
+                                        <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['kata_arab']?></strong></label>
                                         <span class="icon-cek-<?= $i?>"></span>
                                     <!-- </div> -->
                                     <input type="hidden" name="kunci<?=$i?>" value="<?= $kalimat['arti']?>">
@@ -34,7 +45,7 @@
                                                 <?php foreach ($kata as $k => $data) :?>
                                                     <div class="radio-toolbar radio-shadow mr-1">
                                                         <input type="radio" id="<?= $i.$k?>" name="<?= $i?>1" class="btn-primary" value="<?= $data?>">
-                                                        <label for="<?= $i.$k?>"><center><?= $data?></center></label>
+                                                        <label for="<?= $i.$k?>" id="container-content"><center><?= $data?></center></label>
                                                     </div>
                                                 <?php endforeach;?>
                                             </div>
@@ -149,4 +160,9 @@
         $("#jawaban"+id).val("");
         $("#select"+id).show();
     });
+
+    $("#font").change(function(){
+        let font = $(this).val();
+        $("[id='container-content']").css("font-size", font)
+    })
 </script>
