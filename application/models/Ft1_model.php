@@ -941,6 +941,231 @@
                         "status" => "on"
                     ],
 
+                // Mufrodat 11
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "رُوْحٌ",
+                        "kata_arab" => "رُوْحٌ",
+                        "arti" => "Ruh",
+                        "huruf" => array_unique(["رُ","وْ","حٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "لَـحْـمٌ",
+                        "kata_arab" => "لَحْمٌ",
+                        "arti" => "Daging",
+                        "huruf" => array_unique(["لَ","حْ","مٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "عَـظْـمٌ",
+                        "kata_arab" => "عَظْمٌ",
+                        "arti" => "Tulang",
+                        "huruf" => array_unique(["عَ","ظْ","مٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "شَـحْـمٌ",
+                        "kata_arab" => "شَحْمٌ",
+                        "arti" => "Lemak",
+                        "huruf" => array_unique(["شَ","حْ","مٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "دَمٌ",
+                        "kata_arab" => "دَمٌ",
+                        "arti" => "Darah",
+                        "huruf" => array_unique(["دَ","مٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "قَـيْـحٌ",
+                        "kata_arab" => "قَيْحٌ",
+                        "arti" => "Nanah",
+                        "huruf" => array_unique(["قَ","يْ","حٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "مَـعْـيٌ",
+                        "kata_arab" => "مَعْيٌ",
+                        "arti" => "Usus",
+                        "huruf" => array_unique(["مَ","عْ","يٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 11",
+                        "kata" => "مَـعْـيٌ غَـلِـيْـظٌ",
+                        "kata_arab" => "مَعْيٌ غَلِيْظٌ",
+                        "arti" => "Usus besar",
+                        "huruf" => array_unique(["مَ","عْ","يٌ","_","غَ","لِ","يْ","ظٌ"]),
+                        "status" => "on"
+                    ],
+
+                // Mufrodat 12
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "مَـعْـيٌ رَقِـيْـقٌ",
+                        "kata_arab" => "مَعْيٌ رَقِيْقٌ",
+                        "arti" => "Usus halus",
+                        "huruf" => array_unique(["مَ","عْ","يٌ","_","رَ","قِ","يْ","قٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "رِئَـةٌ",
+                        "kata_arab" => "رِئَةٌ",
+                        "arti" => "Paru-paru",
+                        "huruf" => array_unique(["رِ","ئَ","ةٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "قَـلْـبٌ",
+                        "kata_arab" => "قَلْبٌ",
+                        "arti" => "Jantung",
+                        "huruf" => array_unique(["قَ","لْ","بٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "كَـبِـدٌ",
+                        "kata_arab" => "كَبِدٌ",
+                        "arti" => "Hati",
+                        "huruf" => array_unique(["كَ","بِ","دٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "عَـضَـلَـةٌ",
+                        "kata_arab" => "عَضَلَةٌ",
+                        "arti" => "Otot",
+                        "huruf" => array_unique(["عَ","ضَ","لَ","ةٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "بَـوْلٌ",
+                        "kata_arab" => "بَوْلٌ",
+                        "arti" => "Kencing",
+                        "huruf" => array_unique(["بَ","وْ","لٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "غَائِـطٌ",
+                        "kata_arab" => "غَائِطٌ",
+                        "arti" => "Tahi",
+                        "huruf" => array_unique(["غَ","ا","ئِ","طٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 12",
+                        "kata" => "ضُـرَاطٌ",
+                        "kata_arab" => "ضُرَاطٌ",
+                        "arti" => "Kentut (suara)",
+                        "huruf" => array_unique(["ضُ","رَ","ا","طٌ"]),
+                        "status" => "on"
+                    ],
+
+                // Mufrodat 13
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "فُـسَاءٌ",
+                        "kata_arab" => "فُسَاءٌ",
+                        "arti" => "Kentut (t.suara)",
+                        "huruf" => array_unique(["فُ","سَ","ا","ءٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "نَـفْـسٌ",
+                        "kata_arab" => "نَفْسٌ",
+                        "arti" => "Jiwa",
+                        "huruf" => array_unique(["نَ","فْ","سٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "بُـصَاقٌ",
+                        "kata_arab" => "بُصَاقٌ",
+                        "arti" => "Ludah",
+                        "huruf" => array_unique(["بُ","صَ","ا","قٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "عَـرَقٌ",
+                        "kata_arab" => "عَرَقٌ",
+                        "arti" => "Keringat",
+                        "huruf" => array_unique(["عَ","رَ","قٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "عِـرْقٌ",
+                        "kata_arab" => "عِرْقٌ",
+                        "arti" => "Urat",
+                        "huruf" => array_unique(["عِ","رْ","قٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "شَـرَيَانٌ",
+                        "kata_arab" => "شَرَيَانٌ",
+                        "arti" => "Pembuluh",
+                        "huruf" => array_unique(["شَ","رَ","يَ","ا","نٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "عَـصَـبٌ",
+                        "kata_arab" => "عَصَبٌ",
+                        "arti" => "Saraf",
+                        "huruf" => array_unique(["عَ","صَ","بٌ"]),
+                        "status" => "on"
+                    ],
+                    [
+                        "id" => "",
+                        "tema" => "Mufrodat 13",
+                        "kata" => "ضِـلْـعٌ",
+                        "kata_arab" => "ضِلْعٌ",
+                        "arti" => "Tulang rusuk",
+                        "huruf" => array_unique(["ضِ","لْ","عٌ"]),
+                        "status" => "on"
+                    ],
+
+
+                // 
+
             ];
 
             return $data;
@@ -1014,11 +1239,31 @@
                 [
                     "tema" => "Mufrodat 10",
                     "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 9"),
-                    "next" => "",
+                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 11"),
                     "title_arab" => "سَاقٌّ - شَامَـةٌ",
                     "kata" => "10"
                 ],
-
+                [
+                    "tema" => "Mufrodat 11",
+                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 10"),
+                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 12"),
+                    "title_arab" => "رُوْحٌ - مَـعْـيٌ غَـلِـيْـظٌ",
+                    "kata" => "8"
+                ],
+                [
+                    "tema" => "Mufrodat 12",
+                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 11"),
+                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 13"),
+                    "title_arab" => "مَـعْـيٌ رَقِـيْـقٌ - ضُـرَاطٌ",
+                    "kata" => "8"
+                ],
+                [
+                    "tema" => "Mufrodat 13",
+                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 12"),
+                    "next" => "",
+                    "title_arab" => "فُـسَاءٌ - ضِـلْـعٌ",
+                    "kata" => "8"
+                ],
 
             ];
             
