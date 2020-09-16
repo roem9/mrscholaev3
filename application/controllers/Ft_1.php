@@ -140,6 +140,10 @@ class Ft_1 extends CI_CONTROLLER{
             // var_dump($data);
     }
 
+    public function qowaid(){
+        
+    }
+
     // search
         public function searchForId($program, $array) {
             foreach ($array as $key => $val) {

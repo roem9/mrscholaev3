@@ -171,7 +171,7 @@
                             "id" => "17",
                             "tema" => "Mufrodat 2",
                             "kata" => "هَلْ / أَ",
-                            "kata_arab" => "هَلَْ",
+                            "kata_arab" => "هَلْ",
                             "arti" => "Apakah",
                             "huruf" => array_unique(["هَ","لْ"]),
                             "status" => "on",
