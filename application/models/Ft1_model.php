@@ -3454,7 +3454,7 @@
                         "id" => "",
                         "tema" => "Mufrodat 40",
                         "kata" => "بَـوَّابَـةٌ",
-                        "kata_arab" => "ءء",
+                        "kata_arab" => "بَوَّابَةٌ",
                         "arti" => "Gerbang",
                         "huruf" => array_unique($this->huruf("بَوَّابَةٌ")),
                         "status" => "on"
