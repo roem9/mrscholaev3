@@ -30,7 +30,11 @@ class Ft_1 extends CI_CONTROLLER{
         
         $materi = $this->Ft1_model->tema();
         $kata = $this->Ft1_model->kata();
-        if(!empty($_GET['id'])){
+        $bab = $this->Ft1_model->bab();
+
+        if(!empty($_GET['bg'])){
+
+        } else if(!empty($_GET['id'])){
             $i = 0;
             foreach ($kata as $kata) {
                 if(MD5($kata['tema']) == $_GET['id']){
@@ -44,7 +48,6 @@ class Ft_1 extends CI_CONTROLLER{
                     $tema = $materi;
                 }
             }
-
             
             $data['back'] = $tema['back'];
             $data['next'] = $tema['next'];
@@ -127,13 +130,19 @@ class Ft_1 extends CI_CONTROLLER{
         } else {
             $data['title'] = 'Full Time 1';
             $i = 1;
-            foreach ($materi as $materi) {
-                $data['mufrodat'][$i] = $this->latihan("latihan_ft_1", $id, $materi['tema'], $materi['title_arab'], $materi['kata']);
-                $i++;
-            }
+            // foreach ($materi as $materi) {
+            //     $data['mufrodat'][$i] = $this->latihan("latihan_ft_1", $id, $materi['tema'], $materi['title_arab'], $materi['kata']);
+            //     $i++;
+            // }
+            $data['tema'] = $bab;
+            // foreach ($materi as $materi) {
+            //     $data['mufrodat'][$i] = $this->latihan("latihan_ft_1", $id, $materi['tema'], $materi['title_arab'], $materi['kata']);
+            //     $i++;
+            // }
             
             $this->load->view("templates/header-user", $data);
-            $this->load->view("ft_1/index-mufrodat", $data);
+            // $this->load->view("ft_1/index-mufrodat", $data);
+            $this->load->view("ft_1/index-tema", $data);
             $this->load->view("templates/footer-user", $data);
             // var_dump($materi);
         }
@@ -210,6 +219,30 @@ class Ft_1 extends CI_CONTROLLER{
             $data[2] = $this->Admin_model->get_one($table, ["id_user" => $id, "MD5(materi)" => $materi, "latihan" => "Latihan 3"]);
 
             return $data;
+        }
+
+        public function get_tema(){
+            $id = $this->input->post("id");
+            $tema = $this->Ft1_model->tema();
+            $bab = $this->Ft1_model->bab();
+
+            $i = 0;
+            foreach ($tema as $tema) {
+                if($tema['bab'] == $id){
+                    $data['tema'][$i] = $tema;
+                    $data['tema'][$i]['tema'] = MD5($tema['tema']);
+                    $i++;
+                }
+            }
+            
+            foreach ($bab as $bab) {
+                if($bab['bab'] == $id){
+                    $data['bab'] = $bab;
+                }
+            }
+
+            echo json_encode($data);
+            // var_dump($cek);
         }
     // get
 

@@ -6058,1241 +6058,298 @@
 
         public function tema(){
             $data = [
-                [
-                    "tema" => "Mufrodat 1",
-                    "back" => "",
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 2"),
-                    "title_arab" => "مَا - لِـمَنْ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 2",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 1"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 3"),
-                    "title_arab" => "أَيْنَ - أَيُّ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 3",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 2"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 4"),
-                    "title_arab" => "أَمَامَ - هُنَاكَ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 4",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 3"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 5"),
-                    "title_arab" => "الْيَوْمَ - مَسَاءً",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 5",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 4"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 6"),
-                    "title_arab" => "لَـيْـلًا - السَّـنَـةُ الْآتِـيَـةُ ",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 6",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 5"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 7"),
-                    "title_arab" => "عَـقْـلٌ - سِـنٌّ ",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 7",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 6"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 8"),
-                    "title_arab" => "حَاجِـبٌ - شَـفَـةٌ سُـفْـلَـى",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 8",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 7"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 9"),
-                    "title_arab" => "مُـخٌّ - صَـدْرٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 9",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 8"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 10"),
-                    "title_arab" => "ثَـدْيٌ - كَـعْـبٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 10",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 9"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 11"),
-                    "title_arab" => "سَاقٌّ - شَامَـةٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 11",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 10"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 12"),
-                    "title_arab" => "رُوْحٌ - مَـعْـيٌ غَـلِـيْـظٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 12",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 11"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 13"),
-                    "title_arab" => "مَـعْـيٌ رَقِـيْـقٌ - ضُـرَاطٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 13",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 12"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 14"),
-                    "title_arab" => "فُـسَاءٌ - ضِـلْـعٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 14",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 13"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 15"),
-                    "title_arab" => "أَخَـذَ - تَـحَـرَّكَ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 15",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 14"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 16"),
-                    "title_arab" => "تَـذَكَّـرَ - خَافَ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 16",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 15"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 17"),
-                    "title_arab" => "دَلَّـكَ - غَـضَّ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 17",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 16"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 18"),
-                    "title_arab" => "فَـسَا - كَـتَـبَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 18",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 17"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 19"),
-                    "title_arab" => "لَـمَـسَ - هَـمَـسَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 19",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 18"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 20"),
-                    "title_arab" => "أَبٌ - حَـفِـيْـدٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 20",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 19"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 21"),
-                    "title_arab" => "حَـفِـيْـدَةٌ - أَخٌ صَـغِـيْـرٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 21",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 20"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 22"),
-                    "title_arab" => "أُخْـتٌ كَـبِـيْـرَةٌ - عَـذْرَاءُ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 22",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 21"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 23"),
-                    "title_arab" => "أَرْمَـلٌ - فَـتَاةٌ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "1", "2", "مَا - لِـمَنْ", "9", "1"),
+                $this->data_tema("1", "2", "", "أَيْنَ - أَيُّ", "10", "1"),
 
+                $this->data_tema("", "3", "", "أَمَامَ - هُنَاكَ", "10", "2"),
                 
-                [
-                    "tema" => "Mufrodat 23",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 22"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 24"),
-                    "title_arab" => "رَبَّـي - دَعَا",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 24",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 23"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 25"),
-                    "title_arab" => "أَمَـرَ - اِعْـتَـرَفَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 25",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 24"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 26"),
-                    "title_arab" => "رَجَـى - سَـكَـتَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 26",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 25"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 27"),
-                    "title_arab" => "مُـتَـوَاضِـعٌ - صَادِقٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 27",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 26"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 28"),
-                    "title_arab" => "كَاذِبٌ - مُـشَاغِـبٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 28",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 27"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 29"),
-                    "title_arab" => "لَـطِـيْـفٌ - شَـهِـيْـرٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 29",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 28"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 30"),
-                    "title_arab" => "عَاطِـفِـيٌّ - ذَكِـيٌّ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 30",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 29"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 31"),
-                    "title_arab" => "غَـبِـيٌّ - أَبْـكَـمٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 31",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 30"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 32"),
-                    "title_arab" => "قَـزَمٌ - عَادِلٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 32",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 31"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 33"),
-                    "title_arab" => "غَـيْـرُ عَادِلٍ - خَاسِـرٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 33",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 32"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 34"),
-                    "title_arab" => "سَـمِـيْـنٌ - مَـغْـلُـوْبٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 34",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 33"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 35"),
-                    "title_arab" => "ثِـقَّـةُ النَّـفْـسِ - مُـخْـجِـلٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 35",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 34"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 36"),
-                    "title_arab" => "مُـمْـتِـعٌ - مُـتَـفَاجِـئٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 36",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 35"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 37"),
-                    "title_arab" => "تَائِـبٌ - سَـرِيْـعُ الـنِّـسْـيَانِ",
-                    "kata" => "5"
-                ],
-                [
-                    "tema" => "Mufrodat 37",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 36"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 38"),
-                    "title_arab" => "جِـدَارٌ - خِـزَانَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 38",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 37"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 39"),
-                    "title_arab" => "دَوْلَـبٌ - أَرِيْـكَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 39",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 38"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 40"),
-                    "title_arab" => "مِـكْـنَـسَـةٌ - مَـنْـفَـضَّـةُ السَّـجَائِـرِ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 40",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 39"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 41"),
-                    "title_arab" => "تَـقْـوِيْـمٌ - بَـوَّابَـةٌ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "4", "5", "الْيَوْمَ - مَسَاءً", "11", "3"),
+                $this->data_tema("4", "5", "", "لَـيْـلًا - السَّـنَـةُ الْآتِـيَـةُ ", "11", "3"),
+                
+                $this->data_tema("", "6", "7", "عَـقْـلٌ - سِـنٌّ ", "11", "4"),
+                $this->data_tema("6", "7", "8", "حَاجِـبٌ - شَـفَـةٌ سُـفْـلَـى", "11", "4"),
+                $this->data_tema("7", "8", "9", "مُـخٌّ - صَـدْرٌ", "10", "4"),
+                $this->data_tema("8", "9", "10", "ثَـدْيٌ - كَـعْـبٌ", "10", "4"),
+                $this->data_tema("9", "10", "", "سَاقٌّ - شَامَـةٌ", "10", "4"),
 
-                [
-                    "tema" => "Mufrodat 41",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 40"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 42"),
-                    "title_arab" => "سَـقْـفٌ - زُقَاقٌ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 42",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 41"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 43"),
-                    // "next" => "",
-                    "title_arab" => "كَـنَـسَ - دَخَـلَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 43",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 42"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 44"),
-                    "title_arab" => "خَـرَجَ - اِنْـطَـفَأَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 44",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 43"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 45"),
-                    // "next" => "",
-                    "title_arab" => "صَـعِـدَ - وَاجَـهَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 45",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 44"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 46"),
-                    "title_arab" => "أَسْـوَدُ - أَزْرَقُ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 46",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 45"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 47"),
-                    "title_arab" => "أَخْـضَـرُ - ذَهَـبِـيٌّ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 47",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 46"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 48"),
-                    "title_arab" => "كَـبِـيْـرٌ - نَـظِـيْـفٌ",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 48",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 47"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 49"),
-                    "title_arab" => "وَسِـخٌ - نَاعِـمٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 49",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 48"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 50"),
-                    "title_arab" => "خَـشِـنٌ - ثَـقِـيْـلٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 50",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 49"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 51"),
-                    "title_arab" => "خَـفِـيْـفٌ - مَـيِّـتٌ",
-                    "kata" => "10"
-                ],
+                $this->data_tema("", "11", "12", "رُوْحٌ - مَـعْـيٌ غَـلِـيْـظٌ", "8", "5"),
+                $this->data_tema("11", "12", "13", "مَـعْـيٌ رَقِـيْـقٌ - ضُـرَاطٌ", "8", "5"),
+                $this->data_tema("12", "13", "", "فُـسَاءٌ - ضِـلْـعٌ", "8", "5"),
 
-                
-                [
-                    "tema" => "Mufrodat 51",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 50"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 52"),
-                    "title_arab" => "مَـفْـتُـوْحٌ - خَـطَاءٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 52",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 51"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 53"),
-                    // "next" => "",
-                    "title_arab" => "ثَـوْبٌ - لِـفَاعٌ",
-                    "kata" => "11"
-                ],
-                [
-                    "tema" => "Mufrodat 53",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 52"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 54"),
-                    "title_arab" => "حَـمَّالَـةُ الـصَّـدْرِ - نَـعْـلٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 54",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 53"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 55"),
-                    // "next" => "",
-                    "title_arab" => "حِـذَاءٌ - رِبَاطٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 55",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 54"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 56"),
-                    "title_arab" => "سِـوَارٌ - لُـؤْلُـؤٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 56",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 55"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 57"),
-                    "title_arab" => "لَـبِـسَ - قَـصَّـرَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 57",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 56"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 58"),
-                    "title_arab" => "كَـبَّـرَ - نَـسَـجَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 58",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 57"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 59"),
-                    "title_arab" => "سَـرِيْـرٌ - سَـجَّادَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 59",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 58"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 60"),
-                    "title_arab" => "مِـرْآةٌ - جَـوَّالٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 60",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 59"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 61"),
-                    "title_arab" => "نَامَ - تَـرَبَّـعَ",
-                    "kata" => "7"
-                ],
-                
-                
-                [
-                    "tema" => "Mufrodat 61",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 60"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 62"),
-                    "title_arab" => "مَـوْقِـدٌ - إِنَاءٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 62",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 61"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 63"),
-                    // "next" => "",
-                    "title_arab" => "طَـبَـقٌ - شَـوْكَـةٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 63",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 62"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 64"),
-                    "title_arab" => "رَفُّ الـصُّـحُـوْنِ - مَاءٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 64",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 63"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 65"),
-                    // "next" => "",
-                    "title_arab" => "رُزٌّ - جَـمْـرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 65",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 64"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 66"),
-                    "title_arab" => "دُخَانٌ - بُـنٌّ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 66",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 65"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 67"),
-                    "title_arab" => "شَايٌ - كَـرَفْـسٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 67",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 66"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 68"),
-                    "title_arab" => "قَـرَنْـفِـلٌ - كُـرْنُـبٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 68",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 67"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 69"),
-                    "title_arab" => "جَـوْزُ الْـهِـنْـدِ - زُبْـدَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 69",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 68"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 70"),
-                    "title_arab" => "أَكَـلَ - مَـضَـعَ ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 70",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 69"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 71"),
-                    "title_arab" => "عَـضَّ - خَـلَـطَ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "14", "15", "أَخَـذَ - تَـحَـرَّكَ", "9", "6"),
+                $this->data_tema("14", "15", "16", "تَـذَكَّـرَ - خَافَ", "9", "6"),
+                $this->data_tema("15", "16", "17", "دَلَّـكَ - غَـضَّ", "9", "6"),
+                $this->data_tema("16", "17", "18", "فَـسَا - كَـتَـبَ", "8", "6"),
+                $this->data_tema("17", "18", "", "لَـمَـسَ - هَـمَـسَ", "8", "6"),
 
-                
-                [
-                    "tema" => "Mufrodat 71",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 70"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 72"),
-                    "title_arab" => "اِخْـتَـلَـطَ - تَـسَـوَّقَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 72",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 71"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 73"),
-                    // "next" => "",
-                    "title_arab" => "طَـعْـمٌ - بَارِدٌ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 73",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 72"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 74"),
-                    "title_arab" => "حِـرِّيْـفٌ - رَيَّانٌ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 74",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 73"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 75"),
-                    // "next" => "",
-                    "title_arab" => "بِـرْكَـةٌ - مِـعْـلَاقٌ",
-                    "kata" => "10"
-                ],
-                [
-                    "tema" => "Mufrodat 75",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 74"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 76"),
-                    "title_arab" => "دَلْـوٌ - مِـيْـزَابٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 76",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 75"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 77"),
-                    "title_arab" => "اِغْـتَـسَـلَ - وَضَـعَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 77",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 76"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 78"),
-                    "title_arab" => "بَـصَـقَ - لَـوَّثَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 78",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 77"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 79"),
-                    "title_arab" => "سَـبَـحَ - رَشَّ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 79",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 78"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 80"),
-                    "title_arab" => "تَـجَـمَّـدَ - صَـبَّ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 80",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 79"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 81"),
-                    "title_arab" => "مَـدْرَسَـةٌ حُـكُـوْمِـيَّـةٌ - إِدَارَةٌ",
-                    "kata" => "8"
-                ],
-                
+                $this->data_tema("", "19", "20", "أَبٌ - حَـفِـيْـدٌ", "9", "7"),
+                $this->data_tema("19", "20", "21", "حَـفِـيْـدَةٌ - أَخٌ صَـغِـيْـرٌ", "9", "7"),
+                $this->data_tema("20", "21", "22", "أُخْـتٌ كَـبِـيْـرَةٌ - عَـذْرَاءُ",  "8", "7"),
+                $this->data_tema("21", "22", "", "أَرْمَـلٌ - فَـتَاةٌ",  "8", "7"),
 
-                [
-                    "tema" => "Mufrodat 81",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 80"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 82"),
-                    "title_arab" => "عَـمُـوْدٌ - مَـصْـرُوْفُ الْـجَـيْـبِ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 82",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 81"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 83"),
-                    // "next" => "",
-                    "title_arab" => "رَشْـوَةٌ - سَـبُّـوْرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 83",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 82"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 84"),
-                    "title_arab" => "حِـبْـرٌ - شَـهَادَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 84",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 83"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 85"),
-                    // "next" => "",
-                    "title_arab" => "شَـهَادَةُ الإِنْـجَازِ - جَامِعَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 85",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 84"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 86"),
-                    "title_arab" => "دِرَاسَـةٌ أُوْلَـى - نَـشْـرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 86",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 85"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 87"),
-                    "title_arab" => "نَـتِـيْـجَـةٌ - مُـصَـحِّـحٌ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 87",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 86"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 88"),
-                    "title_arab" => "ذَهَـبَ - مَـرَّنَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 88",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 87"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 89"),
-                    "title_arab" => "اِمْـتَـحَـنَ - شَـكَا",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 89",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 88"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 90"),
-                    "title_arab" => "صَـنَـعَ - رَافَـقَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 90",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 89"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 91"),
-                    "title_arab" => "خَـدِمَ - أَخْـبَـرَ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "23", "24", "رَبَّـي - دَعَا",  "8", "8"),
+                $this->data_tema("23", "24", "25", "أَمَـرَ - اِعْـتَـرَفَ",  "8", "8"),
+                $this->data_tema("24", "25", "", "رَجَـى - سَـكَـتَ",  "8", "8"),
 
-                [
-                    "tema" => "Mufrodat 91",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 90"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 92"),
-                    "title_arab" => "قَـرَأَ - وَصَــلَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 92",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 91"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 93"),
-                    // "next" => "",
-                    "title_arab" => "أَوْصَـلَ - أَطَاعَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 93",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 92"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 94"),
-                    "title_arab" => "خَالَـفَ - طَـرَدَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 94",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 93"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 95"),
-                    // "next" => "",
-                    "title_arab" => "شَـرَحَ - غَـضِـبَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 95",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 94"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 96"),
-                    "title_arab" => "دَرَّاجَـةٌ - بِـتْـشَا",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 96",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 95"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 97"),
-                    "title_arab" => "عَـرَبَـةٌ - طَائِـرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 97",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 96"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 98"),
-                    "title_arab" => "دَبَّابَـةٌ - بُـوْرٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 98",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 97"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 99"),
-                    "title_arab" => "مَـقْـعَـدٌ - تَـذْكِـرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 99",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 98"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 100"),
-                    "title_arab" => "تَـأْشِـيْـرَةٌ - مَـسَافَـةُ الـسَّـفَـرِ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 100",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 99"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 101"),
-                    "title_arab" => "قَادَ - اِلْـتَـفَـتَ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "26", "27", "مُـتَـوَاضِـعٌ - صَادِقٌ", "10", "9"),
+                $this->data_tema("26", "27", "28", "كَاذِبٌ - مُـشَاغِـبٌ", "10", "9"),
+                $this->data_tema("27", "28", "29", "لَـطِـيْـفٌ - شَـهِـيْـرٌ", "10", "9"),
+                $this->data_tema("28", "29", "30", "عَاطِـفِـيٌّ - ذَكِـيٌّ", "10", "9"),
+                $this->data_tema("29", "30", "31", "غَـبِـيٌّ - أَبْـكَـمٌ", "10", "9"),
+                $this->data_tema("30", "31", "32", "قَـزَمٌ - عَادِلٌ", "10", "9"),
+                $this->data_tema("31", "32", "33", "غَـيْـرُ عَادِلٍ - خَاسِـرٌ", "10", "9"),
+                $this->data_tema("32", "33", "34", "سَـمِـيْـنٌ - مَـغْـلُـوْبٌ", "10", "9"),
+                $this->data_tema("33", "34", "35", "ثِـقَّـةُ النَّـفْـسِ - مُـخْـجِـلٌ", "10", "9"),
+                $this->data_tema("34", "35", "36", "مُـمْـتِـعٌ - مُـتَـفَاجِـئٌ", "10", "9"),
+                $this->data_tema("35", "36", "", "تَائِـبٌ - سَـرِيْـعُ الـنِّـسْـيَانِ", "5", "9"),
 
-                
-                [
-                    "tema" => "Mufrodat 101",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 100"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 102"),
-                    "title_arab" => "صَـدَمَ - أَبْـحَـرَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 102",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 101"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 103"),
-                    // "next" => "",
-                    "title_arab" => "طَـبِـيْـبٌ - دَوَاءٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 103",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 102"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 104"),
-                    "title_arab" => "دَاءٌ - مِـجْـهَـرٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 104",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 103"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 105"),
-                    // "next" => "",
-                    "title_arab" => "ضِـيَاءٌ - بَـثْـرَةٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 105",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 104"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 106"),
-                    "title_arab" => "مَـغْـصٌ - سَـرَطَانٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 106",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 105"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 107"),
-                    "title_arab" => "إِسْـهَالٌ - كَـسِـيْـحٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 107",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 106"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 108"),
-                    "title_arab" => "عَالَـجَ - زَادَ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 108",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 107"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 109"),
-                    "title_arab" => "اِزْدَادَ - حَـسِـبَ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 109",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 108"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 110"),
-                    "title_arab" => "كَـلْـبٌ - بَـقَـرٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 110",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 109"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 111"),
-                    "title_arab" => "جَامُـوْسٌ - قُـنْـفُـذٌ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "37", "38", "جِـدَارٌ - خِـزَانَـةٌ", "8", "10"),
+                $this->data_tema("37", "38", "39", "دَوْلَـبٌ - أَرِيْـكَـةٌ", "8", "10"),
+                $this->data_tema("38", "39", "40", "مِـكْـنَـسَـةٌ - مَـنْـفَـضَّـةُ السَّـجَائِـرِ", "8", "10"),
+                $this->data_tema("39", "40", "41", "تَـقْـوِيْـمٌ - بَـوَّابَـةٌ", "8", "10"),
+                $this->data_tema("40", "41", "", "سَـقْـفٌ - زُقَاقٌ", "6", "10"),
 
-                
-                [
-                    "tema" => "Mufrodat 111",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 110"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 112"),
-                    "title_arab" => "سَـرَطَانٌ - حِـمَارٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 112",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 111"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 113"),
-                    // "next" => "",
-                    "title_arab" => "حِـمَارُ الـزَّرَدِ - إِنْـكِـلِـيْـسٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 113",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 112"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 114"),
-                    "title_arab" => "دُبٌّ - خُـفَاشٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 114",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 113"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 115"),
-                    // "next" => "",
-                    "title_arab" => "جَـمَـلٌ - يَـرَقَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 115",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 114"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 116"),
-                    "title_arab" => "غُـرَابٌ - طَـيْـرٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 116",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 115"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 117"),
-                    "title_arab" => "وَزٌّ - قِـرَشٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 117",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 116"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 118"),
-                    "title_arab" => "صَـدَفٌ - خُـرْطُـوْمٌ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 118",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 117"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 119"),
-                    "title_arab" => "أَطْـعَـمَ - تَـسَـلَّـقَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 119",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 118"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 120"),
-                    "title_arab" => "طَارَ - مَاءَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 120",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 119"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 121"),
-                    "title_arab" => "تُـفَّاحٌ - اَفُـوْكَادُو",
-                    "kata" => "8"
-                ],
-                
-                
-                [
-                    "tema" => "Mufrodat 121",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 120"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 122"),
-                    "title_arab" => "شَـمَامٌ - فَاكِـهَـةُ الـتِّـنِـيْـنَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 122",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 121"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 123"),
-                    // "next" => "",
-                    "title_arab" => "أَنَانَاسُ - ذُرَّةٌ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 123",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 122"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 124"),
-                    "title_arab" => "حَـصَـدَ - حَـرَثَ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 124",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 123"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 125"),
-                    // "next" => "",
-                    "title_arab" => "مَـطْـبَـخٌ - مَـحَـطَّـةُ الـقِـطَارِ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 125",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 124"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 126"),
-                    "title_arab" => "مَـحَـطَّـةُ اْلـبِـنْـزِيْـنِ - مَـمْـلَـكَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 126",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 125"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 127"),
-                    "title_arab" => "مَـحْـكَـمَـةٌ - شَارِعٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 127",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 126"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 128"),
-                    "title_arab" => "مَـتْـحَـفٌ - شُـرْفَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 128",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 127"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 129"),
-                    "title_arab" => "مَـسْـكَـنٌ - جَامِـعَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 129",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 128"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 130"),
-                    "title_arab" => "كَـنِـيْـسَـةٌ - بُـرْجٌ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 130",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 129"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 131"),
-                    "title_arab" => "جَاءَ - بَاتَ",
-                    "kata" => "6"
-                ],
-                
-                [
-                    "tema" => "Mufrodat 131",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 130"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 132"),
-                    "title_arab" => "بَـنَـى - حَـيِـيَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 132",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 131"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 133"),
-                    // "next" => "",
-                    "title_arab" => "شَـمْـسٌ - جَـوٌّ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 133",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 132"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 134"),
-                    "title_arab" => "قُـزَحٍ - مَـرْجَانٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 134",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 133"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 135"),
-                    // "next" => "",
-                    "title_arab" => "سَـفْـحٌ - سَـحَابٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 135",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 134"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 136"),
-                    "title_arab" => "ثَـلْـجٌ - شَاطِـئٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 136",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 135"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 137"),
-                    "title_arab" => "قَارَةٌ - غَارٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 137",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 136"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 138"),
-                    "title_arab" => "خَـلَـقَ - أَشْـرَقَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 138",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 137"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 139"),
-                    "title_arab" => "صَـوَّرَ - تَـسَـلَّـقَ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 139",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 138"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 140"),
-                    "title_arab" => "مُـعَـلِّـمٌ - مُـخْـتَـطِـفٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 140",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 139"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 141"),
-                    "title_arab" => "سَارِقٌ - صَـيَّادُ الـسَّـمَـكِ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "42", "43", "كَـنَـسَ - دَخَـلَ", "8", "11"),
+                $this->data_tema("42", "43", "44", "خَـرَجَ - اِنْـطَـفَأَ", "8", "11"),
+                $this->data_tema("43", "44", "", "صَـعِـدَ - وَاجَـهَ", "7", "11"),
 
+                $this->data_tema("", "45", "46", "أَسْـوَدُ - أَزْرَقُ", "6", "12"),
+                $this->data_tema("45", "46", "", "أَخْـضَـرُ - ذَهَـبِـيٌّ", "6", "12"),
+
+                $this->data_tema("", "47", "48", "كَـبِـيْـرٌ - نَـظِـيْـفٌ", "11", "13"),
+                $this->data_tema("47", "48", "49", "وَسِـخٌ - نَاعِـمٌ", "10", "13"),
+                $this->data_tema("48", "49", "50", "خَـشِـنٌ - ثَـقِـيْـلٌ", "10", "13"),
+                $this->data_tema("49", "50", "51", "خَـفِـيْـفٌ - مَـيِّـتٌ", "10", "13"),
+                $this->data_tema("50", "51", "", "مَـفْـتُـوْحٌ - خَـطَاءٌ", "10", "13"),
+
+                $this->data_tema("", "52", "53", "ثَـوْبٌ - لِـفَاعٌ", "11", "14"),
+                $this->data_tema("52", "53", "54", "حَـمَّالَـةُ الـصَّـدْرِ - نَـعْـلٌ", "10", "14"),
+                $this->data_tema("53", "54", "55", "حِـذَاءٌ - رِبَاطٌ", "10", "14"),
+                $this->data_tema("54", "55", "", "سِـوَارٌ - لُـؤْلُـؤٌ", "10", "14"),
+
+                $this->data_tema("", "56", "57", "لَـبِـسَ - قَـصَّـرَ", "6", "15"),
+                $this->data_tema("56", "57", "", "كَـبَّـرَ - نَـسَـجَ", "6", "15"),
+
+                $this->data_tema("", "58", "59", "سَـرِيْـرٌ - سَـجَّادَةٌ", "8", "16"),
+                $this->data_tema("58", "59", "", "مِـرْآةٌ - جَـوَّالٌ", "8", "16"),
+
+                $this->data_tema("", "60", "", "نَامَ - تَـرَبَّـعَ", "7", "17"),
                 
-                [
-                    "tema" => "Mufrodat 141",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 140"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 142"),
-                    "title_arab" => "صَـيَّادٌ - مُـصَـوِّرٌ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 142",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 141"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 143"),
-                    // "next" => "",
-                    "title_arab" => "مُـشَـعْـوِذٌ - خَـيَّاطٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 143",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 142"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 144"),
-                    "title_arab" => "طَيَّارٌ - رِيَاضِـيٌّ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 144",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 143"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 145"),
-                    // "next" => "",
-                    "title_arab" => "رَئِـيْـسٌ - نَائِـبُ رَئِـيْـسُ الْـجُـمْـهُـوْرِيَّـةِ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 145",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 144"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 146"),
-                    "title_arab" => "وَزِيْـرٌ - رَئـِيْـسُ اْلـقَـرْيَـةِ",
-                    "kata" => "7"
-                ],
-                [
-                    "tema" => "Mufrodat 146",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 145"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 147"),
-                    "title_arab" => "رَأَسَ - جَـمَـعَ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 147",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 146"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 148"),
-                    "title_arab" => "اِخْـتَارَ - كَـفَـى",
-                    "kata" => "5"
-                ],
-                [
-                    "tema" => "Mufrodat 148",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 147"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 149"),
-                    "title_arab" => "مَوْسِمُ الأَمْطَارِ - فَصْلُ الرَّبِيْعِ",
-                    "kata" => "6"
-                ],
-                [
-                    "tema" => "Mufrodat 149",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 148"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 150"),
-                    "title_arab" => "مَاءٌ - طِـفْـلٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 150",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 149"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 151"),
-                    "title_arab" => "أَصْـلٌ - وِسَادَةٌ",
-                    "kata" => "8"
-                ],
+                $this->data_tema("", "61", "62", "مَـوْقِـدٌ - إِنَاءٌ", "9", "18"),
+                $this->data_tema("61", "62", "63", "طَـبَـقٌ - شَـوْكَـةٌ", "9", "18"),
+                $this->data_tema("62", "63", "64", "رَفُّ الـصُّـحُـوْنِ - مَاءٌ", "8", "18"),
+                $this->data_tema("63", "64", "65", "رُزٌّ - جَـمْـرَةٌ", "8", "18"),
+                $this->data_tema("64", "65", "66", "دُخَانٌ - بُـنٌّ", "8", "18"),
+                $this->data_tema("65", "66", "67", "شَايٌ - كَـرَفْـسٌ", "8", "18"),
+                $this->data_tema("66", "67", "68", "قَـرَنْـفِـلٌ - كُـرْنُـبٌ", "8", "18"),
+                $this->data_tema("67", "68", "", "جَـوْزُ الْـهِـنْـدِ - زُبْـدَةٌ", "8", "18"),
+
+                $this->data_tema("", "69", "70", "أَكَـلَ - مَـضَـعَ ", "8", "19"),
+                $this->data_tema("69", "70", "71", "عَـضَّ - خَـلَـطَ", "8", "19"),
+                $this->data_tema("70", "71", "", "اِخْـتَـلَـطَ - تَـسَـوَّقَ", "6", "19"),
+
+                $this->data_tema("", "72", "73", "طَـعْـمٌ - بَارِدٌ", "6", "20"),
+                $this->data_tema("72", "73", "", "حِـرِّيْـفٌ - رَيَّانٌ", "6", "20"),
+
+                $this->data_tema("", "74", "75", "بِـرْكَـةٌ - مِـعْـلَاقٌ", "10", "21"),
+                $this->data_tema("74", "75", "", "دَلْـوٌ - مِـيْـزَابٌ", "9", "21"),
+
+                $this->data_tema("", "76", "77", "اِغْـتَـسَـلَ - وَضَـعَ", "7", "22"),
+                $this->data_tema("76", "77", "78", "بَـصَـقَ - لَـوَّثَ", "7", "22"),
+                $this->data_tema("77", "78", "79", "سَـبَـحَ - رَشَّ", "7", "22"),
+                $this->data_tema("78", "79", "", "تَـجَـمَّـدَ - صَـبَّ", "8", "22"),
+
+                $this->data_tema("", "80", "81", "مَـدْرَسَـةٌ حُـكُـوْمِـيَّـةٌ - إِدَارَةٌ", "8", "23"),
+                $this->data_tema("80", "81", "82", "عَـمُـوْدٌ - مَـصْـرُوْفُ الْـجَـيْـبِ", "8", "23"),
+                $this->data_tema("81", "82", "83", "رَشْـوَةٌ - سَـبُّـوْرَةٌ", "8", "23"),
+                $this->data_tema("82", "83", "84", "حِـبْـرٌ - شَـهَادَةٌ", "8", "23"),
+                $this->data_tema("83", "84", "85", "شَـهَادَةُ الإِنْـجَازِ - جَامِعَةٌ", "8", "23"),
+                $this->data_tema("84", "85", "86", "دِرَاسَـةٌ أُوْلَـى - نَـشْـرَةٌ", "8", "23"),
+                $this->data_tema("85", "86", "", "نَـتِـيْـجَـةٌ - مُـصَـحِّـحٌ", "7", "23"),
+
+                $this->data_tema("", "87", "88", "ذَهَـبَ - مَـرَّنَ", "8", "24"),
+                $this->data_tema("87", "88", "89", "اِمْـتَـحَـنَ - شَـكَا", "8", "24"),
+                $this->data_tema("88", "89", "90", "صَـنَـعَ - رَافَـقَ", "8", "24"),
+                $this->data_tema("89", "90", "91", "خَـدِمَ - أَخْـبَـرَ", "8", "24"),
+                $this->data_tema("90", "91", "92", "قَـرَأَ - وَصَــلَ", "8", "24"),
+                $this->data_tema("91", "92", "93", "أَوْصَـلَ - أَطَاعَ", "8", "24"),
+                $this->data_tema("92", "93", "94", "خَالَـفَ - طَـرَدَ", "8", "24"),
+                $this->data_tema("93", "94", "", "شَـرَحَ - غَـضِـبَ", "6", "24"),
+
+                $this->data_tema("", "95", "96", "دَرَّاجَـةٌ - بِـتْـشَا", "8", "25"),
+                $this->data_tema("95", "96", "97", "عَـرَبَـةٌ - طَائِـرَةٌ", "8", "25"),
+                $this->data_tema("96", "97", "98", "دَبَّابَـةٌ - بُـوْرٌ", "8", "25"),
+                $this->data_tema("97", "98", "99", "مَـقْـعَـدٌ - تَـذْكِـرَةٌ", "8", "25"),
+                $this->data_tema("98", "99", "", "تَـأْشِـيْـرَةٌ - مَـسَافَـةُ الـسَّـفَـرِ", "8", "25"),
+
+                $this->data_tema("", "100", "101", "قَادَ - اِلْـتَـفَـتَ", "8", "26"),
+                $this->data_tema("100", "101", "", "صَـدَمَ - أَبْـحَـرَ", "8", "26"),
+
+                $this->data_tema("", "102", "103", "طَـبِـيْـبٌ - دَوَاءٌ", "9", "27"),
+                $this->data_tema("102", "103", "104", "دَاءٌ - مِـجْـهَـرٌ", "9", "27"),
+                $this->data_tema("103", "104", "105", "ضِـيَاءٌ - بَـثْـرَةٌ", "9", "27"),
+                $this->data_tema("104", "105", "106", "مَـغْـصٌ - سَـرَطَانٌ", "9", "27"),
+                $this->data_tema("105", "106", "", "إِسْـهَالٌ - كَـسِـيْـحٌ", "9", "27"),
+
+                $this->data_tema("", "107", "108", "عَالَـجَ - زَادَ", "9", "28"),
+                $this->data_tema("107", "108", "", "اِزْدَادَ - حَـسِـبَ", "9", "28"),
+
+                $this->data_tema("", "109", "110", "كَـلْـبٌ - بَـقَـرٌ", "8", "29"),
+                $this->data_tema("109", "110", "111", "جَامُـوْسٌ - قُـنْـفُـذٌ", "8", "29"),
+                $this->data_tema("110", "111", "112", "سَـرَطَانٌ - حِـمَارٌ", "8", "29"),
+                $this->data_tema("111", "112", "113", "حِـمَارُ الـزَّرَدِ - إِنْـكِـلِـيْـسٌ", "8", "29"),
+                $this->data_tema("112", "113", "114", "دُبٌّ - خُـفَاشٌ", "8", "29"),
+                $this->data_tema("113", "114", "115", "جَـمَـلٌ - يَـرَقَـةٌ", "8", "29"),
+                $this->data_tema("114", "115", "116", "غُـرَابٌ - طَـيْـرٌ", "8", "29"),
+                $this->data_tema("115", "116", "117", "وَزٌّ - قِـرَشٌ", "8", "29"),
+                $this->data_tema("116", "117", "", "صَـدَفٌ - خُـرْطُـوْمٌ", "7", "29"),
+
+                $this->data_tema("", "118", "119", "أَطْـعَـمَ - تَـسَـلَّـقَ", "7", "30"),
+                $this->data_tema("118", "119", "", "طَارَ - مَاءَ", "7", "30"),
+
+                $this->data_tema("", "120", "121", "تُـفَّاحٌ - اَفُـوْكَادُو", "8", "31"),
+                $this->data_tema("120", "121", "122", "شَـمَامٌ - فَاكِـهَـةُ الـتِّـنِـيْـنَ", "8", "31"),
+                $this->data_tema("121", "122", "", "أَنَانَاسُ - ذُرَّةٌ", "7", "31"),
+
+                $this->data_tema("", "123", "", "حَـصَـدَ - حَـرَثَ", "7", "32"),
+
+                $this->data_tema("", "124", "125", "مَـطْـبَـخٌ - مَـحَـطَّـةُ الـقِـطَارِ", "8", "33"),
+                $this->data_tema("124", "125", "126", "مَـحَـطَّـةُ اْلـبِـنْـزِيْـنِ - مَـمْـلَـكَـةٌ", "8", "33"),
+                $this->data_tema("125", "126", "127", "مَـحْـكَـمَـةٌ - شَارِعٌ", "8", "33"),
+                $this->data_tema("126", "127", "128", "مَـتْـحَـفٌ - شُـرْفَـةٌ", "8", "33"),
+                $this->data_tema("127", "128", "129", "مَـسْـكَـنٌ - جَامِـعَـةٌ", "8", "33"),
+                $this->data_tema("128", "129", "", "كَـنِـيْـسَـةٌ - بُـرْجٌ", "7", "33"),
                 
-                
-                [
-                    "tema" => "Mufrodat 151",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 150"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 152"),
-                    "title_arab" => "حَـجَـرٌ - دَفْـتَـرٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 152",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 151"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 153"),
-                    // "next" => "",
-                    "title_arab" => "شَـهْـرٌ - بِـنْـطَالٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 153",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 152"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 154"),
-                    "title_arab" => "سِـرْوَالٌ - فِـلْـمٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 154",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 153"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 155"),
-                    // "next" => "",
-                    "title_arab" => "صُـوْرَةٌ - قَـلْـبٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 155",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 154"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 156"),
-                    "title_arab" => "حَـيَـوَانٌ - سَـبِـيْـلٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 156",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 155"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 157"),
-                    "title_arab" => "شَارِعٌ - مِـلْـيُـوْنٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 157",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 156"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 158"),
-                    "title_arab" => "قَاعِـدَةٌ - فِـرَاشٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 158",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 157"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 159"),
-                    "title_arab" => "فِـعْـلٌ - قِـرْطَاسٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 159",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 158"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 160"),
-                    "title_arab" => "رَئِـيْـسٌ - ظُـفْـرٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 160",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 159"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 161"),
-                    "title_arab" => "كُـرْسِـيٌّ - مَـعْـرِفَـةٌ",
-                    "kata" => "8"
-                ],
-                
-                [
-                    "tema" => "Mufrodat 161",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 160"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 162"),
-                    "title_arab" => "نَـوْعٌ - طَالِـبٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 162",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 161"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 163"),
-                    // "next" => "",
-                    "title_arab" => "مَـتْـحَـفٌ - مَـصْـنَـعٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 163",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 162"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 164"),
-                    "title_arab" => "مَـلْـبَـسٌ - مِـسْـطَـرَةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 164",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 163"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 165"),
-                    // "next" => "",
-                    "title_arab" => "مِـمْـسَـحَـةٌ - بَـطْـنٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 165",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 164"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 166"),
-                    "title_arab" => "صَـحْـنٌ - صَاحِـبٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 166",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 165"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 167"),
-                    "title_arab" => "نَـعْـلٌ - صِـفَـةٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 167",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 166"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 168"),
-                    "title_arab" => "مِـرْفَـقٌ - ضَـيْـفٌ",
-                    "kata" => "9"
-                ],
-                [
-                    "tema" => "Mufrodat 168",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 167"),
-                    "next" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 169"),
-                    "title_arab" => "يَـدٌ - دُكَّانٌ",
-                    "kata" => "8"
-                ],
-                [
-                    "tema" => "Mufrodat 169",
-                    "back" => "ft_1/mufrodat"."?id=".MD5("Mufrodat 168"),
-                    "next" => "",
-                    "title_arab" => "هَـدَفٌ - لَـوْنٌ",
-                    "kata" => "9"
-                ],
+                $this->data_tema("", "130", "131", "جَاءَ - بَاتَ", "6", "34"),
+                $this->data_tema("130", "131", "", "بَـنَـى - حَـيِـيَ", "6", "34"),
+
+                $this->data_tema("", "132", "133", "شَـمْـسٌ - جَـوٌّ", "8", "35"),
+                $this->data_tema("132", "133", "134", "قُـزَحٍ - مَـرْجَانٌ", "8", "35"),
+                $this->data_tema("133", "134", "135", "سَـفْـحٌ - سَـحَابٌ", "8", "35"),
+                $this->data_tema("134", "135", "136", "ثَـلْـجٌ - شَاطِـئٌ", "8", "35"),
+                $this->data_tema("135", "136", "", "قَارَةٌ - غَارٌ", "8", "35"),
+
+                $this->data_tema("", "137", "138", "خَـلَـقَ - أَشْـرَقَ", "8", "36"),
+                $this->data_tema("137", "138", "", "صَـوَّرَ - تَـسَـلَّـقَ", "8", "36"),
+
+                $this->data_tema("", "139", "140", "مُـعَـلِّـمٌ - مُـخْـتَـطِـفٌ", "8", "37"),
+                $this->data_tema("139", "140", "141", "سَارِقٌ - صَـيَّادُ الـسَّـمَـكِ", "8", "37"),
+                $this->data_tema("140", "141", "142", "صَـيَّادٌ - مُـصَـوِّرٌ", "6", "37"),
+                $this->data_tema("141", "142", "143", "مُـشَـعْـوِذٌ - خَـيَّاطٌ", "8", "37"),
+                $this->data_tema("142", "143", "144", "طَيَّارٌ - رِيَاضِـيٌّ", "8", "37"),
+                $this->data_tema("143", "144", "145", "رَئِـيْـسٌ - نَائِـبُ رَئِـيْـسُ الْـجُـمْـهُـوْرِيَّـةِ", "8", "37"),
+                $this->data_tema("144", "145", "", "وَزِيْـرٌ - رَئـِيْـسُ اْلـقَـرْيَـةِ", "7", "37"),
+
+                $this->data_tema("", "146", "147", "رَأَسَ - جَـمَـعَ", "6", "38"),
+                $this->data_tema("146", "147", "", "اِخْـتَارَ - كَـفَـى", "5", "38"),
+
+                $this->data_tema("", "148", "", "مَوْسِمُ الأَمْطَارِ - فَصْلُ الرَّبِيْعِ", "6", "39"),
+
+                $this->data_tema("", "149", "150", "مَاءٌ - طِـفْـلٌ", "8", "40"),
+                $this->data_tema("149", "150", "151", "أَصْـلٌ - وِسَادَةٌ", "8", "40"),
+                $this->data_tema("150", "151", "152", "حَـجَـرٌ - دَفْـتَـرٌ", "8", "40"),
+                $this->data_tema("151", "152", "153", "شَـهْـرٌ - بِـنْـطَالٌ", "8", "40"),
+                $this->data_tema("152", "153", "154", "سِـرْوَالٌ - فِـلْـمٌ", "8", "40"),
+                $this->data_tema("153", "154", "155", "صُـوْرَةٌ - قَـلْـبٌ", "8", "40"),
+                $this->data_tema("154", "155", "156", "حَـيَـوَانٌ - سَـبِـيْـلٌ", "8", "40"),
+                $this->data_tema("155", "156", "157", "شَارِعٌ - مِـلْـيُـوْنٌ", "8", "40"),
+                $this->data_tema("156", "157", "158", "قَاعِـدَةٌ - فِـرَاشٌ", "8", "40"),
+                $this->data_tema("157", "158", "159", "فِـعْـلٌ - قِـرْطَاسٌ", "8", "40"),
+                $this->data_tema("158", "159", "160", "رَئِـيْـسٌ - ظُـفْـرٌ", "8", "40"),
+                $this->data_tema("159", "160", "161", "كُـرْسِـيٌّ - مَـعْـرِفَـةٌ", "8", "40"),
+                $this->data_tema("160", "161", "162", "نَـوْعٌ - طَالِـبٌ", "8", "40"),
+                $this->data_tema("161", "162", "163", "مَـتْـحَـفٌ - مَـصْـنَـعٌ", "8", "40"),
+                $this->data_tema("162", "163", "164", "مَـلْـبَـسٌ - مِـسْـطَـرَةٌ", "8", "40"),
+                $this->data_tema("163", "164", "165", "مِـمْـسَـحَـةٌ - بَـطْـنٌ", "8", "40"),
+                $this->data_tema("164", "165", "166", "صَـحْـنٌ - صَاحِـبٌ", "8", "40"),
+                $this->data_tema("165", "166", "167", "نَـعْـلٌ - صِـفَـةٌ", "8", "40"),
+                $this->data_tema("166", "167", "168", "مِـرْفَـقٌ - ضَـيْـفٌ", "9", "40"),
+                $this->data_tema("167", "168", "169", "يَـدٌ - دُكَّانٌ", "8", "40"),
+                $this->data_tema("168", "169", "", "هَـدَفٌ - لَـوْنٌ", "9", "40"),
             ];
             
+            return $data;
+        }
+
+        public function bab(){
+            $data = [
+                $this->data_bab("كَلِمَاتُ اْلإِسْتِفْهَامِ", "Kata Tanya", "1"),
+                $this->data_bab("ظُرُوْفُ الْمَكَانِ", "Keterangan Tempat", "2"),
+                $this->data_bab("ظُرُوْفُ الزَّمَانِ", "Keterangan Waktu", "3"),
+                $this->data_bab("أَعْضَاءُ الْبَدَنِ", "Anggota Badan", "4"),
+                $this->data_bab("أَعْضَاءٌ دَاخِلِيَّةٌ", "Anggota Dalam", "5"),
+                $this->data_bab("الأَفْعَالُ عَنْ أَعْضَاءِ الْبَدَنِ", "Kata kerja tentang Anggota Badan", "6"),
+                $this->data_bab("الأُسْرَةُ", "Keluarga", "7"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلأُسْرَةِ", "Kata kerja tentang keluarga", "8"),
+                $this->data_bab("الطَّبِيْعَةُ الْبَشَرِيَّةُ", "Sifat Manusia", "9"),
+                $this->data_bab("آثَاثُ اْلبَيْتِ", "Perabotan Rumah", "10"),
+                
+
+                $this->data_bab("الأَفْعَالُ عَنِ اْلبَيْتِ", "Pekerjaan tentang rumah", "11"),
+                $this->data_bab("الأَلْوَانُ", "Warna-warna", "12"),
+                $this->data_bab("الصِّفَاتُ", "Sifat-sifat", "13"),
+                $this->data_bab("مَلَابِسُ وَ جَوَاهِرُ", "Pakaian dan Perhiasan", "14"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَلَابِسِ", "Kata kerja tentang Pakaian", "15"),
+                $this->data_bab("غُرْفَةُ النَّوْمِ", "Kamar tidur", "16"),
+                $this->data_bab("الأَفْعَالُ عَنْ غُرْفَةِ النَّوْمِ", "Kata kerja ttg Kamar Tidur", "17"),
+                $this->data_bab("الْمَطْبَخُ", "Dapur", "18"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَطْبَخِ", "Kata kerja ttg Dapur", "19"),
+                $this->data_bab("الطُّعُوْمُ", "Rasa-rasa", "20"),
+
+                $this->data_bab("الحَمَّامُ", "Kamar Mandi", "21"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْحَمَّامِ", "Kata kerja ttg Kamar Mandi", "22"),
+                $this->data_bab("المَدْرَسَةُ", "Sekolah", "23"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَدْرَسَةِ", "Kata kerja ttg Sekolah", "24"),
+                $this->data_bab("الْمَرْكُوْبَاتُ", "Kendaraan", "25"),
+                $this->data_bab("الأَفْعَالُ  عَنِ الْمَرْكُوْبَاتِ", "Kata kerja ttg Kendaraan", "26"),
+                $this->data_bab("الْمُسْتَشْفَى", "Rumah sakit", "27"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمُسْتَشْفَى", "Kata kerja ttg Rumah sakit", "28"),
+                $this->data_bab("أَسْمَاءُ الْحَيَوَانَاتِ", "Nama-nama hewan", "29"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْحَيَوَانِ", "Kata kerja ttg Hewan", "30"),
+
+                $this->data_bab("أَسْمَاءُ اْلفَوَاكِهِ", "Nama-nama buah", "31"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلفَوَاكِهِ", "Kata kerja ttg Buah-buahan", "32"),
+                $this->data_bab("أَسْمَاءُ الْمَكَانِ", "Nama-nama tempat", "33"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَكَانِ", "Kata kerja ttg Tempat", "34"),
+                $this->data_bab("العَالَمُ", "Dunia", "35"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلعَالَمِ", "Kata kerja ttg Dunia", "36"),
+                $this->data_bab("الْمِهْنَةُ", "Profesi", "37"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمِهْنَةِ", "Kata kerja ttg Profesi", "38"),
+                $this->data_bab("الفُصُوْلُ", "Musim-musim", "39"),
+                $this->data_bab("جُمُوْعُ التَّكْسِيْرِ", "Jamak Taksir", "40"),
+            ];
+
+            return $data;
+        }
+
+        public function data_bab($title, $title_arti, $bab){
+            $data = [
+                "title" => $title,
+                "title_arti" => $title_arti,
+                "bab" => $bab
+            ];
+
+            return $data;
+        }
+
+        public function data_tema($back, $tema, $next, $title, $kata, $bab){
+            if($back != ""){
+                $back = "ft_1/mufrodat"."?id=".MD5("Mufrodat $back");
+            }
+
+            if($next != ""){
+                $next = "ft_1/mufrodat"."?id=".MD5("Mufrodat $next");
+            }
+
+            $data = [
+                "tema" => "Mufrodat " . $tema,
+                "back" => $back,
+                "next" => $next,
+                "title_arab" => $title,
+                "kata" => $kata,
+                "bab" => $bab
+            ];
+
             return $data;
         }
 
