@@ -7332,7 +7332,7 @@
                 } else if (substr($kata, -2, 2) == "ّ" || substr($kata, -6, 2) == "ّ" || substr($kata, -4, 2) == "ّ"){
                     $huruf[$i] = substr($kata, -6);
                     $kata = substr($kata, 0, -6);
-                } else if(substr($kata, -2) == "ا" || substr($kata, -2) == "ى" || substr($kata, -2) == "-" || substr($kata, -2) == "_" || substr($kata, -2) == "ل" || substr($kata, -2) == "آ" || substr($kata, -2) == "ي" || substr($kata, -2) == "و"){
+                } else if(substr($kata, -2) == "ا" || substr($kata, -2) == "ى" || substr($kata, -2) == "ج" || substr($kata, -2) == "-" || substr($kata, -2) == "_" || substr($kata, -2) == "ل" || substr($kata, -2) == "آ" || substr($kata, -2) == "ي" || substr($kata, -2) == "و"){
                     $huruf[$i] = substr($kata, -2);
                     $kata = substr($kata, 0, -2);
                 } else {
