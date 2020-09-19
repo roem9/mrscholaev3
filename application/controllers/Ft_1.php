@@ -134,11 +134,13 @@ class Ft_1 extends CI_CONTROLLER{
             //     $data['mufrodat'][$i] = $this->latihan("latihan_ft_1", $id, $materi['tema'], $materi['title_arab'], $materi['kata']);
             //     $i++;
             // }
-            $data['tema'] = $bab;
-            // foreach ($materi as $materi) {
-            //     $data['mufrodat'][$i] = $this->latihan("latihan_ft_1", $id, $materi['tema'], $materi['title_arab'], $materi['kata']);
-            //     $i++;
-            // }
+            
+            $data['tema'] = [];
+
+            foreach ($bab as $i => $bab) {
+                $data['tema'][$i] = $bab;
+                $data['tema'][$i]['kemajuan'] = $this->latihan_bab($bab['bab'], $id);
+            }
             
             $this->load->view("templates/header-user", $data);
             // $this->load->view("ft_1/index-mufrodat", $data);
@@ -165,6 +167,22 @@ class Ft_1 extends CI_CONTROLLER{
     // search
 
     // get
+        public function latihan_bab($bab, $id){
+            $tema = $this->Ft1_model->tema();
+            $data['tema'] = [];
+            $presentasi = 0;
+            foreach ($tema as $i => $tema) {
+                if($tema['bab'] == $bab){
+                    $data['tema'][$i] = $this->latihan("latihan_ft_1", $id, $tema['tema'], $tema['title_arab'], $tema['kata']);
+                    $presentasi += $data['tema'][$i]['mufrodat'];
+                }
+            }
+
+            $kemajuan = $presentasi / COUNT($data['tema']);
+
+            return $kemajuan;
+        }
+
         public function tema($table, $id, $tema, $title, $title_arti, $total, $tot_latihan, $array){
             $latihan = $this->Admin_model->get_all($table, ["id_user" => $id, "tema" => $tema], "waktu", "DESC");
             if($latihan){
@@ -222,6 +240,7 @@ class Ft_1 extends CI_CONTROLLER{
         }
 
         public function get_tema(){
+            $id_user = $this->session->userdata('id');
             $id = $this->input->post("id");
             $tema = $this->Ft1_model->tema();
             $bab = $this->Ft1_model->bab();
@@ -231,6 +250,8 @@ class Ft_1 extends CI_CONTROLLER{
                 if($tema['bab'] == $id){
                     $data['tema'][$i] = $tema;
                     $data['tema'][$i]['tema'] = MD5($tema['tema']);
+                    $kemajuan = $this->latihan("latihan_ft_1", $id_user, $tema['tema'], $tema['title_arab'], $tema['kata']);
+                    $data['tema'][$i]['kemajuan'] = $kemajuan['mufrodat'];
                     $i++;
                 }
             }

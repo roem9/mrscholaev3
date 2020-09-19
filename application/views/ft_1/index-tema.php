@@ -25,13 +25,13 @@
             <div class="row">
                 <?php 
                     foreach ($tema as $tema) :?>
-                                <div class="col-12 col-md-4 mb-3">
-                                <div class="card rounded-lg border-primary">
-                                <div class="card-header list-group-item-primary d-flex justify-content-center">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card rounded-lg <?= $tema['kemajuan'] != "100" ? "border-danger" : "border-primary";?>">
+                                <div class="card-header d-flex justify-content-center <?= $tema['kemajuan'] != "100" ? "list-group-item-danger" : "list-group-item-primary";?>">
                                     <span class="text-dark arab"><?= $tema['title']?><span>
                                 </div>
                                 <div class="card-body">
-                                    <a href="#daftarIsi" data-id="<?= $tema['bab']?>" data-toggle="modal" class="d-flex justify-content-center btn btn-block btn-sm btn-primary btnDaftarIsi"><span><?= $tema['title_arti']?></span></a>
+                                    <a href="#daftarIsi" data-id="<?= $tema['bab']?>" data-toggle="modal" class="d-flex justify-content-center btn btn-block btn-sm <?= $tema['kemajuan'] != "100" ? "btn-danger" : "btn-primary";?> btnDaftarIsi"><span><?= $tema['title_arti']?></span></a>
                                 </div>
                             </div>
                         </div>
@@ -58,10 +58,17 @@
 
                 data = data.tema
                 data.forEach(function (data) {
-                    html += `<li class="list-group-item d-flex justify-content-between" style="font-size: 20px">
-                        <span><strong>`+data.title_arab+`</strong></span>
-                        <span><a href="<?= base_url()?>ft_1/mufrodat?id=`+data.tema+`" ><i class="fa fa-angle-right text-secondary"></i></a></span>
-                    </li>`
+                    if(data.kemajuan != 100){
+                        html += `<li class="list-group-item d-flex justify-content-between" style="font-size: 20px">
+                            <span><strong>`+data.title_arab+`</strong></span>
+                            <span><a href="<?= base_url()?>ft_1/mufrodat?id=`+data.tema+`" class="btn btn-sm btn-danger"><i class="fa fa-book text-light mr-1"></i> `+Math.floor(data.kemajuan)+`%</a></span>
+                        </li>`
+                    } else {
+                        html += `<li class="list-group-item d-flex justify-content-between" style="font-size: 20px">
+                            <span><strong>`+data.title_arab+`</strong></span>
+                            <span><a href="<?= base_url()?>ft_1/mufrodat?id=`+data.tema+`" class="btn btn-sm btn-info"><i class="fa fa-book text-light mr-1"></i> `+Math.floor(data.kemajuan)+`%</a></span>
+                        </li>`
+                    }
                 }); 
 
                 $(".listGroup").html(html)

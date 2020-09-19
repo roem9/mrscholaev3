@@ -170,10 +170,10 @@
                         "id" => "17",
                         "tema" => "Mufrodat 2",
                         "kata" => "هَلْ / أَ",
-                        "kata_arab" => "هَلَْ",
+                        "kata_arab" => "هَلْ",
                         "arti" => "Apakah",
                         // "huruf" => array_unique(["هَ","لْ"]),
-                        "huruf" => array_unique($this->huruf("هَلَْ")),
+                        "huruf" => array_unique($this->huruf("هَلْ")),
                         "status" => "on"
                     ],
                     [
