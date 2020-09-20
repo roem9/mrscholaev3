@@ -1,4 +1,4 @@
-<div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 mb-3">
                     <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times"></i> keluar</a>
@@ -61,13 +61,13 @@
                 <?php endforeach;?>
             </div>
             <div class="row">
-                <form action="<?= base_url()?>ft_1/add_latihan" method="post" id="latihan">
+                <!-- <form action="<?= base_url()?>ft_1/add_latihan" method="post" id="latihan">
                     <input type="hidden" name="materi" value="<?= $materi?>">
                     <input type="hidden" name="tema" value="<?= $tema?>">
                     <input type="hidden" name="table" value="<?= $table?>">
                     <input type="hidden" name="latihan" value="Latihan 3">
                     <input type="hidden" name="redirect" value="<?= $redirect?>">
-                </form>
+                </form> -->
                 <div class="col-12 col-md-12 mb-3">
                     <a id="simpanJawaban" data-id="<?= COUNT($mufrodat)?>" class="btn btn-block btn-primary text-light">Periksa</a>
                 </div>
@@ -105,12 +105,13 @@
             Swal.fire({
                 text: "selamat! semua jawabanmu benar",
                 icon: 'success',
-                confirmButtonText: 'Simpan',
-            }).then((result) => {
-                if (result.value) {
-                    $('#latihan').submit();
-                }
+                confirmButtonText: '<a href="<?= base_url($redirect)?>">Selesai</a>',
             })
+            // .then((result) => {
+            //     if (result.value) {
+            //         $('#latihan').submit();
+            //     }
+            // })
         }
     })
 

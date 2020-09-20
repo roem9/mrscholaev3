@@ -11,8 +11,7 @@
       </div>
       <div class="modal-body">
         <ul class="list-group">
-            <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 1 <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
-            <li class="list list-group-item d-flex justify-content-between">2. Qowaid Full Time 1 <span><a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+            <div class="listGroup"></div>
         </ul>
       </div>
       <div class="modal-footer">
@@ -47,6 +46,17 @@
 
 <div class="overlay"></div>
 <script>
+    $(".btnMulai").click(function(){
+        $("#daftarIsiTitle").html("Materi Full Time 1")
+
+        let html = `
+            <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 1 <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+            <li class="list list-group-item d-flex justify-content-between">2. Qowaid Full Time 1 <span><a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+        `;
+
+        $(".listGroup").html(html)
+    })
+
     $(".btnDaftarIsi").click(function(){
         let id = $(this).data("id");
         

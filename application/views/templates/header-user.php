@@ -66,7 +66,7 @@
                 <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-book mr-3"></i>Materi Hifdzi I</a>
             <?php endif;?>
             <?php if(in_array("Full Time 1", $program)):?>
-                <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action <?php if($title == 'Full Time 1'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>" id="btnMateriFullTime1"><i class="fa fa-book mr-3"></i>Materi Full Time 1</a>
+                <a href="#" class="list-group-item list-group-item-action <?php if($title == 'Full Time 1'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>" id="btnMateriFullTime1"><i class="fa fa-book mr-3"></i>Materi Full Time 1</a>
                 <div class="MateriFullTime1">
                     <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action">
                         <span class="ml-4">Mufrodat</span> 

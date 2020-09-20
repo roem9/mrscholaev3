@@ -59,6 +59,41 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">جَـمْـعُ التَّـكْـسِـيْـرِ<span>
+                        </div>
+                        <div class="card-body">
+                            Hafalkan Jamak Taksir pada materi Mufrodat bagian 40. Silahkan klik <a href="<?= base_url()?>ft_1/mufrodat" class="text-primary"><u>disini</u></a>
+                            <!-- <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Jamak Mudzakkar & Muannats Salim')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">الضَّـمِـيْـرُ الْـمُـنْـفَـصِـلُ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Dhomir Munfashil')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">الضَّـمِـيْـرُ الْـمُـتَّـصِـلُ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Dhomir Muttashil')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

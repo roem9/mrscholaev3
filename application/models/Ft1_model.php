@@ -6376,6 +6376,9 @@
                 } else if(substr($kata, -1) == " "){
                     $huruf[$i] = "_";
                     $kata = substr($kata, 0, -1);
+                } else if(substr($kata, -1) == "/"){
+                    $huruf[$i] = substr($kata, -1);
+                    $kata = substr($kata, 0, -1);
                 } else if (substr($kata, -8) == "اَلْ") {
                     $huruf[$i] = substr($kata, -8);
                     $kata = substr($kata, 0, -8);
@@ -6675,4 +6678,45 @@
             return $data;
         }
 
+        public function dhomir_munfashil(){
+            $data = [
+                $this->data_kata("", "Mufrodat 1", "هُـوَ", "هُوَ", "Dia (lk) 1"),
+                $this->data_kata("", "Mufrodat 1", "هُـمَا", "هُمَا", "Dia (lk) 2"),
+                $this->data_kata("", "Mufrodat 1", "هُـمْ", "هُمْ", "Mereka (lk)"),
+                $this->data_kata("", "Mufrodat 1", "هِـيَ", "هِيَ", "Dia (pr) 1"),
+                $this->data_kata("", "Mufrodat 1", "هُـمَا", "هُمَا", "Dia (pr) 2"),
+                $this->data_kata("", "Mufrodat 1", "هُـنَّ", "هُنَّ", "Mereka (pr)"),
+                $this->data_kata("", "Mufrodat 1", "أَنْـتَ", "أَنْتَ", "Kamu (lk) 1"),
+                $this->data_kata("", "Mufrodat 1", "أنْـتُـمَا", "أنْتُمَا", "Kamu (lk) 2"),
+                $this->data_kata("", "Mufrodat 1", "أَنْـتُـمْ", "أَنْتُمْ", "Kalian (lk)"),
+                $this->data_kata("", "Mufrodat 1", "أَنْـتِ", "أَنْتِ", "Kamu (pr) 1"),
+                $this->data_kata("", "Mufrodat 1", "أنْـتُـمَا", "أنْتُمَا", "Kamu (pr) 2"),
+                $this->data_kata("", "Mufrodat 1", "أَنْـتُـنَّ", "أَنْتُنَّ", "Kalian (pr)"),
+                $this->data_kata("", "Mufrodat 1", "أَنَا", "أَنَا", "Saya"),
+                $this->data_kata("", "Mufrodat 1", "نَـحْـنُ", "نَحْنُ", "Kita"),
+            ];
+
+            return $data;
+        }
+
+        public function dhomir_muttashil(){
+            $data = [
+                $this->data_kata("", "Mufrodat 1", "ـهُ/ـهِ", "هُ/هِ", "Dia (lk) 1"),
+                $this->data_kata("", "Mufrodat 1", "ـهُـمَا/ـهِـمَا", "هُمَا/هِمَا", "Dia (lk) 2"),
+                $this->data_kata("", "Mufrodat 1", "ـهُـمْ/ـهِـمْ", "هُمْ/هِمْ", "Mereka (lk)"),
+                $this->data_kata("", "Mufrodat 1", "ـهَا", "هَا", "Dia (pr) 1"),
+                $this->data_kata("", "Mufrodat 1", "ـهُـمَا/ـهِـمَا", "هُمَا/هِمَا", "Dia (pr) 2"),
+                $this->data_kata("", "Mufrodat 1", "ـهُـنَّ/ـهِـنَّ", "هُنَّ/هِنَّ", "Mereka (pr)"),
+                $this->data_kata("", "Mufrodat 1", "ـكَ", "كَ", "Kamu (lk) 1"),
+                $this->data_kata("", "Mufrodat 1", "ـكُـمَا", "كُمَا", "Kamu (lk) 2"),
+                $this->data_kata("", "Mufrodat 1", "ـكُـمْ", "كُمْ", "Kalian (lk)"),
+                $this->data_kata("", "Mufrodat 1", "ـكِ", "كِ", "Kamu (pr) 1"),
+                $this->data_kata("", "Mufrodat 1", "ـكُـمَا", "كُمَا", "Kamu (pr) 2"),
+                $this->data_kata("", "Mufrodat 1", "ـكُـنَّ", "كُنَّ", "Kalian (pr)"),
+                $this->data_kata("", "Mufrodat 1", "ـيْ/يَ/نِـيْ", "يْ/يَ/نِيْ", "Saya"),
+                $this->data_kata("", "Mufrodat 1", "نَا", "نَا", "Kita"),
+            ];
+
+            return $data;
+        }
     }
