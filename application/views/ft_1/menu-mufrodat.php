@@ -2,7 +2,7 @@
             <div class="row">
                 <div class="col-12 mb-3">
                     
-                <a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i><?= $tema?></a>
+                <a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Mufrodat</a>
                 </div>
                 <div class="col-12">
                     <div class="form-group">

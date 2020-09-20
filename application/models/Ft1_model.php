@@ -6470,30 +6470,207 @@
 
         public function mufrod_mutsanna(){
             $data = [
-                $this->kata_mufrod_mutsanna("1", "Subjek Mufrod", "كِـتَابٌ")
+                $this->kata_mufrod_mutsanna("1", "كِتَابَيْنِ (Mufrod Subjek)", "كِتَابٌ", "كِتَابٌ"),
+                $this->kata_mufrod_mutsanna("1", "كِتَابَيْنِ (Mufrod Objek)", "كِتَابٌ", "كِتَابًا"),
+                $this->kata_mufrod_mutsanna("1", "كِتَابًا (Mutsanna Objek)", "كِتَابٌ", "كِتَابَانِ"),
+                $this->kata_mufrod_mutsanna("1", "كِتَابٌ (Mutsanna Objek)", "كِتَابٌ", "كِتَابَيْنِ"),
+                $this->kata_mufrod_mutsanna("1", "سَيَّارَتَيْنِ (Mufrod Subjek)", "سَيَّارَةٌ", "سَيَّارَةٌ"),
+                $this->kata_mufrod_mutsanna("1", "سَيَّارَتَانِ (Mufrod Objek)", "سَيَّارَةٌ", "سَيَّارَةً"),
+                $this->kata_mufrod_mutsanna("1", "سَيَّارَةً (Mutsanna Objek)", "سَيَّارَةٌ", "سَيَّارَتَانِ"),
+                $this->kata_mufrod_mutsanna("1", "كِتَابٌ (Mutsanna Objek)", "سَيَّارَةٌ", "سَيَّارَتَيْنِ"),
+                
+                $this->kata_mufrod_mutsanna("2", "سَقْفَيْنِ (Mufrod Subjek)", "سَقْفٌ", "سَقْفٌ"),
+                $this->kata_mufrod_mutsanna("2", "سَقْفَانِ (Mufrod Objek)", "سَقْفٌ", "سَقْفًا"),
+                $this->kata_mufrod_mutsanna("2", "سَقْفٌ (Mutsanna Objek)", "سَقْفٌ", "سَقْفَانِ"),
+                $this->kata_mufrod_mutsanna("2", "سَقْفًا (Mutsanna Objek)", "سَقْفٌ", "سَقْفَيْنِ"),
+                $this->kata_mufrod_mutsanna("2", "مِعْلَمَتَيْنِ (Mufrod Subjek)", "مِعْلَمَةٌ", "مِعْلَمَةٌ"),
+                $this->kata_mufrod_mutsanna("2", "مِعْلَمَتَانِ (Mufrod Objek)", "مِعْلَمَةٌ", "مِعْلَمَةً"),
+                $this->kata_mufrod_mutsanna("2", "مِعْلَمَةً (Mutsanna Objek)", "مِعْلَمَةٌ", "مِعْلَمَتَانِ"),
+                $this->kata_mufrod_mutsanna("2", "مِعْلَمَةٌ (Mutsanna Objek)", "مِعْلَمَةٌ", "مِعْلَمَتَيْنِ"),
+
+                $this->kata_mufrod_mutsanna("3", "فَصْلَيْنِ (Mufrod Subjek)", "فَصْلٌ", "فَصْلٌ"),
+                $this->kata_mufrod_mutsanna("3", "فَصْلَانِ (Mufrod Objek)", "فَصْلٌ", "فَصْلًا"),
+                $this->kata_mufrod_mutsanna("3", "فَصْلٌ (Mutsanna Objek)", "فَصْلٌ", "فَصْلَانِ"),
+                $this->kata_mufrod_mutsanna("3", "فَصْلًا (Mutsanna Objek)", "فَصْلٌ", "فَصْلَيْنِ"),
+                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَتَيْنِ (Mufrod Subjek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَةٌ"),
+                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَتَانِ (Mufrod Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَةً"),
+                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَةٌ (Mutsanna Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَتَانِ"),
+                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَةً (Mutsanna Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَتَيْنِ"),
+
+                $this->kata_mufrod_mutsanna("4", "عَيْنَيْنِ (Mufrod Subjek)", "عَيْنٌ", "عَيْنٌ"),
+                $this->kata_mufrod_mutsanna("4", "عَيْنَانِ (Mufrod Objek)", "عَيْنٌ", "عَيْنًا"),
+                $this->kata_mufrod_mutsanna("4", "عَيْنًا (Mutsanna Objek)", "عَيْنٌ", "عَيْنَانِ"),
+                $this->kata_mufrod_mutsanna("4", "عَيْنٌ (Mutsanna Objek)", "عَيْنٌ", "عَيْنَيْنِ"),
+                $this->kata_mufrod_mutsanna("4", "سَاعَتَيْنِ (Mufrod Subjek)", "سَاعَةٌ", "سَاعَةٌ"),
+                $this->kata_mufrod_mutsanna("4", "سَاعَتَانِ (Mufrod Objek)", "سَاعَةٌ", "سَاعَةً"),
+                $this->kata_mufrod_mutsanna("4", "سَاعَةً (Mutsanna Objek)", "سَاعَةٌ", "سَاعَتَانِ"),
+                $this->kata_mufrod_mutsanna("4", "سَاعَةٌ (Mutsanna Objek)", "سَاعَةٌ", "سَاعَتَيْنِ"),
+                
+                $this->kata_mufrod_mutsanna("5", "سِلْكَانِ (Mufrod Subjek)", "سِلْكٌ", "سِلْكٌ"),
+                $this->kata_mufrod_mutsanna("5", "سِلْكَانِ (Mufrod Objek)", "سِلْكٌ", "سِلْكًا"),
+                $this->kata_mufrod_mutsanna("5", "سِلْكٌ (Mutsanna Objek)", "سِلْكٌ", "سِلْكَانِ"),
+                $this->kata_mufrod_mutsanna("5", "سِلْكًا (Mutsanna Objek)", "سِلْكٌ", "سِلْكَيْنِ"),
+                $this->kata_mufrod_mutsanna("5", "مَدْرَسَتَيْنِ (Mufrod Subjek)", "مَدْرَسَةٌ", "مَدْرَسَةٌ"),
+                $this->kata_mufrod_mutsanna("5", "مَدْرَسَتَانِ (Mufrod Objek)", "مَدْرَسَةٌ", "مَدْرَسَةً"),
+                $this->kata_mufrod_mutsanna("5", "مَدْرَسَةٌ (Mutsanna Objek)", "مَدْرَسَةٌ", "مَدْرَسَتَانِ"),
+                $this->kata_mufrod_mutsanna("5", "مَدْرَسَةً (Mutsanna Objek)", "مَدْرَسَةٌ", "مَدْرَسَتَيْنِ"),
             ];
 
             return $data;
         }
 
-        public function kata_mufrod_mutsanna($latihan, $soal, $jawaban){
+        public function kata_mufrod_mutsanna($latihan, $soal, $kata, $jawaban){
             $data = [
                 "latihan" => $latihan,
                 "soal" => $soal,
                 "jawaban" => $jawaban,
-                "huruf" => array_unique($this->huruf($this->huruf_mufrod_mutsanna_mudzakkar("كِـتَابٌ"))),
-                // "huruf" => $this->huruf_mufrod_mutsanna_mudzakkar("كِـتَابٌ"),
+                "kata" => $this->kata_muf_muts($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_mufrod_mutsanna($kata)), ["_"])),
             ];
 
             return $data;
         }
 
-        public function huruf_mufrod_mutsanna_mudzakkar($kata){
-            $huruf = $kata;
-            $mutsanna_subjek = substr($kata, 0, -2) . "َانِ";
-            $mutsanna_objek = substr($kata, 0, -2) . "َيْنِ";
+        public function huruf_mufrod_mutsanna($kata){
+            if(strpos($kata, "ة") !== false){
+                $ta = str_replace("ة", "ت", $kata);
+                $mufrod_objek = substr($kata, 0, -2) . "ً";
+                $mutsanna_subjek = substr($ta, 0, -2) . "َانِ";
+                $mutsanna_objek = substr($ta, 0, -2) . "َيْنِ";
+            } else{
+                $mufrod_objek = substr($kata, 0, -2) . "ًا";
+                $mutsanna_subjek = substr($kata, 0, -2) . "َانِ";
+                $mutsanna_objek = substr($kata, 0, -2) . "َيْنِ";
+            }
 
-            $data = $kata . " " . $mutsanna_subjek . " " . $mutsanna_objek;
+            $data = $kata . " " . $mufrod_objek . " " . $mutsanna_subjek . " " . $mutsanna_objek;
+
+            return $data;
+        }
+
+        public function kata_muf_muts($kata){
+            if(strpos($kata, "ة") !== false){
+                $ta = str_replace("ة", "ت", $kata);
+                $mufrod_objek = substr($kata, 0, -2) . "ً";
+                $mutsanna_subjek = substr($ta, 0, -2) . "َانِ";
+                $mutsanna_objek = substr($ta, 0, -2) . "َيْنِ";
+            } else{
+                $mufrod_objek = substr($kata, 0, -2) . "ًا";
+                $mutsanna_subjek = substr($kata, 0, -2) . "َانِ";
+                $mutsanna_objek = substr($kata, 0, -2) . "َيْنِ";
+            }
+
+            $data[0] = $kata;
+            $data[1] = $mufrod_objek;
+            $data[2] = $mutsanna_subjek;
+            $data[3] = $mutsanna_objek;
+
+            return $data;
+        }
+
+        public function mudzakkar_muannats_salim(){
+            $data = [
+                $this->kata_mudzakkar_muannats_salim("1", "مُعَلِّمٌ (Mufrod Muannats Subjek)", "مُعَلِّمٌ", "مُعَلِّمَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُعَلِّمٌ (Jamak Mudzakkar Salim Subjek)", "مُعَلِّمٌ", "مُعَلِّمُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُعَلِّمٌ (Jamak Mudzakkar Salim Objek)", "مُعَلِّمٌ", "مُعَلِّمِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُعَلِّمٌ (Jamak Muannats Salim Subjek)", "مُعَلِّمٌ", "مُعَلِّمَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُعَلِّمٌ (Jamak Muannats Salim Objek)", "مُعَلِّمٌ", "مُعَلِّمَاتٍ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُهَنْدِسٌ (Mufrod Muannats Subjek)", "مُهَنْدِسٌ", "مُهَنْدِسَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُهَنْدِسٌ (Jamak Mudzakkar Salim Subjek)", "مُهَنْدِسٌ", "مُهَنْدِسُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُهَنْدِسٌ (Jamak Mudzakkar Salim Objek)", "مُهَنْدِسٌ", "مُهَنْدِسِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُهَنْدِسٌ (Jamak Muannats Salim Subjek)", "مُهَنْدِسٌ", "مُهَنْدِسَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("1", "مُهَنْدِسٌ (Jamak Muannats Salim Objek)", "مُهَنْدِسٌ", "مُهَنْدِسَاتٍ"),
+
+                
+                $this->kata_mudzakkar_muannats_salim("2", "سَائِقٌ (Mufrod Muannats Subjek)", "سَائِقٌ", "سَائِقَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("2", "سَائِقٌ (Jamak Mudzakkar Salim Subjek)", "سَائِقٌ", "سَائِقُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("2", "سَائِقٌ (Jamak Mudzakkar Salim Objek)", "سَائِقٌ", "سَائِقِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("2", "سَائِقٌ (Jamak Muannats Salim Subjek)", "سَائِقٌ", "سَائِقَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("2", "سَائِقٌ (Jamak Muannats Salim Objek)", "سَائِقٌ", "سَائِقَاتٍ"),
+                $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Mufrod Muannats Subjek)", "مُوَظَّفٌ", "مُوَظَّفَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Mudzakkar Salim Subjek)", "مُوَظَّفٌ", "مُوَظَّفُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Mudzakkar Salim Objek)", "مُوَظَّفٌ", "مُوَظَّفِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Muannats Salim Subjek)", "مُوَظَّفٌ", "مُوَظَّفَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Muannats Salim Objek)", "مُوَظَّفٌ", "مُوَظَّفَاتٍ"),
+
+                
+                $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Mufrod Muannats Subjek)", "عَالِمٌ", "عَالِمَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Jamak Mudzakkar Salim Subjek)", "عَالِمٌ", "عَالِمُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Jamak Mudzakkar Salim Objek)", "عَالِمٌ", "عَالِمِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Jamak Muannats Salim Subjek)", "عَالِمٌ", "عَالِمَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Jamak Muannats Salim Objek)", "عَالِمٌ", "عَالِمَاتٍ"),
+                $this->kata_mudzakkar_muannats_salim("3", "مُمَثِّلٌ (Mufrod Muannats Subjek)", "مُمَثِّلٌ", "مُمَثِّلَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("3", "مُمَثِّلٌ (Jamak Mudzakkar Salim Subjek)", "مُمَثِّلٌ", "مُمَثِّلُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("3", "مُمَثِّلٌ (Jamak Mudzakkar Salim Objek)", "مُمَثِّلٌ", "مُمَثِّلِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("3", "مُمَثِّلٌ (Jamak Muannats Salim Subjek)", "مُمَثِّلٌ", "مُمَثِّلَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("3", "مُمَثِّلٌ (Jamak Muannats Salim Objek)", "مُمَثِّلٌ", "مُمَثِّلَاتٍ"),
+
+                
+                $this->kata_mudzakkar_muannats_salim("4", "مُهَرِّجٌ (Mufrod Muannats Subjek)", "مُهَرِّجٌ", "مُهَرِّجَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُهَرِّجٌ (Jamak Mudzakkar Salim Subjek)", "مُهَرِّجٌ", "مُهَرِّجُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُهَرِّجٌ (Jamak Mudzakkar Salim Objek)", "مُهَرِّجٌ", "مُهَرِّجِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُهَرِّجٌ (Jamak Muannats Salim Subjek)", "مُهَرِّجٌ", "مُهَرِّجَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُهَرِّجٌ (Jamak Muannats Salim Objek)", "مُهَرِّجٌ", "مُهَرِّجَاتٍ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُصَوِّرٌ (Mufrod Muannats Subjek)", "مُصَوِّرٌ", "مُصَوِّرَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُصَوِّرٌ (Jamak Mudzakkar Salim Subjek)", "مُصَوِّرٌ", "مُصَوِّرُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُصَوِّرٌ (Jamak Mudzakkar Salim Objek)", "مُصَوِّرٌ", "مُصَوِّرِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُصَوِّرٌ (Jamak Muannats Salim Subjek)", "مُصَوِّرٌ", "مُصَوِّرَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("4", "مُصَوِّرٌ (Jamak Muannats Salim Objek)", "مُصَوِّرٌ", "مُصَوِّرَاتٍ"),
+
+                
+                $this->kata_mudzakkar_muannats_salim("5", "خَادِمٌ (Mufrod Muannats Subjek)", "خَادِمٌ", "خَادِمَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("5", "خَادِمٌ (Jamak Mudzakkar Salim Subjek)", "خَادِمٌ", "خَادِمُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("5", "خَادِمٌ (Jamak Mudzakkar Salim Objek)", "خَادِمٌ", "خَادِمِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("5", "خَادِمٌ (Jamak Muannats Salim Subjek)", "خَادِمٌ", "خَادِمَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("5", "خَادِمٌ (Jamak Muannats Salim Objek)", "خَادِمٌ", "خَادِمَاتٍ"),
+                $this->kata_mudzakkar_muannats_salim("5", "مُمَرِّضٌ (Mufrod Muannats Subjek)", "مُمَرِّضٌ", "مُمَرِّضَةٌ"),
+                $this->kata_mudzakkar_muannats_salim("5", "مُمَرِّضٌ (Jamak Mudzakkar Salim Subjek)", "مُمَرِّضٌ", "مُمَرِّضُوْنَ"),
+                $this->kata_mudzakkar_muannats_salim("5", "مُمَرِّضٌ (Jamak Mudzakkar Salim Objek)", "مُمَرِّضٌ", "مُمَرِّضِيْنَ"),
+                $this->kata_mudzakkar_muannats_salim("5", "مُمَرِّضٌ (Jamak Muannats Salim Subjek)", "مُمَرِّضٌ", "مُمَرِّضَاتٌ"),
+                $this->kata_mudzakkar_muannats_salim("5", "مُمَرِّضٌ (Jamak Muannats Salim Objek)", "مُمَرِّضٌ", "مُمَرِّضَاتٍ"),
+            ];
+
+            return $data;
+
+        }
+
+        public function kata_mudzakkar_muannats_salim($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_mudz_mua_salim($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_mudzakkar_muannats_salim($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function huruf_mudzakkar_muannats_salim($kata){
+            $mudz_sal_sub = substr($kata, 0, -2) . "ُوْنَ";
+            $mudz_sal_obj = substr($kata, 0, -2) . "ِيْنَ";
+            $mua_sal_sub = substr($kata, 0, -2) . "َاتٌ";
+            $mua_sal_obj = substr($kata, 0, -2) . "َاتٍ";
+            $mua_muf = substr($kata, 0, -2) . "َةٌ";
+
+            $data = $kata . " " . $mua_muf . " " . $mudz_sal_sub . " " . $mudz_sal_obj . " " . $mua_sal_sub . " " . $mua_sal_obj;
+
+            return $data;
+        }
+
+        public function kata_mudz_mua_salim($kata){
+            $mudz_sal_sub = substr($kata, 0, -2) . "ُوْنَ";
+            $mudz_sal_obj = substr($kata, 0, -2) . "ِيْنَ";
+            $mua_sal_sub = substr($kata, 0, -2) . "َاتٌ";
+            $mua_sal_obj = substr($kata, 0, -2) . "َاتٍ";
+            $mua_muf = substr($kata, 0, -2) . "َةٌ";
+
+            $data[0] = $kata;
+            $data[1] = $mua_muf;
+            $data[2] = $mudz_sal_sub;
+            $data[3] = $mudz_sal_obj;
+            $data[4] = $mua_sal_sub;
+            $data[5] = $mua_sal_obj;
 
             return $data;
         }

@@ -8,7 +8,7 @@
             <?php endif; ?>
             <div class="row">
                 <div class="col-12 mb-2">
-                    <a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-success"><i class="fa fa-arrow-left"></i> Qowaid</a>
+                    <a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Qowaid</a>
                 </div>
                 <!-- <div class="col-12">
                     <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Bahasa Arab memiliki pengelompokan Isim (Kata Benda) berdasarkan jenis, apakah untuk laki-laki (<strong>مُذَكَّرٌ</strong>) atau perempuan (<strong>مُؤَنَّثٌ</strong>)</div>

@@ -4,14 +4,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="daftarIsiTitle">Modal title</h5>
+        <h5 class="modal-title" id="daftarIsiTitle">Materi Full Time 1</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <ul class="list-group">
-            <div class="listGroup"></div>
+            <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 1 <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+            <li class="list list-group-item d-flex justify-content-between">2. Qowaid Full Time 1 <span><a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
         </ul>
       </div>
       <div class="modal-footer">
@@ -23,15 +24,18 @@
         
         <div class="container">
             <div class="row">
+                <div class="col-4 col-md-4 mb-3">
+                    <span><a href="#daftarIsi" data-toggle="modal" class="btn btn-sm btn-success img-shadow btnMulai"><i class="fa fa-book mr-2"></i>materi</a></span>
+                </div>
                 <?php 
                     foreach ($tema as $tema) :?>
                         <div class="col-12 col-md-4 mb-3">
                             <div class="card rounded-lg <?= $tema['kemajuan'] != "100" ? "border-danger" : "border-primary";?>">
                                 <div class="card-header d-flex justify-content-center <?= $tema['kemajuan'] != "100" ? "list-group-item-danger" : "list-group-item-primary";?>">
-                                    <span class="text-dark arab"><?= $tema['title']?><span>
+                                    <span class="text-dark arab"><?= angka_arab($tema['bab']) . " " . $tema['title']?><span>
                                 </div>
                                 <div class="card-body">
-                                    <a href="#daftarIsi" data-id="<?= $tema['bab']?>" data-toggle="modal" class="d-flex justify-content-center btn btn-block btn-sm <?= $tema['kemajuan'] != "100" ? "btn-danger" : "btn-primary";?> btnDaftarIsi"><span><?= $tema['title_arti']?></span></a>
+                                    <a href="#daftarIsi" data-id="<?= $tema['bab']?>" data-toggle="modal" class="d-flex justify-content-center btn btn-block btn-sm <?= $tema['kemajuan'] != "100" ? "btn-danger" : "btn-primary";?> btnDaftarIsi"><span><?= $tema['bab'] . ". " . $tema['title_arti']?></span></a>
                                 </div>
                             </div>
                         </div>

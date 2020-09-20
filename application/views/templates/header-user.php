@@ -3,6 +3,21 @@
         $hasil_rupiah = "Rp" . number_format($angka,0,',','.');
         return $hasil_rupiah;
     }
+
+    function angka_arab($data){
+        $data = str_replace("0", "٠", $data);
+        $data = str_replace("1", "١", $data);
+        $data = str_replace("2", "٢", $data);
+        $data = str_replace("3", "٣", $data);
+        $data = str_replace("4", "٤", $data);
+        $data = str_replace("5", "٥", $data);
+        $data = str_replace("6", "٦", $data);
+        $data = str_replace("7", "٧", $data);
+        $data = str_replace("8", "٨", $data);
+        $data = str_replace("9", "٩", $data);
+
+        return $data;
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -48,10 +63,18 @@
             </div>
             <a href="<?= base_url()?>profil" class="list-group-item list-group-item-action <?php if($title == 'Profil'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-user mr-3"></i>Profil</a>
             <?php if(in_array("Hifdzi 1", $program)):?>
-                <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Hifdzi I</a>
+                <a href="<?= base_url()?>materi/program/<?= MD5('Hifdzi 1')?>" class="list-group-item list-group-item-action <?php if($title == 'Materi Hifdzi I'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-book mr-3"></i>Materi Hifdzi I</a>
             <?php endif;?>
             <?php if(in_array("Full Time 1", $program)):?>
-                <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action <?php if($title == 'Full Time 1'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-language mr-3"></i>Materi Full Time</a>
+                <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action <?php if($title == 'Full Time 1'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>" id="btnMateriFullTime1"><i class="fa fa-book mr-3"></i>Materi Full Time 1</a>
+                <div class="MateriFullTime1">
+                    <a href="<?= base_url()?>ft_1/mufrodat" class="list-group-item list-group-item-action">
+                        <span class="ml-4">Mufrodat</span> 
+                    </a>
+                    <a href="<?= base_url()?>ft_1/qowaid" class="list-group-item list-group-item-action">
+                        <span class="ml-4">Qowaid</span> 
+                    </a>
+                </div>
             <?php endif;?>
             <a href="<?= base_url()?>setting" class="list-group-item list-group-item-action <?php if($title == 'Pengaturan'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-cog mr-3"></i>Pengaturan</a>
             <a href="<?= base_url()?>login/logout_user" class="list-group-item list-group-item-action" onclick="return confirm('Yakin akan keluar?')"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
@@ -65,3 +88,11 @@
                 <a id="sidebarCollapse" class="btn btn-sm"><img src="<?= base_url()?>assets/img/logo.png" width="25"><span class="text-light ml-2"><b><?= $title?></b></span></span></a>
             </div>
         </nav>
+
+<script>
+    $(".MateriFullTime1").hide();
+      
+    $('#btnMateriFullTime1').on('click', function() {
+        $('.MateriFullTime1').fadeToggle(300);
+    });
+</script>

@@ -43,11 +43,11 @@
                 <div class="col-12">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-warning">Latihan</li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mufrod & Mutsanna')?>&i=1" class="btn btn-sm btn-block btn-success">Latihan 1</a></li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mufrod & Mutsanna')?>&i=2" class="btn btn-sm btn-block btn-success">Latihan 2</a></li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mufrod & Mutsanna')?>&i=3" class="btn btn-sm btn-block btn-success">Latihan 3</a></li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mufrod & Mutsanna')?>&i=4" class="btn btn-sm btn-block btn-success">Latihan 4</a></li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mufrod & Mutsanna')?>&i=5" class="btn btn-sm btn-block btn-success">Latihan 5</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=1" class="btn btn-sm btn-block btn-success">Latihan 1</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=2" class="btn btn-sm btn-block btn-success">Latihan 2</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=3" class="btn btn-sm btn-block btn-success">Latihan 3</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=4" class="btn btn-sm btn-block btn-success">Latihan 4</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=5" class="btn btn-sm btn-block btn-success">Latihan 5</a></li>
                     </ul>
                 </div>
             </div>
