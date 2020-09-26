@@ -212,6 +212,13 @@ class Ft_1 extends CI_CONTROLLER{
                 $this->load->view("templates/header-user", $data);
                 $this->load->view("ft_1/qowaid/materi-hafalan", $data);
                 $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Dhomir Muttashil Milki")){
+                $data['title'] = "Dhomir Muttashil (Kepemilikan)";
+
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/dhomir_muttashil_milki", $data);
+                $this->load->view("templates/footer-user", $data);
             }
         } else if(!empty($_GET['ln'])){
             if($_GET['ln'] == MD5("Mudzakkar & Muannats")){
@@ -234,6 +241,7 @@ class Ft_1 extends CI_CONTROLLER{
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Mufrod & Mutsanna")){
                 $urut = $_GET['i'];
+                $latihan = $_GET['j'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->mufrod_mutsanna();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Mufrod & Mutsanna");
@@ -246,7 +254,7 @@ class Ft_1 extends CI_CONTROLLER{
                 
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
-                if($urut <= 3)
+                if($latihan == 1)
                     $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
                 else
                     $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
@@ -255,6 +263,7 @@ class Ft_1 extends CI_CONTROLLER{
 
             } else if($_GET['ln'] == MD5("Jamak Mudzakkar & Muannats Salim")){
                 $urut = $_GET['i'];
+                $latihan = $_GET['j'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->mudzakkar_muannats_salim();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Jamak Mudzakkar & Muannats Salim");
@@ -267,10 +276,13 @@ class Ft_1 extends CI_CONTROLLER{
                 
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
-                if($urut <= 3)
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol simpan";
                     $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                else
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol simpan";
                     $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                }
 
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Dhomir Munfashil")){
@@ -347,7 +359,35 @@ class Ft_1 extends CI_CONTROLLER{
                     }
                     $this->load->view("templates/footer-user", $data);
                 // view
+            } else if($_GET['ln'] == MD5("Dhomir Muttashil Milki")){
+                $urut = $_GET['i'];
+                $latihan = $_GET['j'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->dhomir_muttashil_milki();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Jamak Mudzakkar & Muannats Salim");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
                 }
+
+                $this->load->view("templates/footer-user", $data);
+            
+            }
         } else {
 
             $data['title'] = "Qowaid Full Time 1";

@@ -1867,7 +1867,7 @@
                         "tema" => "Mufrodat 21",
                         "kata" => "أُخْـتٌ صَـغِـيْـرَةٌ",
                         "kata_arab" => "أُخْتٌ صَغِيْرَةٌ",
-                        "arti" => "Kakak (pr)",
+                        "arti" => "Adik (pr)",
                         "huruf" => array_unique($this->huruf("أُخْتٌ صَغِيْرَةٌ")),
                         "status" => "on"
                     ],
@@ -5442,9 +5442,9 @@
                     $this->data_kata("", "Mufrodat 101", "صَدَمَ-يَصْدُمُ-صَدَامَةً", "صَدَمَ-يَصْدُمُ-صَدَامَةً", "Menabrak"),
                     $this->data_kata("", "Mufrodat 101", "تَصَادَمَ-يَتَصَادَمُ-تَصَادُمًا", "تَصَادَمَ-يَتَصَادَمُ-تَصَادُمًا", "Tabrakan"),
                     $this->data_kata("", "Mufrodat 101", "دَاهَمَ-يُدَاهِمُ-مُدَاهَمَةً", "دَاهَمَ-يُدَاهِمُ-مُدَاهَمَةً", "Mendobrak"),
-                    $this->data_kata("", "Mufrodat 101", "كَسَّرَ-يُكَسِّرُ-تَكِسْيًرا", "كَسَّرَ-يُكَسِّرُ-تَكِسْيًرا", "Memecahkan"),
+                    $this->data_kata("", "Mufrodat 101", "كَسَّرَ-يُكَسِّرُ-تَكْسِيْرًا", "كَسَّرَ-يُكَسِّرُ-تَكْسِيْرًا", "Memecahkan"),
                     $this->data_kata("", "Mufrodat 101", "جَرَّ-يَجُرُّ-جَرًّا", "جَرَّ-يَجُرُّ-جَرًّا", "Menarik"),
-                    $this->data_kata("", "Mufrodat 101", "سَيَّرَ-يُسَيِّرُ-تَسيِيْرًا", "سَيَّرَ-يُسَيِّرُ-تَسيِيْرًا", "Menjalankan"),
+                    $this->data_kata("", "Mufrodat 101", "سَيَّرَ-يُسَيِّرُ-تَسْيِيْرًا", "سَيَّرَ-يُسَيِّرُ-تَسْيِيْرًا", "Menjalankan"),
                     $this->data_kata("", "Mufrodat 101", "عَبَرَ-يَعْبُرُ-عُبُوْرًا", "عَبَرَ-يَعْبُرُ-عُبُوْرًا", "Menyeberang"),
                     $this->data_kata("", "Mufrodat 101", "أَبْحَرَ-يُبْحِرُ-إِبْحَارًا", "أَبْحَرَ-يُبْحِرُ-إِبْحَارًا", "Berlayar"),
 
@@ -5459,7 +5459,7 @@
                     $this->data_kata("", "Mufrodat 102", "دَوَاءٌ", "دَوَاءٌ", "Obat"),
 
                     $this->data_kata("", "Mufrodat 103", "دَاءٌ", "دَاءٌ", "Penyakit"),
-                    $this->data_kata("", "Mufrodat 103", "سَيَّارَةُ اْلإِسْعَافِ", "سَيَّارَةُ اْلإِسْعَافِ", "Ambulan"),
+                    $this->data_kata("", "Mufrodat 103", "سَيَّارَةُ الْإِسْعَافِ", "سَيَّارَةُ الْإِسْعَافِ", "Ambulan"),
                     $this->data_kata("", "Mufrodat 103", "حُقْنَةٌ", "حُقْنَةٌ", "Suntikan"),
                     $this->data_kata("", "Mufrodat 103", "مِيْزَانُ الْحَرَارَةِ", "مِيْزَانُ الْحَرَارَةِ", "Termometer"),
                     $this->data_kata("", "Mufrodat 103", "سَمَّاعَةُ الطَّبِيْبِ", "سَمَّاعَةُ الطَّبِيْبِ", "Stetoskop"),
@@ -5616,7 +5616,7 @@
 
                     $this->data_kata("", "Mufrodat 120", "تُفَّاحٌ", "تُفَّاحٌ", "Apel"),
                     $this->data_kata("", "Mufrodat 120", "عِنَبٌ", "عِنَبٌ", "Anggur"),
-                    $this->data_kata("", "Mufrodat 120", "كُمِثْرَي", "كُمِثْرَي", "Pir"),
+                    $this->data_kata("", "Mufrodat 120", "كُمِثْرَى", "كُمِثْرَى", "Pir"),
                     $this->data_kata("", "Mufrodat 120", "مَوْزٌ", "مَوْزٌ", "Pisang"),
                     $this->data_kata("", "Mufrodat 120", "بَابَايَا", "بَابَايَا", "Pepaya"),
                     $this->data_kata("", "Mufrodat 120", "مَنْجَا", "مَنْجَا", "Mangga"),
@@ -5847,7 +5847,7 @@
 
                     $this->data_kata("", "Mufrodat 147", "اِخْتَارَ-يَخْتَارُ-اِخْتِيَارًا", "اِخْتَارَ-يَخْتَارُ-اِخْتِيَارًا", "Memilih"),
                     $this->data_kata("", "Mufrodat 147", "أَخَّرَ-يُؤَخِّرُ-تَأْخِيْرًا", "أَخَّرَ-يُؤَخِّرُ-تَأْخِيْرًا", "mengakhirkan"),
-                    $this->data_kata("", "Mufrodat 147", "أَجَّلَ-يُؤَجِّلُ-تَأْجِيْلًا", "أَجَّلَ-يُؤَجِّلُ-تَأْجِيْلًا", "Mengakhirkan"),
+                    $this->data_kata("", "Mufrodat 147", "أَجَّلَ-يُؤَجِّلُ-تَأْجِيْلًا", "أَجَّلَ-يُؤَجِّلُ-تَأْجِيْلًا", "Mengakhirkan", "", "off"),
                     $this->data_kata("", "Mufrodat 147", "عَجَّلَ-يُعَجِّلُ-تَعْجِيْلًا", "عَجَّلَ-يُعَجِّلُ-تَعْجِيْلًا", "menyegerakan"),
                     $this->data_kata("", "Mufrodat 147", "كَفَى-يَكْفِي-كِفَايَةً", "كَفَى-يَكْفِي-كِفَايَةً", "Cukup"),
 
@@ -6716,6 +6716,228 @@
                 $this->data_kata("", "Mufrodat 1", "ـيْ/يَ/نِـيْ", "يْ/يَ/نِيْ", "Saya"),
                 $this->data_kata("", "Mufrodat 1", "نَا", "نَا", "Kita"),
             ];
+
+            return $data;
+        }
+
+        public function dhomir_muttashil_milki(){
+            $data = [
+                $this->kata_dhomir_muttashil_milki("1", "مَعْهَدٌ + هُوَ", "مَعْهَدٌ", "مَعْهَدُهُ"),
+                $this->kata_dhomir_muttashil_milki("1", "مَعْهَدٌ + هُمَا", "مَعْهَدٌ", "مَعْهَدُهُمَا"),
+                $this->kata_dhomir_muttashil_milki("1", "مَعْهَدٌ + هُمْ", "مَعْهَدٌ", "مَعْهَدُهُمْ"),
+                $this->kata_dhomir_muttashil_milki("1", "نَعْلٌ + هِيَ", "نَعْلٌ", "نَعْلُهَا"),
+                $this->kata_dhomir_muttashil_milki("1", "نَعْلٌ + هُنَّ", "نَعْلٌ", "نَعْلُهُنَّ"),
+                $this->kata_dhomir_muttashil_milki("1", "نَعْلٌ + أَنْتَ", "نَعْلٌ", "نَعْلُكَ"),
+                $this->kata_dhomir_muttashil_milki("1", "صَوْتٌ + أنْتُمَا", "صَوْتٌ", "صَوْتُكُمَا"),
+                $this->kata_dhomir_muttashil_milki("1", "صَوْتٌ + أَنْتُمْ", "صَوْتٌ", "صَوْتُكُمْ"),
+                $this->kata_dhomir_muttashil_milki("1", "صَوْتٌ + أَنْتِ", "صَوْتٌ", "صَوْتُكِ"),
+                $this->kata_dhomir_muttashil_milki("1", "ضَيْفٌ + أَنْتُنَّ", "ضَيْفٌ", "ضَيْفُكُنَّ"),
+                $this->kata_dhomir_muttashil_milki("1", "ضَيْفٌ + أَنَا", "ضَيْفٌ", "ضَيْفِيْ"),
+                $this->kata_dhomir_muttashil_milki("1", "ضَيْفٌ + نَحْنُ", "ضَيْفٌ", "ضَيْفُنَا"),
+
+                $this->kata_dhomir_muttashil_milki("2", "قَلْبٌ + هُوَ", "قَلْبٌ", "قَلْبُهُ"),
+                $this->kata_dhomir_muttashil_milki("2", "قَلْبٌ + هُمَا", "قَلْبٌ", "قَلْبُهُمَا"),
+                $this->kata_dhomir_muttashil_milki("2", "قَلْبٌ + هُمْ", "قَلْبٌ", "قَلْبُهُمْ"),
+                $this->kata_dhomir_muttashil_milki("2", "مَسْكَنٌ + هِيَ", "مَسْكَنٌ", "مَسْكَنُهَا"),
+                $this->kata_dhomir_muttashil_milki("2", "مَسْكَنٌ + هُنَّ", "مَسْكَنٌ", "مَسْكَنُهُنَّ"),
+                $this->kata_dhomir_muttashil_milki("2", "مَسْكَنٌ + أَنْتَ", "مَسْكَنٌ", "مَسْكَنُكَ"),
+                $this->kata_dhomir_muttashil_milki("2", "دَفْتَرٌ + أنْتُمَا", "دَفْتَرٌ", "دَفْتَرُكُمَا"),
+                $this->kata_dhomir_muttashil_milki("2", "دَفْتَرٌ + أَنْتُمْ", "دَفْتَرٌ", "دَفْتَرُكُمْ"),
+                $this->kata_dhomir_muttashil_milki("2", "دَفْتَرٌ + أَنْتِ", "دَفْتَرٌ", "دَفْتَرُكِ"),
+                $this->kata_dhomir_muttashil_milki("2", "مُدَرِّسٌ + أَنْتُنَّ", "مُدَرِّسٌ", "مُدَرِّسُكُنَّ"),
+                $this->kata_dhomir_muttashil_milki("2", "مُدَرِّسٌ + أَنَا", "مُدَرِّسٌ", "مُدَرِّسِيْ"),
+                $this->kata_dhomir_muttashil_milki("2", "مُدَرِّسٌ + نَحْنُ", "مُدَرِّسٌ", "مُدَرِّسُنَا"),
+                
+                $this->kata_dhomir_muttashil_milki("3", "عِنَبَانِ + هُوَ", "عِنَبَانِ", "عِنَبَاهُ"),
+                $this->kata_dhomir_muttashil_milki("3", "عِنَبَانِ + هُمَا", "عِنَبَانِ", "عِنَبَاهُمَا"),
+                $this->kata_dhomir_muttashil_milki("3", "عِنَبَانِ + هُمْ", "عِنَبَانِ", "عِنَبَاهُمْ"),
+                $this->kata_dhomir_muttashil_milki("3", "حِبْرَانِ + هِيَ", "حِبْرَانِ", "حِبْرَاهَا"),
+                $this->kata_dhomir_muttashil_milki("3", "حِبْرَانِ + هُنَّ", "حِبْرَانِ", "حِبْرَاهُنَّ"),
+                $this->kata_dhomir_muttashil_milki("3", "حِبْرَانِ + أَنْتَ", "حِبْرَانِ", "حِبْرَاكَ"),
+                $this->kata_dhomir_muttashil_milki("3", "فِنْجَانَانِ + أنْتُمَا", "فِنْجَانَانِ", "فِنْجَانَاكُمَا"),
+                $this->kata_dhomir_muttashil_milki("3", "فِنْجَانَانِ + أَنْتُمْ", "فِنْجَانَانِ", "فِنْجَانَاكُمْ"),
+                $this->kata_dhomir_muttashil_milki("3", "فِنْجَانَانِ + أَنْتِ", "فِنْجَانَانِ", "فِنْجَانَاكِ"),
+                $this->kata_dhomir_muttashil_milki("3", "كِبْرِيْتَانِ + أَنْتُنَّ", "كِبْرِيْتَانِ", "كِبْرِيْتَاكُنَّ"),
+                $this->kata_dhomir_muttashil_milki("3", "كِبْرِيْتَانِ + نَحْنُ", "كِبْرِيْتَانِ", "كِبْرِيْتَانَا"),
+
+                $this->kata_dhomir_muttashil_milki("4", "مُحَاضِرُوْنَ + هُوَ", "مُحَاضِرُوْنَ", "مُحَاضِرُوْهُ"),
+                $this->kata_dhomir_muttashil_milki("4", "مُحَاضِرُوْنَ + هُمَا", "مُحَاضِرُوْنَ", "مُحَاضِرُوْهُمَا"),
+                $this->kata_dhomir_muttashil_milki("4", "مُحَاضِرُوْنَ + هُمْ", "مُحَاضِرُوْنَ", "مُحَاضِرُوْهُمْ"),
+                $this->kata_dhomir_muttashil_milki("4", "خَادِمُوْنَ + هِيَ", "خَادِمُوْنَ", "خَادِمُوْهَا"),
+                $this->kata_dhomir_muttashil_milki("4", "خَادِمُوْنَ + هُنَّ", "خَادِمُوْنَ", "خَادِمُوْهُنَّ"),
+                $this->kata_dhomir_muttashil_milki("4", "خَادِمُوْنَ + أَنْتَ", "خَادِمُوْنَ", "خَادِمُوْكَ"),
+                $this->kata_dhomir_muttashil_milki("4", "مُصَوِّرُوْنَ + أنْتُمَا", "مُصَوِّرُوْنَ", "مُصَوِّرُوْكُمَا"),
+                $this->kata_dhomir_muttashil_milki("4", "مُصَوِّرُوْنَ + أَنْتُمْ", "مُصَوِّرُوْنَ", "مُصَوِّرُوْكُمْ"),
+                $this->kata_dhomir_muttashil_milki("4", "مُصَوِّرُوْنَ + أَنْتِ", "مُصَوِّرُوْنَ", "مُصَوِّرُوْكِ"),
+                $this->kata_dhomir_muttashil_milki("4", "مُهَنْدِسُوْنَ + أَنْتُنَّ", "مُهَنْدِسُوْنَ", "مُهَنْدِسُوْكُنَّ"),
+                $this->kata_dhomir_muttashil_milki("4", "مُهَنْدِسُوْنَ + نَحْنُ", "مُهَنْدِسُوْنَ", "مُهَنْدِسُوْنَا"),
+                
+                $this->kata_dhomir_muttashil_milki("5", "مُوْسَى + أَنَا", "مُوْسَى", "مُوْسَيَّ"),
+                $this->kata_dhomir_muttashil_milki("5", "مُسْتَشْفَى + أَنَا", "مُسْتَشْفَى", "مُسْتَشْفَيَّ"),
+                $this->kata_dhomir_muttashil_milki("5", "عَصَا + أَنَا", "عَصَا", "عَصَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "دُنْيَا + أَنَا", "دُنْيَا", "دُنْيَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "كِتَابَانِ + أَنَا", "كِتَابَانِ", "كِتَابَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "قَلَمَانِ + أَنَا", "قَلَمَانِ", "قَلَمَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "جَوَّالَانِ + أَنَا", "جَوَّالَانِ", "جَوَّالَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "فِرَاشَانِ + أَنَا", "فِرَاشَانِ", "فِرَاشَايَ"),
+                $this->kata_dhomir_muttashil_milki("5", "مُحَاضِرُوْنَ + أَنَا", "مُحَاضِرُوْنَ", "مُحَاضِرِيَّ"),
+                $this->kata_dhomir_muttashil_milki("5", "خَادِمُوْنَ + أَنَا", "خَادِمُوْنَ", "خَادِمِيَّ"),
+                $this->kata_dhomir_muttashil_milki("5", "مُصَوِّرُوْنَ + أَنَا", "مُصَوِّرُوْنَ", "مُصَوِّرِيَّ"),
+                $this->kata_dhomir_muttashil_milki("5", "مُهَنْدِسُوْنَ + أَنَا", "مُهَنْدِسُوْنَ", "مُهَنْدِسِيَّ"),
+                
+                
+            ];
+
+            return $data;
+        }
+
+        public function kata_dhomir_muttashil_milki($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_dho_mut_milki($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_dhomir_muttashil_milki($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function kata_dho_mut_milki($kata){
+            if(substr($kata, -6, 6) == "انِ"){
+                $huwa = substr($kata, 0, -4) . "هُ";
+                $huma = substr($kata, 0, -4) . "هُمَا";
+                $hum = substr($kata, 0, -4) . "هُمْ";
+                $hiya = substr($kata, 0, -4) . "هَا";
+                $hunna = substr($kata, 0, -4) . "هُنَّ";
+                $anta = substr($kata, 0, -4) . "كَ";
+                $antuma = substr($kata, 0, -4) . "كُمَا";
+                $antum = substr($kata, 0, -4) . "كُمْ";
+                $anti = substr($kata, 0, -4) . "كِ";
+                $antunna = substr($kata, 0, -4) . "كُنَّ";
+                $ana = substr($kata, 0, -4) . "يَ";
+                $nahnu = substr($kata, 0, -4) . "نَا";
+            } else if(substr($kata, -8, 8) == "وْنَ"){
+                $huwa = substr($kata, 0, -4) . "هُ";
+                $huma = substr($kata, 0, -4) . "هُمَا";
+                $hum = substr($kata, 0, -4) . "هُمْ";
+                $hiya = substr($kata, 0, -4) . "هَا";
+                $hunna = substr($kata, 0, -4) . "هُنَّ";
+                $anta = substr($kata, 0, -4) . "كَ";
+                $antuma = substr($kata, 0, -4) . "كُمَا";
+                $antum = substr($kata, 0, -4) . "كُمْ";
+                $anti = substr($kata, 0, -4) . "كِ";
+                $antunna = substr($kata, 0, -4) . "كُنَّ";
+                $ana = substr($kata, 0, -10) . "ِيَّ";
+                $nahnu = substr($kata, 0, -4) . "نَا";
+            } else if(substr($kata, -2) == "ى" || substr($kata, -2) == "ا"){
+                $huwa = substr($kata, 0, -2) . "اهُ";
+                $huma = substr($kata, 0, -2) . "اهُمَا";
+                $hum = substr($kata, 0, -2) . "اهُمْ";
+                $hiya = substr($kata, 0, -2) . "اهَا";
+                $hunna = substr($kata, 0, -2) . "اهُنَّ";
+                $anta = substr($kata, 0, -2) . "اكَ";
+                $antuma = substr($kata, 0, -2) . "اكُمَا";
+                $antum = substr($kata, 0, -2) . "اكُمْ";
+                $anti = substr($kata, 0, -2) . "اكِ";
+                $antunna = substr($kata, 0, -2) . "اكُنَّ";
+                if(substr($kata, -2) == "ا"){
+                    $ana = substr($kata, 0, -2) . "ايَ";
+                } else {
+                    $ana = substr($kata, 0, -2) . "يَّ";
+                }
+                $nahnu = substr($kata, 0, -2) . "انَا";
+            } else {
+                $huwa = substr($kata, 0, -2) . "ُهُ";
+                $huma = substr($kata, 0, -2) . "ُهُمَا";
+                $hum = substr($kata, 0, -2) . "ُهُمْ";
+                $hiya = substr($kata, 0, -2) . "ُهَا";
+                $hunna = substr($kata, 0, -2) . "ُهُنَّ";
+                $anta = substr($kata, 0, -2) . "ُكَ";
+                $antuma = substr($kata, 0, -2) . "ُكُمَا";
+                $antum = substr($kata, 0, -2) . "ُكُمْ";
+                $anti = substr($kata, 0, -2) . "ُكِ";
+                $antunna = substr($kata, 0, -2) . "ُكُنَّ";
+                $ana = substr($kata, 0, -2) . "ِيْ";
+                $nahnu = substr($kata, 0, -2) . "ُنَا";
+            }
+
+            $data[0] = $huwa;
+            $data[1] = $huma;
+            $data[2] = $hum;
+            $data[3] = $hiya;
+            $data[4] = $hunna;
+            $data[5] = $anta;
+            $data[6] = $antuma;
+            $data[7] = $antum;
+            $data[8] = $anti;
+            $data[9] = $antunna;
+            $data[10] = $ana;
+            $data[11] = $nahnu;
+
+            return $data;
+        }
+
+        public function huruf_dhomir_muttashil_milki($kata){
+            if(substr($kata, -6, 6) == "انِ"){
+                $huwa = substr($kata, 0, -4) . "هُ";
+                $huma = substr($kata, 0, -4) . "هُمَا";
+                $hum = substr($kata, 0, -4) . "هُمْ";
+                $hiya = substr($kata, 0, -4) . "هَا";
+                $hunna = substr($kata, 0, -4) . "هُنَّ";
+                $anta = substr($kata, 0, -4) . "كَ";
+                $antuma = substr($kata, 0, -4) . "كُمَا";
+                $antum = substr($kata, 0, -4) . "كُمْ";
+                $anti = substr($kata, 0, -4) . "كِ";
+                $antunna = substr($kata, 0, -4) . "كُنَّ";
+                $ana = substr($kata, 0, -4) . "يَ";
+                $nahnu = substr($kata, 0, -4) . "نَا";
+            } else if(substr($kata, -8, 8) == "وْنَ"){
+                $huwa = substr($kata, 0, -4) . "هُ";
+                $huma = substr($kata, 0, -4) . "هُمَا";
+                $hum = substr($kata, 0, -4) . "هُمْ";
+                $hiya = substr($kata, 0, -4) . "هَا";
+                $hunna = substr($kata, 0, -4) . "هُنَّ";
+                $anta = substr($kata, 0, -4) . "كَ";
+                $antuma = substr($kata, 0, -4) . "كُمَا";
+                $antum = substr($kata, 0, -4) . "كُمْ";
+                $anti = substr($kata, 0, -4) . "كِ";
+                $antunna = substr($kata, 0, -4) . "كُنَّ";
+                $ana = substr($kata, 0, -10) . "ِيَّ";
+                $nahnu = substr($kata, 0, -4) . "نَا";
+            } else if(substr($kata, -2) == "ى" || substr($kata, -2) == "ا"){
+                $huwa = substr($kata, 0, -2) . "اهُ";
+                $huma = substr($kata, 0, -2) . "اهُمَا";
+                $hum = substr($kata, 0, -2) . "اهُمْ";
+                $hiya = substr($kata, 0, -2) . "اهَا";
+                $hunna = substr($kata, 0, -2) . "اهُنَّ";
+                $anta = substr($kata, 0, -2) . "اكَ";
+                $antuma = substr($kata, 0, -2) . "اكُمَا";
+                $antum = substr($kata, 0, -2) . "اكُمْ";
+                $anti = substr($kata, 0, -2) . "اكِ";
+                $antunna = substr($kata, 0, -2) . "اكُنَّ";
+                if(substr($kata, -2) == "ا"){
+                    $ana = substr($kata, 0, -2) . "ايَ";
+                } else {
+                    $ana = substr($kata, 0, -2) . "يَّ";
+                }
+                $nahnu = substr($kata, 0, -2) . "انَا";
+            } else {
+                $huwa = substr($kata, 0, -2) . "ُهُ";
+                $huma = substr($kata, 0, -2) . "ُهُمَا";
+                $hum = substr($kata, 0, -2) . "ُهُمْ";
+                $hiya = substr($kata, 0, -2) . "ُهَا";
+                $hunna = substr($kata, 0, -2) . "ُهُنَّ";
+                $anta = substr($kata, 0, -2) . "ُكَ";
+                $antuma = substr($kata, 0, -2) . "ُكُمَا";
+                $antum = substr($kata, 0, -2) . "ُكُمْ";
+                $anti = substr($kata, 0, -2) . "ُكِ";
+                $antunna = substr($kata, 0, -2) . "ُكُنَّ";
+                $ana = substr($kata, 0, -2) . "ِيْ";
+                $nahnu = substr($kata, 0, -2) . "ُنَا";
+            }
+
+            $data = $huwa . " " . $huma . " " . $hum . " " . $hiya . " " . $huma . " " . $hunna . " " . $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna . " " . $ana . " " . $nahnu;
 
             return $data;
         }

@@ -74,6 +74,9 @@
                     <a href="<?= base_url()?>ft_1/qowaid" class="list-group-item list-group-item-action">
                         <span class="ml-4">Qowaid</span> 
                     </a>
+                    <a href="<?= base_url()?>ibarah/awwal" class="list-group-item list-group-item-action">
+                        <span class="ml-4">Ibarah Yaumiyah</span> 
+                    </a>
                 </div>
             <?php endif;?>
             <a href="<?= base_url()?>setting" class="list-group-item list-group-item-action <?php if($title == 'Pengaturan'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-cog mr-3"></i>Pengaturan</a>

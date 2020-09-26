@@ -13,6 +13,7 @@
         <ul class="list-group">
             <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 1 <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
             <li class="list list-group-item d-flex justify-content-between">2. Qowaid Full Time 1 <span><a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+            <li class="list list-group-item d-flex justify-content-between">3. Ibarah Yaumiyah 1 <span><a href="<?= base_url()?>ibarah/awwal" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
         </ul>
       </div>
       <div class="modal-footer">
@@ -90,6 +91,18 @@
                         </div>
                         <div class="card-body">
                             <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Dhomir Muttashil')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">الضَّـمِـيْـرُ الْـمُـتَّـصِـلُ لِـلْـمِـلْـكِ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Dhomir Muttashil Milki')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
                         </div>
                     </div>
                 </div>

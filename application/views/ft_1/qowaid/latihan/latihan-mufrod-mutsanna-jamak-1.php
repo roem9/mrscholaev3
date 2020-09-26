@@ -4,7 +4,7 @@
                     <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times mr-1"></i>keluar</a>
                 </div>
                 <div class="col-12 mb-1">
-                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Ubahlah kata sesuai perintah di dalam kurung. Pilihlah jawaban kemudian tekan tombol <strong>simpan</strong></div>
+                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i><?= $pesan?></div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
